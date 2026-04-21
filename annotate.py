@@ -120,6 +120,32 @@ def find_or_create_project(client):
     projects = client.projects.list()
     for p in projects:
         if p.title == PROJECT_NAME:
+            config_path = "label_studio_config.xml"
+            if os.path.exists(config_path):
+                with open(config_path, 'r') as f:
+                    local_config = f.read()
+                remote_config = client.projects.get(id=p.id).label_config or ""
+                def norm(s): return ' '.join(s.split())
+                if norm(local_config) != norm(remote_config):
+                    print()
+                    print("  WARNING: Label Studio config mismatch detected!")
+                    print("     Local file:    label_studio_config.xml")
+                    print("     Remote project:", PROJECT_NAME)
+                    print()
+                    print("  [1] Keep LOCAL  -- overwrite Label Studio with local file")
+                    print("  [2] Keep REMOTE -- overwrite local file with Label Studio config")
+                    print("  [3] Skip        -- leave both as-is and continue")
+                    choice = input("  Choose [1/2/3]: ").strip()
+                    if choice == '1':
+                        client.projects.update(id=p.id, label_config=local_config)
+                        print("  Updated Label Studio config from local file.")
+                    elif choice == '2':
+                        with open(config_path, 'w') as f:
+                            f.write(remote_config)
+                        print("  Updated local file from Label Studio config.")
+                    else:
+                        print("  Skipped. Configs remain out of sync.")
+                    print()
             return p.id
 
     config_path = "label_studio_config.xml"
