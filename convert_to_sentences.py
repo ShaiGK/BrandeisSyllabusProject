@@ -18,6 +18,12 @@ Each output record:
     "char_end":   int    # character offset of line end (exclusive)
   }
 
+Line filtering:
+  Lines whose entire content is a bare integer that continues an ascending
+  page-number sequence are dropped (PDF page numbers embedded in extracted
+  text).  All other lines, including lone integers that break the sequence,
+  are kept.
+
 Label assignment:
   A line receives the label of any span that covers >50% of the line's
   characters.  If multiple spans qualify (shouldn't happen with clean
@@ -70,19 +76,41 @@ def load_annotations(path):
 def get_line_offsets(text):
     """
     Split text on '\\n' and return a list of (char_start, char_end, line_text)
-    for every non-empty line (after stripping).
+    for every non-empty line (after stripping), skipping page-number lines.
+
+    Page-number lines are lines whose entire content is a single integer that
+    continues an ascending sequence of page numbers seen so far in the document.
+    For example, if lines "3", "4", "5" each appear alone, they are treated as
+    PDF page numbers and dropped.  A bare integer that does not continue the
+    current sequence is kept (it could be a year, a score, etc.).
 
     char_start / char_end are offsets into the original text string.
     """
     lines = []
     pos = 0
+    next_page = None  # the integer we'd expect next if a page-number run is ongoing
+
     for raw_line in text.split("\n"):
         line_start = pos
         line_end = pos + len(raw_line)
         stripped = raw_line.strip()
+
         if stripped:
-            lines.append((line_start, line_end, stripped))
+            # Check whether this line is a bare integer
+            if stripped.isdigit():
+                n = int(stripped)
+                if next_page is None or n == next_page:
+                    # Start or continue a page-number sequence, skip
+                    next_page = n + 1
+                else:
+                    # Integer doesn't fit the sequence; treat as real content
+                    lines.append((line_start, line_end, stripped))
+            else:
+                # Non-numeric line: real content
+                lines.append((line_start, line_end, stripped))
+
         pos = line_end + 1  # +1 for the '\n' character itself
+
     return lines
 
 
