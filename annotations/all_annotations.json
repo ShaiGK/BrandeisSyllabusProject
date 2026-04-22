@@ -124,5 +124,869 @@
     ],
     "validity": "Valid",
     "notes": ""
+  },
+  {
+    "doc_id": "243CHEM 11A ALL General Chemistry I Claudia Novack & Claudia Novack & Claudia Novack",
+    "semester": "Fall Semester 2024 (243)",
+    "school": "College of Arts and Sciences",
+    "department": "Chemistry",
+    "course_name": "243CHEM 11A ALL General Chemistry I Claudia Novack & Claudia Novack & Claudia Novack",
+    "annotator": "spencer",
+    "spans": [
+      {
+        "start": 83,
+        "end": 171,
+        "text": "Email: novack@brandeis.edu\\nTelephone: 781-736-2582\\nINSTRUCTOR’S OFFICE AND OFFICE HOURS:",
+        "label": "ADMIN"
+      },
+      {
+        "start": 251,
+        "end": 388,
+        "text": "Location: Edison Lecks 120\\nOffice hours (no appointment necessary): Monday 2:30-3:20 PM\\nWednesday 1:20-2:10 PM\\nThursday 11:15 AM-12:05 PM",
+        "label": "ADMIN"
+      },
+      {
+        "start": 64,
+        "end": 82,
+        "text": "DR. CLAUDIA NOVACK",
+        "label": "ADMIN"
+      },
+      {
+        "start": 490,
+        "end": 1054,
+        "text": "Lectures: Monday, Wednesday, & Thursday 10:10-11:00 AM, Gerstenzang 123\\nRecitations: Section 1: Monday 12:20-1:10 PM, Gerstenzang 122\\nSection 2: Wednesday 12:20-1:10 PM, Gerstenzang 122\\nSection 3: Thursday 12:20-1:10 PM, Gerstenzang 122\\nGroup-work (Pretests): some Fridays (see schedule pp. 8 and 9), 9:35-10:55 AM, place\\nTBA\\nTests: Friday, September 13, 9:35-10:55 AM, place TBA\\nFriday, September 27, 9:35-10:55 AM, place TBA\\nFriday, October 25, 9:35-10:55 AM, place TBA\\nFriday, November 15, 9:35-10:55 AM, place TBA\\nTuesday, December 10, 9:35-10:55 AM, place TBA",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1115,
+        "end": 1152,
+        "text": "INCLEMENT WEATHER (“SNOW DAY”) POLICY",
+        "label": "ATTEND"
+      },
+      {
+        "start": 1232,
+        "end": 1406,
+        "text": "Unless otherwise notified, lectures and recitations will be held on “snow days.” These will be\\nconsidered regular class days and Zoom attendance (with camera on) is expected.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 1407,
+        "end": 1637,
+        "text": "Note that the\\nfollowing links will be active only on days when classes cannot be held in person.\\nLink for remote lectures and recitations: Zoom Link for Lectures/Recitations\\nLink for remote office hours: Zoom Link for Office Hours",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1638,
+        "end": 1835,
+        "text": "If the university is closed on a test day, the test will be rescheduled for the subsequent Friday and\\nheld in-person. Group-work sessions will be handled on a case-by-case basis as the need arises.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1972,
+        "end": 3203,
+        "text": "Chemistry 11A covers a wide array of topics, embracing aspects of descriptive, as well as\\nquantitative, chemistry. No prior study of chemistry is assumed. The course begins by looking at\\nthe atomic foundation of matter, the elements, and the organization of the Periodic Table, working\\nits way up to an examination of how atoms are bonded together to form larger units of matter.\\nStudents who complete this course will gain understanding of the laws that govern the behavior of\\nmatter in the gas phase, as well as knowledge of the major types of chemical reactions and how to\\nrepresent them. A strong focus is put on learning methods of creative problem-solving—using the\\nmaterial to develop the critical thinking tools essential to solving unfamiliar problems—skills that\\ncarry students far beyond the confines of the classroom. When taken in conjunction with\\nChemistry 11B and the associated lab courses (Chemistry 18A and 18B), this course meets the\\ngeneral, analytic, and inorganic requirements of medical, dental, and veterinary schools.\\nSuccess in this four-credit course assumes that students will spend a minimum of 9 hours of study time\\nper week in preparation for class (readings, problem sets, recitations, SI sessions).",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 3299,
+        "end": 4116,
+        "text": "Upon successful completion of this course, students will be able to\\n• make qualitative and quantitative predictions about the results of chemical reactions.\\n• predict chemical and physical properties of matter based on models of molecular structure.\\n• think both critically (analytically) and creatively about a variety of approaches to problem-\\nsolving.\\n• view problems as a maze to which there may be more than one equally accurate, if not\\nefficient, solution.\\n• decide between possible approaches to a problem and choose the most efficient.\\n• let go of their dependence on paradigms to solve problems and replace paradigmatic\\nmemorization with true analytical thinking.\\n• explain succinctly what “chemistry” is to a person who has never studied the subject and\\nargue convincingly why chemistry matters to everyone.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 4209,
+        "end": 4691,
+        "text": "Textbook: Tro, Nivaldo J. Chemistry, A Molecular Approach. Pearson Prentice Hall, 4th ed., 2017.\\nFor your convenience, the relevant chapters from the textbook, as well as the appendices, data tables, glossary, and\\nindex, are posted as PDFs on the Moodle course page.\\nCalculators: You must have a scientific calculator for assessments. It does not need to be a\\ngraphing calculator, but it must have log functions. Cell phone calculators will not be permitted\\nunder any circumstances.",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 4692,
+        "end": 4881,
+        "text": "MOODLE: Brandeis Moodle Courses is your gateway to our on-line course website. There you\\nwill find the problem sets, answers to problems, solutions to pretests and tests, and slides to help",
+        "label": "ADMIN"
+      },
+      {
+        "start": 4919,
+        "end": 5078,
+        "text": "you review the material covered in lectures. To access Moodle, go to CHEM 11A (General\\nChemistry I) Moodle Page and log in using your Brandeis ID and password.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 5466,
+        "end": 5758,
+        "text": "ATTENDANCE at all lectures and at least one recitation section a week is a mandatory part of\\nCHEM 11A.\\nLectures: CHEM 11A is an in-person class and lectures begin at 10:10 AM. I know that for\\nsome of you this seems impossibly early, but your physical presence is important for you and\\nfor me.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 6424,
+        "end": 6729,
+        "text": "Since attentive listening is crucial to understanding the lectures, laptops and other electronic\\nInternet devices ARE NOT PERMITTED. Electronic devices are a distraction to your fellow\\nstudents as well as to you (whether you think so or not). Distractions interfere with an effective\\nlearning environment.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 6730,
+        "end": 6926,
+        "text": "If you have documentation from Student Accessibility Services that allows you to use\\na laptop or tablet for notetaking, please make me aware of your accommodation at the beginning of the semester.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 6927,
+        "end": 6990,
+        "text": "Recitations: Attendance at recitation is mandatory in CHEM 11A.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 7987,
+        "end": 8201,
+        "text": "Every student is registered for one 50-minute session. If you are not able to attend the recitation\\nfor which you are registered, you are welcome to attend at another time. You do not need to\\ntell me, just show up.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 8202,
+        "end": 8357,
+        "text": "I expect students to participate in at least one recitation session per\\nweek, but you are welcome to attend as many additional sessions as you find useful.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 5079,
+        "end": 5347,
+        "text": "Lecture recordings: A lot of information gets packed into every lecture in CHEM 11!\\nRecordings of the lectures are made available for review purposes only. They are NOT an\\nacceptable substitute for physical attendance! Lectures in CHEM 11A will not be “live-streamed.”",
+        "label": "ATTEND"
+      },
+      {
+        "start": 8395,
+        "end": 9310,
+        "text": "Supplemental Instruction: Supplemental Instruction (SI) is a wonderful opportunity for\\nyou to process the course material in small groups that maximize your active participation.\\nSessions are conducted by SI Leaders—students who have completed CHEM 11 successfully\\nand who know what it takes to get the grades that you want. By engaging actively in these short\\n(one-hour) collaborative learning sessions, you will be able to digest as much material as it\\nwould take you two and a half hours to study on your own! SI sessions are scheduled in the\\nevenings and on weekends to minimize conflicts with other course obligations. It is our goal to\\nmake these sessions as convenient for you to attend as possible. While attendance at SI sessions is\\nentirely voluntary, results from past semesters indicate that, on average, students who attend SI sessions earn\\nhigher test scores and semester grades than those who do not.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 9311,
+        "end": 9810,
+        "text": "PROBLEM SETS: Problems for each chapter are posted on Moodle. I have assigned a large\\nnumber of problems of graduated difficulty to help you learn the material. Answers to the assigned\\nproblems are posted on Moodle. The problem sets will not be collected or graded, but the pretest\\nand test problems on which you will be graded are based on the assigned cumulative problems\\nfrom the textbook. remember to request the problem for a recitation session so that I can help you\\nunderstand and conquer it!",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 10322,
+        "end": 10727,
+        "text": "READINGS: I expect you to read every chapter thoroughly, and to work through the sample\\nproblems in the text as you go along. Plan to read each chapter before the lectures on the chapter\\nbegin. The only way to keep up is to stay ahead! For your convenience, the relevant chapters\\nfrom the textbook, as well as the appendices, data tables, glossary, and index, are posted as PDFs\\non the Moodle course page.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 10867,
+        "end": 11372,
+        "text": "PRETESTS AND PEER EVALUATIONS: There are 5 group-work sessions in CHEM 11A, each\\nscheduled to occur one week before the test on the same material. During these sessions, your\\ngroup will complete and submit a “pretest.” The pretest will include questions and problems from\\neach of the two chapters that will be covered on the full test the following week. Some form of\\nthe pretest questions WILL be on the actual test, so it will be well worth your time to\\nprepare for these group-work sessions thoroughly!",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 11373,
+        "end": 11513,
+        "text": "The pretests are collectively worth 10% of your\\nsemester grade. I will drop your lowest pretest score before calculating your final average.",
+        "label": "GRADE"
+      },
+      {
+        "start": 11514,
+        "end": 11690,
+        "text": "The group-work sessions begin promptly at 9:35 AM. Arrival to a session later than\\n9:40 will result in an automatic zero on the pretest. There are no exceptions to this\\npolicy.",
+        "label": "LATE"
+      },
+      {
+        "start": 12212,
+        "end": 12508,
+        "text": "After the initial 40 minutes, you will work with your assigned group of 4-5 students for a 30-minute\\ncollaboration period. During that time, you will discuss solutions with your group, share your\\ncollective knowledge, and revise your answers. No textbooks, notes, or Internet sources are\\nallowed.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 12755,
+        "end": 12983,
+        "text": "*Following the inclusive practice of “Universal Design in Education (UDE),” the 40 minutes allowed to all students\\ntakes into consideration that some students have extended time accommodations (up to double time) on assessments.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 13423,
+        "end": 14235,
+        "text": "Peer Evaluations: For each pretest, you will select one paper to submit for grading to represent\\nthe collective work of your group. Your group is free to choose the submitter and vary who submits\\nfor the group from week to week. For any working group, however, there is nothing more\\nfrustrating than having members who do not contribute at all and still get full credit for the efforts\\nof their peers. To encourage you to prepare for the pretests and make a strong contribution to\\nyour group’s effort, every student will submit an end-of-semester evaluation, on Moodle, of all\\ngroup members. The average score you receive from your peers will count for 5% of your overall\\ncourse grade for the semester. Completing the evaluations of yourself and your peers will count\\nfor an additional 5% of your semester grade.",
+        "label": "GRADE"
+      },
+      {
+        "start": 14236,
+        "end": 14344,
+        "text": "TESTS AND FINAL EXAM (“ASSESSMENTS”): In CHEM 11A there are five 75-minute tests and a\\nthree-hour final exam",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 14344,
+        "end": 14392,
+        "text": ", collectively worth 80% of your semester grade.",
+        "label": "GRADE"
+      },
+      {
+        "start": 14688,
+        "end": 15046,
+        "text": "YOUR GRADE WILL BE CALCULATED USING THE BEST SCORES ON FIVE OF THE\\nSIX ASSESSMENTS! I will automatically drop the lowest score on one assessment, even if that\\nlowest score is on the final exam! If you have not missed any of the regular chapter tests\\nduring the semester and are satisfied with your grade, you do not need to take the\\nfinal exam in CHEM 11A!!!",
+        "label": "GRADE"
+      },
+      {
+        "start": 15047,
+        "end": 15585,
+        "text": "MISSED TESTS AND PRETESTS: THERE ARE ABSOLUTELY NO MAKE-UPS FOR PRETESTS\\nOR TESTS, NO EXCEPTIONS. Under certain restricted circumstances (see below) an excused\\nabsence from a test may be granted. Travel plans, family obligations, etc. are not valid excuses\\nand will result in a zero on the missed test. Excused absences will normally not be granted for missed group-\\nwork sessions. I drop the lowest pretest score to allow for the possibility that a student might be sick or absent on one\\nof the Fridays that we have scheduled group work.",
+        "label": "LATE"
+      },
+      {
+        "start": 15623,
+        "end": 16849,
+        "text": "Circumstances qualifying for an excused test absence:\\n• an incapacitating illness or injury in which the student is hospitalized, under medical care, or sufficiently\\ndebilitated as to be unable to perform basic academic tasks. [Colds, headaches, or other such mild complaints\\nthat result in your feeling less than 100% are not considered “incapacitating.” It is your responsibility to get\\nenough rest and take care of yourself in such a way as to enable you to meet all course requirements. To qualify\\nfor an excused absence, an illness must be severe or contagious enough to warrant absence from classes and\\nrestriction from all other social and group events.]\\n• extraordinary circumstances over which the student has no control such as a death in the family.\\n• participation in a varsity game or mandatory travel to a varsity game (not practices or club sports).\\nRequests for an excused absence must be made in writing before the scheduled test (if possible),\\nand in no event later than 24 hours after the test has been administered. All requests must\\nbe accompanied by documentation supporting the reason for the absence. After the\\n24-hour deadline, a missed test will be considered UNEXCUSED and will earn a score of zero.",
+        "label": "LATE"
+      },
+      {
+        "start": 16850,
+        "end": 17198,
+        "text": "A zero\\nscore from one missed assessment will be dropped before the final grade is calculated. If you sleep through one 75-\\nminute test during the semester, for example, that zero (presumably your lowest score!) would be dropped, but you\\nwould have to take the entire final exam as one of the five tests from which your semester grade is calculated.",
+        "label": "GRADE"
+      },
+      {
+        "start": 17199,
+        "end": 17451,
+        "text": "In the case of an EXCUSED absence from a 75-minute test, the corresponding part\\nof the final exam will serve as a make-up. The score that you earn on the\\ncorresponding part of the final exam (see below) will substitute for the score on the\\nmissed test.",
+        "label": "LATE"
+      },
+      {
+        "start": 17452,
+        "end": 18518,
+        "text": "ACCOMMODATIONS: Brandeis seeks to create a learning environment that is welcoming and inclusive of all\\nstudents, and, as your instructor, I want to support you in your learning. If you think you may require disability\\naccommodations, you will need to work with Student Accessibility Support (SAS). You can contact them at 781-\\n736-3470, email them at access@brandeis.edu, or visit the Student Accessibility Support home page. You can find\\nhelpful student FAQs and other resources on the SAS website, including guidance on how to know whether you might\\nbe eligible for support from SAS.\\nIf you already have an accommodation letter from SAS, please provide me with a copy as soon as you can so that I\\ncan ensure effective implementation of accommodations for this class. In order to coordinate test accommodations,\\nideally you should provide the accommodation letter at least 48 hours before the test.\\nStudents sometimes receive approval for academic accommodations later in the semester, which\\nis fine. Note, however, that no accommodations can be made retroactively.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 18519,
+        "end": 19116,
+        "text": "OPTIONAL EXTRA CREDIT AND REDEMPTION POINTS (GRADE BOOSTERS!)\\n______________________________________________________________________________\\nOptional “Redemption Point Challenge” Assignments: No student’s semester grade\\nshould ride on the outcome of a single test. Stress and bad days can affect test performance\\nregardless of how carefully and thoroughly a student has prepared. The “Redemption Point\\nChallenge” is an optional extra-credit assignment that will be posted after each of the five tests. It\\nis an opportunity to delve into the material from a previous test and earn up to 10 points.*",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 19117,
+        "end": 19315,
+        "text": "Earned\\npoints will be added to your test score and the new score will replace your original score. In most\\ncases this will allow you to boost your performance by one-half to a one full letter grade.",
+        "label": "GRADE"
+      },
+      {
+        "start": 19353,
+        "end": 19704,
+        "text": "*Redemption points are not “automatic.” The assignments are graded carefully; points are awarded only for complete\\nwork that reflects thorough learning. Students whose original test score is 82% or higher can earn up to half the\\npoints lost. For example, if you get a 92 on the test, you can earn up to ½ of the 8 lost points, for a final score of\\n96.",
+        "label": "GRADE"
+      },
+      {
+        "start": 19705,
+        "end": 20464,
+        "text": "Redemption Points Earned on the Cumulative Final Exam: You can earn more points\\nback by performing well on the final exam!\\nThe cumulative final exam is divided into five parts, each part corresponding to one of the five 75-\\nminute tests. If your score on a test (after redemption points have been added) is less than 100%,\\nyou have the chance to “redeem” up to half the remaining points by doing well on the\\ncorresponding section of the final. If your percent score on a section of the final is better than your\\npercent score on the corresponding test, your test score will be replaced by the average of your\\noriginal score and your score on the corresponding section of the final. (There is no penalty if you\\ndo worse on the final than on the original test.)",
+        "label": "GRADE"
+      },
+      {
+        "start": 20986,
+        "end": 21964,
+        "text": "Graded components of the course are weighted as follows:\\nTests/Final Exam (5 out of 6) 80%\\nPretests (4 out of 5) 10%\\nPeer Evaluation Score 5%\\nCompletion of Peer Evaluations 5%\\nGrading in CHEM 11 is non-competitive. Grades are based solely on individual student\\nachievement and are independent of class average. (That is, there is no such thing as a “scale” or\\na “curve” in my class, so do not even ask!) The letter grade ranges you see in the table below are\\nlarger targets to aim for than you may be used to from high school or other classes. You do not\\nneed to be “perfect” to get a good letter grade on your transcript! I value deep learning and in\\norder to do that well, you need some room to make mistakes with harder material, rather than get\\nhigh scores by repeating simple tasks.\\nGrade Percentage of Grade Percentage of\\nTotal Points Total Points\\nA 87 – 100 C 51 – 58\\nA- 82 – 86 C- 46 – 50\\nB+ 77 – 81 D+ 41 – 45\\nB 69 – 76 D 33 – 40\\nB- 64 – 68 D- 28 – 32\\nC+ 59 – 63 E < 28",
+        "label": "GRADE"
+      },
+      {
+        "start": 21965,
+        "end": 23364,
+        "text": "Academic honesty:\\nAcademic integrity is central to the mission of educational excellence at Brandeis University. University policy on\\nacademic honesty may be found in your Student Handbook under “Rights and Responsibilities.” While students are\\nPage 7\\n\\nSyllabus, CHEM 11A Fall 2024\\nencouraged to study together and discuss subject matter inside and outside the classroom, tests and the final exam must\\nbe your own individual effort. Cheating is unfair to your fellow students, to the instructor, and to yourself. You might\\nthink that in a class of this size sharing information with a friend during an exam goes unnoticed. It doesn’t. Nearly\\nevery year students are caught trying to cheat.* The consequences are embarrassing and time-consuming, and the\\nincident remains part of your permanent undergraduate record. Violations of University policies on academic integrity,\\ndescribed in Section Three of “Rights and Responsibilities,” will be reported to the Brandeis Student Rights and\\nCommunity Standards Office. A first offense will result in a zero on the assignment. Subsequent offenses may result\\nin failure in the course, suspension, or expulsion from the university.\\n*Cheating includes copying or sharing information with a fellow student on a test or exam, or consulting any written\\nor electronic materials or online sources of information during groupwork sessions, tests, or the final exam.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 23365,
+        "end": 25602,
+        "text": "COURSE SCHEDULE (LECTURE, PRETEST, AND TEST DATES):\\nMonday Tuesday Wednesday Thursday Friday\\n26 27 28 29 30\\nChapter 1 Chapter 1\\nLECTURE (place TBA)\\nChapter 2\\n2 3 4 5 6\\nChapter 2 Chapter 2\\n9 10 11 12 13\\nChapter 3 Chapter 3 Chapter 3\\n16 17 18 19 20\\nChapter 3 Chapter 4 Chapter 4\\n23 24 25 26 27\\nChapter 4 Chapter 4 Chapter 5\\n30 1 2 3 4\\nChapter 5 Chapter 5\\nPage 8\\ntsuguA\\nNo class\\nLabor Day\\nMolecules,\\nCmpds., Chem.\\nEquations\\nrebmetpeS\\nMatter, Meas., Matter, Meas.,\\nProblem Solv. Problem Solv. Atoms and\\nElements\\nAtoms and Atoms and Group-work:\\nElements Elements Pretest 1\\nTest 1\\nMolecules, Molecules, Molecules,\\nChapters 1 & 2\\nCmpds., Chem. Cmpds., Chem. Cmpds., Chem.\\nEquations Equations Equations\\nChem. Quant., Chem. Quant., Group-work:\\nAqueous Rxns. Aqueous Rxns. Pretest 2\\nTest 2\\nChem. Quant., Chem. Quant., Chapters 3 &\\nGases\\nAqueous Rxns. Aqueous Rxns. 4\\nNo class No class\\nGases Gases\\nRosh Hashana Rosh Hashana\\n\\nSyllabus, CHEM 11A Fall 2024\\nMonday Tuesday Wednesday Thursday Friday\\n7 8 9 10 11\\nChapter 5 Chapter 6 Chapter 6\\nThermo-\\nchemistry\\n14 15 16 17 18\\nBrandeis Thursday\\n21 22 23 24 25\\nChapter 6 Brandeis Thursday Chapter 7 Test 3\\nThermo- Chapters 5 & 6\\nchemistry\\n28 29 30 31 1\\nChapter 7 Chapter 7 Chapter 8\\nPeriodic No CHEM 11\\nProperties activities\\n4 5 6 7 8\\nChapter 8 Chapter 8 Chapter 8\\nGroup-work:\\nPretest 4\\n11 12 13 14 15\\nChapter 9 Chapter 9 Drop Deadline\\nTest 4\\nChapter 9\\nChemical Chemical Chapters 7 & 8\\nBonding I Bonding I\\n18 19 20 21 22\\nChapter 9 Chapter 9 Chapter 10\\nNo CHEM 11\\nChemical Chemical\\nactivities\\nBonding I Bonding II\\n25 26 27 28 29\\nChapter 10\\nThanksgiving Recess\\n2 3 4 5 6\\nChapter 10 Chapter 10 Chapter 10\\nChemical Group-work:\\nBonding II Pretest 5\\n9 10 11 12 13\\nBrandeis Friday\\nStudy Day\\nTest 5\\nChapters 9 & 10\\nPage 9\\nrebotcO\\nrebmevoN\\nNo class\\nGases Thermo-\\nYom Kippur\\nchemistry\\nNo class\\nChapter 6 No class Group-work:\\nIndigenous\\nThermo- Sukkot Pretest 3\\nPeoples Day\\nchemistry\\nNo class\\nChapter 7 Quantum\\nShmini\\nQuantum Mechanical\\nAtzeret\\nModel Model\\nQuantum Quantum\\nMechanical Mechanical\\nModel Model\\nPeriodic Periodic\\nProperties Properties\\nChemical\\nBonding I\\nChemical\\nBonding I\\nChemical\\nBonding II\\nChemical\\nBonding II\\nWrap-up FINAL EXAM\\nand Review PERIOD\\nBEGINS\\nrebmeceD\\nPeriodic\\nProperties\\nChemical\\nBonding II",
+        "label": "SCHEDULE"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
+  },
+  {
+    "doc_id": "243PSYC 10A 1 Introduction to Psychology James Howard",
+    "semester": "Fall Semester 2024 (243)",
+    "school": "College of Arts and Sciences",
+    "department": "Psychology",
+    "course_name": "243PSYC 10A 1 Introduction to Psychology James Howard",
+    "annotator": "spencer",
+    "spans": [
+      {
+        "start": 80,
+        "end": 600,
+        "text": "Email: jameshoward@brandeis.edu\\nOffice location: Lemberg Hall, Room 88-104\\nStudent Hours (also known as Office Hours)\\nTuesdays and Thursdays, 2:00 – 3:00 pm\\nZoom link: https://brandeis.zoom.us/j/91410867863\\nStudents may join the Zoom link above or come to my office at any time during the designated Student\\nHours. I am also potentially available by appointment at times outside of the designated Student Hours.\\nCommunication\\nStudents may communicate with me by email any time, and I will respond as quickly as possible.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 601,
+        "end": 817,
+        "text": "Course format and continuity\\nClasses will be conducted in-person, and in-person attendance is a part of the grade (see “Course\\nRequirements” section below). In the event of campus closures, classes will meet on Zoom.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 818,
+        "end": 912,
+        "text": "Meeting Times/Locations\\nMondays, Wednesdays, and Thursdays, 10:10 AM – 11:00 AM\\nOlin-Sang: 101",
+        "label": "ADMIN"
+      },
+      {
+        "start": 932,
+        "end": 1100,
+        "text": "Textbook:\\nSchacter, D.L., Gilbert, D.T., & Nock, M.K. Psychology (6th Edition). New York: Worth.\\nAdditional readings for assignments will be posted on Moodle as needed.",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 1101,
+        "end": 1677,
+        "text": "Learning Goals:\\nThis course serves as an introduction to Psychology. We will cover many of the subfields of Psychology,\\nwith a focus on scientific research into the human mind. You will be challenged to hone your critical\\nthinking skills through the course material, written assignments, and active class participation. What I\\nwould most like for you to gain from this course is 1) an appreciation of the breadth of the field of\\nPsychology, and 2) the ability to critically evaluate findings from the behavioral sciences that you will\\nencounter in the media and everyday life.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 1678,
+        "end": 1892,
+        "text": "Credit Hours:\\nSuccess in this 4-credit course is based on the expectation that students will spend a minimum of nine\\nhours per week in preparation for class (readings, assignments, preparation for the exams, etc.).",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1896,
+        "end": 4268,
+        "text": "Teaching Assistant Details\\nGraduate Students:\\nPrimary contact for students with first name A-Ce\\nJillian Franks Email: franksj@brandeis.edu\\nStudent Hours time: Thursdays, 2:30 PM – 3:30 PM\\nStudent Hours Zoom link: https://brandeis.zoom.us/j/95274518648\\nPrimary contact for students with first name Ch-Ge\\nDaisy Kiyemba Email: daisykiyemba@brandeis.edu\\nStudent Hours time: Wednesdays, 11:30 AM – 12:30 PM\\nStudent Hours Zoom link: https://brandeis.zoom.us/j/97979026127\\nPrimary contact for students with first name Gi-J\\nLiam McMahon Email: liammcmahon@brandeis.edu\\nStudent Hours time: Tuesdays, 1:00 PM – 2:00 PM\\nStudent Hours Zoom link: https://brandeis.zoom.us/j/2916640779\\nPrimary contact for students with first name K-M\\nJared Newell Email: jarednewell@brandeis.edu\\nStudent Hours time: Fridays, 11:00 AM – 12:00 PM\\nStudent Hours Zoom link: https://brandeis.zoom.us/j/91946264937\\nPrimary contact for students with first name N-Si\\nHannah Park Email: hepark@brandeis.edu\\nStudent Hours time: Mondays, 9:00 AM – 10:00 AM\\nStudent Hours Zoom link: https://brandeis.zoom.us/j/96478429597\\nPrimary contact for students with first name Sk-Z\\nLuke Sim Email: lukesim@brandeis.edu\\nStudent Hours time: Fridays, 5:00 PM – 6:00 PM\\nStudent Hours Zoom link: https://brandeis.zoom.us/j/96565399895\\nUndergraduate Students:\\nPrimary contact for students with first name A-J\\nAbigail Froyshteter Email: afroyshteter@brandeis.edu\\nPrimary contact for students with first name K-Z\\nSunan Sun Email: catherinesun@brandeis.edu\\nTeaching Assistant assignment and communication\\nEach student is assigned as indicated above to a graduate student Teaching Assistant (TA) according to the\\nfirst letter of their first name, as it is listed in Workday. Graduate student TA’s will hold regular weekly\\nStudent Hours on Zoom at the indicated links. Graduate student TA’s are primarily responsible for grading\\nexams and assignments. Undergraduate student TA’s are primarily responsible for recording attendance.\\nBoth graduate and undergraduate TA’s are available to discuss and/or clarify any course material or\\ncourse policies. Students may contact their assigned TA by email any time, and the TA will respond as\\npromptly as they can. Keep in mind that you have three options for contacting people with questions: 1)\\nProfessor Howard, 2) your assigned graduate student TA, 3) your assigned undergraduate student TA.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 4292,
+        "end": 4317,
+        "text": "Attendance (10% of grade)",
+        "label": "GRADE"
+      },
+      {
+        "start": 4318,
+        "end": 4722,
+        "text": "Attendance will be recorded at the beginning of each lecture starting on Thursday, September 12. There\\nwill be 30 lecture days that count towards your attendance grade. You get 3 “free” unexcused absences\\nfor the semester, meaning the final attendance grade will be out of 27 rather than 30. If you need to miss\\nmore than 3 lectures, please notify your assigned undergraduate TA with a documented excuse.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 4723,
+        "end": 4757,
+        "text": "Two Written Assignments (15% each)",
+        "label": "GRADE"
+      },
+      {
+        "start": 4758,
+        "end": 4989,
+        "text": "There will be two short written assignments of approximately 2 pages in length. The details of the\\nassignments will be discussed in class and posted on Moodle two weeks before the deadlines.\\nAssignments must be submitted to Moodle,",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 5045,
+        "end": 5067,
+        "text": "Three Exams (20% each)",
+        "label": "GRADE"
+      },
+      {
+        "start": 4990,
+        "end": 5044,
+        "text": "and if turned in late will be docked 10% per 24 hours.",
+        "label": "LATE"
+      },
+      {
+        "start": 5068,
+        "end": 5238,
+        "text": "There will be three non-cumulative exams consisting primarily of multiple choice and short answer items.\\nThe exams will be administered on Moodle and are open book/notes.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 5239,
+        "end": 5343,
+        "text": "However, you must not work\\ncollaboratively with other students (see “Academic Integrity” section below).",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 5344,
+        "end": 5405,
+        "text": "You will have a 9-hour\\nwindow in which to complete each exam.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 5406,
+        "end": 5538,
+        "text": "Make-up exams will be offered in the case of things like serious\\nillness or attendance at a funeral. Documentation must be provided.",
+        "label": "LATE"
+      },
+      {
+        "start": 5539,
+        "end": 5744,
+        "text": "Exam dates are:\\nExam 1: Opens Thursday, September 26 at 10:00am, closes at 7:00pm\\nExam 2: Opens Monday, November 4 at 10:00am, closes at 7:00pm\\nExam 3: Opens Monday, December 9 at 10:00am, closes at 7:00pm",
+        "label": "SCHEDULE"
+      },
+      {
+        "start": 5745,
+        "end": 6151,
+        "text": "Research Familiarization Requirement\\nTo receive a grade for this course you must complete the Research Familiarization Requirement, which\\ninvolves either participation in experiments or written assignments regarding hypothetical participation in\\npsychological experiments. For more details about this requirement see the Research Familiarization\\nRequirement section at the bottom of the course Moodle site.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 6152,
+        "end": 6281,
+        "text": "Questions about fulfilling the Research\\nFamiliarization Requirement should be directed to Carrie Robertson (carrob@brandeis.edu).",
+        "label": "ADMIN"
+      },
+      {
+        "start": 6282,
+        "end": 6681,
+        "text": "Evaluation and Grading\\nClass Element Grade Percentage\\nAttendance 10%\\nAssignment 1 15%\\nAssignment 2 15%\\nExam 1 20%\\nExam 2 20%\\nExam 3 20%\\nCut-offs for final letter grades are below. You must meet or exceed the cut-off to receive that letter grade.\\nNote that I reserve the right to make the grade distribution more generous if needed (e.g., if class\\naverages are much lower than in previous semesters).",
+        "label": "GRADE"
+      },
+      {
+        "start": 6685,
+        "end": 8359,
+        "text": "Course Plan\\nThe lecture topics may change slightly, but exam dates and assignment deadlines will not change.\\nDate Topic Readings Assignments\\nWednesday 28-Aug Introduction and Syllabus Review\\nThursday 29-Aug Methods in Psychology Chapter 2\\nMonday 2-Sep No class, Labor Day\\nWednesday 4-Sep\\nMethods in Psychology Chapter 2\\nThursday 5-Sep\\nMonday 9-Sep\\nWednesday 11-Sep\\nNeuroscience & Behavior Chapter 3\\nThursday 12-Sep\\nMonday 16-Sep\\nWednesday 18-Sep\\nThursday 19-Sep\\nSensation & Perception Chapter 4\\nMonday 23-Sep\\nWednesday 25-Sep\\nThursday 26-Sep Exam 1: opens 10:00am, closes 7:00pm\\nMonday 30-Sep\\nLearning Chapter 7\\nWednesday 2-Oct Assignment 1 begins\\nThursday 3-Oct No class, Rosh Hashanah\\nMonday 7-Oct\\nLearning Chapter 7\\nWednesday 9-Oct\\nThursday 10-Oct Memory Chapter 6\\nMonday 14-Oct No class, Indigenous Peoples Day\\nWednesday 16-Oct Memory Chapter 6 Assignment 1 due\\nThursday 17-Oct No class, Sukkot\\nMonday 21-Oct\\nMemory Chapter 6\\nTuesday 22-Oct\\nWednesday 23-Oct Emotion & Motivation Chapter 8\\nThursday 24-Oct No class, Shmini Atzeret\\nMonday 28-Oct\\nWednesday 30-Oct Emotion & Motivation Chapter 8\\nThursday 31-Oct\\nMonday 4-Nov Exam 2: opens 10:00am, closes 7:00pm\\nWednesday 6-Nov\\nThursday 7-Nov Chapter Assignment 2 begins\\nSocial Psychology\\nMonday 11-Nov 13\\nWednesday 13-Nov\\nThursday 14-Nov Chapter\\nDevelopment\\nMonday 18-Nov 11\\nWednesday 20-Nov Consciousness Chapter 5\\nThursday 21-Nov Chapter Assignment 2 due\\nPsychological Disorders\\nMonday 25-Nov 15\\nWednesday 27-Nov\\nNo class, Thanksgiving\\nThursday 28-Nov\\nChapter\\nPsychological Disorders\\nMonday 2-Dec 15\\nWednesday 4-Dec Chapter\\nTreatment of Psych. Disorders\\nThursday 5-Dec 16\\nMonday 9-Dec Exam 3: opens 10:00am, closes 7:00pm",
+        "label": "SCHEDULE"
+      },
+      {
+        "start": 8363,
+        "end": 9147,
+        "text": "Accommodations\\nBrandeis seeks to create a learning environment that is welcoming and inclusive of all students, and I want\\nto support you in your learning. If you think you may require disability accommodations, you will need to\\nwork with Student Accessibility Support (SAS) (781-736-3470, access@brandeis.edu). You can find helpful\\nstudent FAQs and other resources on the SAS website, including guidance on how to know whether you\\nmight be eligible for support from SAS. If you already have an accommodation letter from SAS, please\\nprovide me with a copy as soon as you can so that I can ensure effective implementation of\\naccommodations for this class. In order to coordinate exam accommodations, ideally you should provide\\nthe accommodation letter at least 48 hours before an exam.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 9148,
+        "end": 10814,
+        "text": "Important Policies and Resources\\nAcademic Integrity\\nEvery member of the University community is expected to maintain the highest standards of academic\\nintegrity. A student shall not submit work that is falsified or is not the result of the student's own effort.\\nInfringement of academic integrity by a student subjects that student to serious penalties, which may\\ninclude failure on the assignment, failure in the course, suspension from the University or other\\nsanctions. Please consult Brandeis University Rights and Responsibilities for all policies and procedures\\nrelated to academic integrity. A student who is in doubt regarding standards of academic integrity as they\\napply to a specific course or assignment should consult the faculty member responsible for that course or\\nassignment before submitting the work. Allegations of alleged academic dishonesty will be forwarded to\\nthe Department of Student Rights and Community Standards.\\nExams for this course are open book, but you may not work collaboratively with other people to complete\\nexams. Any work submitted for academic credit must by your own, and must be unique for this course. Do\\nnot submit work that presents the ideas of others as one’s own, recycles your own work across courses,\\nfails to properly cite sources, and/or lifts sentences or ideas from the works of others (including\\ntextbooks, websites, or other students). If you wish to bring in an idea or a quote from an outside source\\nand are uncertain how to cite them, please ask the instructor or teaching assistants how to reference it.\\nAdditional citation and research assistance can be found at Brandeis Library Guides - Citing Sources.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 11303,
+        "end": 12026,
+        "text": "Classroom Health and Safety\\n• Register for the Brandeis Emergency Notification System. Students who receive an emergency\\nnotification while attending class should notify their instructor immediately. In the case of a life-\\nthreatening emergency, call 911. As a precaution, review this active shooter information sheet.\\n• Brandeis provides this shuttle service for traveling across campus or to downtown Waltham,\\nCambridge and Boston.\\n• On the Brandeis campus, all students, faculty, staff and guests are required to observe the university's\\npolicies on physical distancing and mask-wearing to support the health and safety of all classroom\\nparticipants. Review up to date COVID-related health and safety policies regularly.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 10815,
+        "end": 11302,
+        "text": "Personal reactions to topics\\nMaterial covered in Psychology courses such as this one can bring up personal feelings and reactions that\\nyou may not know how to handle. I will rarely give trigger warnings, as you should be prepared to deal\\nwith sensitive topics in the field of Psychology. If needed, please make use of the counseling services\\navailable on campus at the Brandeis Counseling Center. For anonymous peer counseling, call the Brandeis\\nCounseling & Rape Crisis hotline: 6-TALK.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 12030,
+        "end": 12320,
+        "text": "Course Materials/Books/Apps/Equipment\\nIf you are having difficulty purchasing course materials, please make an appointment with your Student\\nFinancial Services or Academic Services advisor to discuss possible funding options, including vouchers for\\npurchases made at the Brandeis Bookstore.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 12321,
+        "end": 12463,
+        "text": "Moodle\\nMoodle is the Brandeis learning management system. Login using your UNET ID and password. For LATTE\\nhelp, contact Library@brandeis.edu.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 12464,
+        "end": 12853,
+        "text": "Library\\nThe Brandeis Library collections and staff offer resources and services to support Brandeis students, faculty\\nand staff. Librarians and Specialists from Research & Instructional Services, Public Services, Archives & Special\\nCollections, Sound & Image Media Studios, MakerLab, AutomationLab, and Digital Scholarship Lab are\\navailable to help you through consultations and workshops.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 12854,
+        "end": 13316,
+        "text": "Brandeis Undergraduate Group Study (BUGS)\\nBUGS is a program in the Office of Academic Services open to all Brandeis undergraduates which offers\\ntutoring at no cost to students. Group Study Leaders are undergraduates who have successfully\\ncompleted the relevant course(s), are recommended by faculty, and have been trained by Academic\\nServices. These peer tutors lead sessions to review course material, discuss study strategies, and help\\nprepare for assessments.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 13317,
+        "end": 13659,
+        "text": "Privacy\\nTo protect your privacy in any case where this course involves online student work outside of Brandeis\\npassword-protected spaces, you may choose to use a pseudonym/alias. You must share the pseudonym/\\nalias with me and any teaching assistants as needed. Alternatively, with prior consultation, you may\\nsubmit such work directly to me.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 13660,
+        "end": 14282,
+        "text": "Student Support\\nBrandeis University is committed to supporting all our students so they can thrive. If a student, faculty, or\\nstaff member wants to learn more about support resources, the Support at Brandeis webpage offers a\\ncomprehensive list that includes these staff colleagues you can consult, along with other support\\nresources:\\n• The Care Team\\n• Academic Services (undergraduate)\\n• Graduate Student Affairs\\n• Directors of Graduate Studies in each department, School of Arts & Sciences\\n• Program Administrators for the Heller School and International Business School\\n• University Ombuds\\n• Office of Equal Opportunity.",
+        "label": "ACCOM"
+      }
+    ],
+    "validity": "Valid",
+    "notes": "Last student support section not sure if should be accom or just admin"
+  },
+  {
+    "doc_id": "243HISP 32A 1 Intermediate Spanish Conversation Kristen Turpin",
+    "semester": "Fall Semester 2024 (243)",
+    "school": "College of Arts and Sciences",
+    "department": "Hispanic Studies",
+    "course_name": "243HISP 32A 1 Intermediate Spanish Conversation Kristen Turpin",
+    "annotator": "spencer",
+    "spans": [
+      {
+        "start": 44,
+        "end": 322,
+        "text": "Contact Details\\nProfessor Kristen M. Turpin, Ph.D. (she/her)\\nOffice location: Rabb 265\\nEmail: kturpin@brandeis.edu\\nPlease address me as “Profesora Turpin” or “Profe” in class and via email. I respond to emails\\nwithin 24 hours on weekdays. I do not check my email on the weekend.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 213,
+        "end": 218,
+        "text": "class",
+        "label": "ADMIN"
+      },
+      {
+        "start": 323,
+        "end": 642,
+        "text": "Meeting Times and Locations\\nClasses\\nMonday, Tuesday, Wednesday, and Thursday at 9:05 - 9:55 AM in Shiffman 202\\nStudent Hours\\nTuesdays 2:30-4:00 pm and Thursdays 10-11:30 am. Please schedule an appointment and\\nindicate whether we will be meeting in-person (Rabb 265) or via Zoom:\\nhttps://calendly.com/kristenturpin/15min",
+        "label": "ADMIN"
+      },
+      {
+        "start": 643,
+        "end": 1325,
+        "text": "Prerequisites / Placement\\nHISP32isathird-semesterSpanishlanguageandculturecoursethatfulfillstheWorldLanguages\\nandCulturesrequirementoftheBrandeisCore.Thiscoursewillbeappropriatelychallengingand\\nengagingforyouif:\\n● YoucompletedHISP20BatBrandeiswithagradeofC-orhigher,or\\n● YoupreviouslystudiedSpanishatanotherinstitution,andyouworkedwiththeDirector\\noftheSpanishLanguageProgram,ElenaGonzálezRos,todetermineyourplacement.\\nPleaserememberthatonceyouhavecompletedacourseinthelanguagesequence(course\\nnumbers10through108inHispanicStudies),youwillnotbeabletoskipalevel. Ifthecourseat\\nyourlevelisclosed,weadviseyoutowaitasemesterandenrollintheappropriatecourseduring\\nthenextregistrationperiod.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1326,
+        "end": 5217,
+        "text": "Course Description\\nWelcometoHISP32A(IntermediateSpanishConversation),ourthirdcourseintheBrandeis\\nlanguagesequence.IfyouhavetakenHISP10Aand20Bwithus,youalreadyknowwhattoexpect\\nfromthiscourse.Youwillcontinueyourjourneythroughlanguageacquisitionthroughmeaningful,\\ncommunicativepractice.\\n1\\n\\nIfthisisthefirstSpanishcoursethatyoutakeatBrandeis,youmayfindthatthewayweteachmight\\nbedifferentfromhowyouweretaughtbefore.Thiscourseispredicatedonthebeliefthatlanguage\\nlearningisnotalistofrulesandwordstomemorize,butratheranintellectualchallengethat\\ninvolvesmakingcreativeandintentionalchoicesabouthowtocreatemeaning.Consequently,you\\nwillnotneedtocompletemechanicalgrammarandvocabularyexercisesinordertobesuccessful\\ninthiscourse;rather,youwillbeaskedtoactivelyuseyouremerginglanguageskillsasyou\\ncompletereal-worldtasksthatarerelevanttoyouasacollegestudent.\\nAsyoucompletethesepracticaltasks,suchasinterviewingforavolunteerposition,planningatrip,\\norsharingyouropinionwithuniversityleaders,yourSpanishisnotexpectedtobeperfect.Infact,\\nyouareencouragedtomakemistakesasyouexperimentwithnewwaysofexpressingyourideasin\\nSpanish.Partofthisprocesswillinvolveinteractingwithauthentictexts--blogposts,YouTube\\nvideos,infographics,newspaperarticles,comics,etc.--toidentifylinguisticmodelstoconsiderin\\nyourownspeakingandwriting.\\nThethreeunitsinthiscoursearedesignedtobuilduponwhatyouhavealreadyachievedasa\\nlanguagelearner,whetheryouarecomingfromHISP20Boranotherlearningexperience.Eachunit\\nwillprovidebriefopportunitiesforreviewbeforeintroducingnewthemes,linguisticmodels,and\\ncontextsforcommunication.Youwillreflectonyourprogressattheendofeachunit.\\n● Unidad1:mipersonalidad.Inthisunit,wewillreflectontwoquestions:WhoamI?How\\nhaveIchanged?Wewillgobeyondthebasicsofdescribingsomeone’spersonalityand\\nlikes/dislikesandlearnhowtousesimplestorytellinginordertodescribeourselvesand\\nsharetheexperiencesthatdefineus.\\n● Unidad2:losviajes.Inthisunit,we’llidentifythebenefitsoftraveling,narrateformative\\nexperienceswe’vehadwhiletraveling,andgiverecommendationstofellowtravelers.\\nWewillalsoconsiderhowtravelingintersectswithissuesofsocialjustice.\\n● Unidad3:lainmigración.Inthisunit,wewillengagewithvariousartisticrepresentations\\nofimmigration—afilm(LosniñosdeLasBrisas),tapestries,andcomics—inorderto\\nunderstandthegoals,difficulties,andexperiencesofimmigrantsindifferentpartsofthe\\ncontemporarySpanish-speakingworld.\\nCourse Outcomes & Goals\\nLanguageacquisitiontakestime,soyouwillnotleavethiscoursebeingfluentornative-likein\\nSpanish.However,thegoaloftheWorldLanguagesandCulturesrequirementatBrandeisisto\\npreparestudentstounderstandbetterandtoparticipateinadifferentculturebydevelopingbasic\\nskills(speaking,listening,reading,andwriting)inanotherlanguage.Therefore,inthiscourse,your\\noverarchinglearninggoalistoimproveyourabilitytocommunicateinSpanishinaculturally\\nappropriateway.Studentsatthislevelwillstartatthenovice-highorintermediate-lowproficiency\\nrange,asdefinedbytheAmericanCouncilontheTeachingofForeignLanguages(ACTFL).Bythe\\nendofthiscourse,weexpectstudentstoreachtheintermediatelevelofproficiency.\\nHerearethelearningoutcomesforthecourse:\\n● youwillbeabletointeractwithotherSpanish-speakersandsharedetailsaboutyour\\npersonality,experiences,andbeliefs(withintermediate-levelproficiencyasdefinedby\\ntheAmericanCouncilfortheTeachingofForeignLanguages),\\n2\\n\\n● youwillbeabletoanalyzethebasicchoicesthatspeakers/writersmaketocreate\\nmeaning,\\n● youwillbeabletocreativelyandpurposefullyadaptlanguagemodelsforyourown\\nneeds,\\n● andyouwillbeabletoquestiontheuniversalityofyourculture(s)andpointsofview.\\nThespecificcontentandthemesofthiscoursewillaskyoutoperformspecificfunctionsofthe\\nSpanishlanguage,includingtheabilityto:\\n● Askquestionsandrequestinformation,\\n● Describepeople,places,objects,andcurrentevents,\\n● Tellstoriesusingsimplenarrativestructures,\\n● Giveexplanations,\\n● Makerecommendations,\\n● Shareanddefendanopinion,and\\n● Talkaboutthefuture.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 5218,
+        "end": 5667,
+        "text": "Learning Materials: Course Content and Online Tools\\nThereisnotextbooktopurchase.Allcoursematerials,assignments,andassessmentswillbe\\npostedonMoodle.Yourinstructorwilluseavarietyoftoolstopromotestudentengagement,such\\nasMoodle,VoiceThread,Flip,and/orGoogletools.Yourinstructorwillshowyouhowtousethese\\ntoolsinclassand/orposttutorialsonMoodle.ItishighlyrecommendedthatyoucreateaGoogle\\nDrivefolder,linkedtoyourBrandeisgmail,toorganizeyourHisp32coursework.",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 5668,
+        "end": 6154,
+        "text": "Whencompletingdailyhomeworkassignments,checkpoints,andassessmenttasks,pleaserelyon\\nyourownlinguistictoolbox—theSpanishthatyou’velearnedpriortothiscourseandthenew\\nlinguisticmodelsthatwe’llencounterthroughoutthesemester.Onlinetoolsmayonlybeused\\nwhentheyenhanceyourlearning.Iftheuseofanonlinetooltruncatesthedeepthinkingand\\nlinguisticexperimentationthatisnecessaryforbuildinglanguageproficiency,itshouldnotbeused\\ninthatway.Herearesomeexamplesofpermissibleandimpermissibleusesofonlinetools:",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 6155,
+        "end": 6879,
+        "text": "Permissibleuses Impermissibleuses\\n● lookingupasinglewordinacredibleonlinedictionary ● translatingentirephrasesor\\n● lookinguptheconjugationofanirregularverbwiththe sentenceswithonline\\nconjugatortoolofWordReference.com translators\\n● askingChatGPTtoexplainagrammarconceptthatyou ● askingChatGPTtowriteyour\\nareconfusedabout(butrememberthatAImodelsdo entirecompositionandthen\\nnotalwaysprovideaccurateinformation) submittingitasyourown\\n● askingChatGPTtogenerateapersonalizedvocabulary ● givingChatGPTareading\\nlist,andthenwritesentencestopracticeusingthemost assignmentandthenaskingit\\nrelevantwordsincontext toanswerassigned\\n● dialoguingwithChatGPTtopracticeanswering comprehensionquestions\\nquestionsaboutyourselfandyourexperiences",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 6883,
+        "end": 7094,
+        "text": "Asyouinteractwithlearningmaterials,boththoseprovidedbyyourinstructorandthosethatyou\\nencounteronline,rememberthatyourgoalistogrowyourabilitytocommunicateinSpanishin\\nreal-lifesituations–notspeakorwrite“perfectly.”",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 7095,
+        "end": 8034,
+        "text": "Course Policies and Evaluation\\nEngagement and Participation\\nHisp32willbeofferedin-person,withtheexpectationthatenrolledstudentsarelivingon/near\\ncampusandplantoconsistentlyattendin-personclasssessions.\\nYouareallowedfourabsencesforthesemesterforanyreason;nojustificationorexplanationwillbe\\nrequired.However,absencesthatexceedtheallowednumberwillresultinalowergrade,\\nspecificallyeachadditionalabsencewillresultin1%subtractedfromthefinalcoursegrade,unless\\nyouhaveexceptionalcircumstancesthatyou(oryouradvisor)havediscussedwithme.Itis\\nrecommendedthatyoureserveyourclassabsencesforthepossibilityofsicknessorother\\nunexpectedcircumstances,suchasfamilyemergency,cartrouble,etc.Ifyouareabsentmorethan\\n8times,youwillautomaticallylose10%offyourfinalgrade.Forexample,ifyourfinalgradeis94%,\\nmissingmorethan8classesinthesemesterwillresultinan84%forthefinalgrade.Takethispolicy\\nseriously.Yourattendanceandclassparticipationisacrucialcomponentofthiscourse.",
+        "label": "ATTEND"
+      }
+    ],
+    "validity": null,
+    "notes": ""
+  },
+  {
+    "doc_id": "253BUS 160A 1 Competitive Strategy Aldo Musacchio",
+    "semester": "Fall Semester 2025 (253)",
+    "school": "College of Arts and Sciences",
+    "department": "Business",
+    "course_name": "253BUS 160A 1 Competitive Strategy Aldo Musacchio",
+    "annotator": "spencer",
+    "spans": [
+      {
+        "start": 106,
+        "end": 445,
+        "text": "Tue & Fri | 9:35AM – 10:55AM\\nRoom: Lemberg Academic Center 054\\nAldo Musacchio\\n(Pronouns: He, him, his)\\nProfessor of International Business\\nTeaching assistant:\\nYllka Sela (yllkasela@brandeis.edu)\\nContact information\\nOffice: Lemberg 252\\nEmail: <aldom@brandeis.edu> (best way to contact me)\\nOffice hours: By appointment (email me to set time)",
+        "label": "ADMIN"
+      },
+      {
+        "start": 479,
+        "end": 905,
+        "text": "Purpose of the Course\\nThis course teaches students the basic principles of competitive and corporate strategy,\\nfocusing mostly on business models and competitive dynamics in technology companies. The\\ncourse also dives into the basics of innovation, competing with platforms, and competition\\namong firms that rely on social strategy. Additional topics covered include corporate\\ndiversification and M&As in technology companies.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 906,
+        "end": 1071,
+        "text": "*The course has a quant component. Students will be required to turn in assignments intended\\nto teach them advanced excel skills and data visualization with Tableau.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 1072,
+        "end": 1393,
+        "text": "Who should be taking this course?\\n· students interested in strategy, consulting, entrepreneurship, and global\\nmanagement\\n· students interested in the challenges startup entrepreneurs face when launching\\nnew products or services\\n· students interested in a career in sales, data, business analysis, investment\\nbanking, etc…",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 1394,
+        "end": 2643,
+        "text": "Learning Goals and Outcomes\\n1. You will learn the basics of strategic management; you will understand how\\nstrategists and CEOs tackle the main challenges they face when selling a new product or\\nservice, when they compete with other firms, and when they acquire new firms,\\n2. You will develop oral communication and presentation skills,\\n3. You will learn to think critically about business models,\\n4. You will learn the basics of two-sided platforms (e.g., such as Uber) and you will\\nacquire tools to help you develop ideas using such platforms,\\n5. You will develop advanced MS Excel skills and basic data visualization using\\nTableau,\\n6. Because the course has a strong focus on team work and decision-making with\\nlimited information, you will learn to:\\na. Use limited information to crack business cases (very useful for job\\ninterviews)\\nb. Recognize personality traits that may handicap you in your future career\\nand identify your own biases, stemming from both your background and your\\nculture;\\nc. Write short business memos about a variety of topics using simple\\nframeworks that strategists worldwide use;\\nd. Work with a team under pressure; and,\\ne. Develop skills to prepare power points and presentations for investors or for\\nboards of directors",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 1131,
+        "end": 1139,
+        "text": "strategy",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 2644,
+        "end": 2690,
+        "text": "Prerequisite: BUS 10a & BUS 152a (recommended)",
+        "label": "ADMIN"
+      },
+      {
+        "start": 2691,
+        "end": 2932,
+        "text": "Expected workload\\nStudents should expect to invest 9 hours/week outside of class on the course.\\nQuestions to prepare for each session will be posted on Latte. There are also a variety of\\nassignments that require work throughout the semester.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 2933,
+        "end": 3228,
+        "text": "Materials for the Course\\nThe course relies mostly on Harvard Business School case studies, which are available for\\npurchase at TBD. Course packs are comprised of copyrighted materials, so please respect\\nintellectual property by purchasing your own copy of the materials (Through the Harvard page",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 3232,
+        "end": 3355,
+        "text": "we keep track of who buys the materials). The cases change every year, so make sure to get the\\nmost up to date case packet.",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 3356,
+        "end": 3946,
+        "text": "For those of you who prefer to have a way to study the material all in one place, I strongly\\nrecommend the following textbook. We won’t use it directly in class because case studies are\\nmore fun, but MOST of the material we discuss in the first part of the course (the basics of\\nstrategy) is there:\\nCompletely optional textbook if you want to see a different style of putting the pieces together:\\nHill, C. W., Jones, G. R., & Schilling, M. A. Strategic management: Theory & cases: An integrated\\napproach. Cengage Learning. [Look for latest edition] [We won’t use it or refer to it in class]",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 3947,
+        "end": 4247,
+        "text": "COMPONENTS OF THE GRADE\\nHere is a breakdown of how we are going to grade all the different assignments of the course.\\nParticipation 30%\\n2 Excel assignments + Tableau homework 15% (5% each)\\nMidterm exam (written, in class) 20%\\nWritten assignments 20%\\nTeam presentations (5% 1st round, 10% the 2nd) 15%",
+        "label": "GRADE"
+      },
+      {
+        "start": 4248,
+        "end": 4886,
+        "text": "GRADING GUIDE\\nGrades in Bus 160a are VERY different from what you may have experienced in other courses at\\nBrandeis University. All of the work is graded relative to your peers. That is, it is all based on\\nrankings of performance for each of the assignments. Why is this the case? Well, because that is\\nhow companies operate. In the real world only a few people get A’s. Nowadays, people are\\ncompeting fiercely in the workplace to be the best and there are lists with rankings for\\npromotions. Your supervisors will evaluate you in relation to your peers. So, take this course as\\nyour first contact with the harsh reality of the workplace.",
+        "label": "GRADE"
+      },
+      {
+        "start": 4887,
+        "end": 5984,
+        "text": "How I calculate the final Grade:\\nAt the end, I will add up everything so that the maximum grade you can get is 100. I will then\\nuse these scores to rank students and to do a distribution of letter grades following a forced-\\ncurve (e.g., something like this 2 A, 6 A-, 8 B+, 8B, 4 B-, 2 C+, 1 D, etc…). The mean should be\\ncentered around B, but the distribution can get stretched out to the right if people don’t turn in\\ntheir assignments or miss too many sessions. In those cases, the letter grades can go all the way\\nto the Ds and Fs. So please do not assume you won’t get a bad grade. Not turning in a written\\nassignment or not participating in the team project gives you an automatic D and missing\\nmultiple assignments can set you back with an F.\\nClass Participation (30%)\\nClass participation will add 30 points in total to your final score. According to your ranking you\\nwill be assigned into 4 buckets:\\nRank\\nPoints towards your final score\\nTop 10% 30 points\\nTop 20-40% 25 points\\nTop 40-66% 20 points\\nTop Bottom third 15 points\\nThose who misuse technology, >2 unexcused absences, etc. 0 points",
+        "label": "GRADE"
+      },
+      {
+        "start": 5985,
+        "end": 6172,
+        "text": "The ranking is based on two scores, one score keeps track of student participation in every\\nsession and assigns a grade. The second score is based on quality of the comments. That is, the",
+        "label": "GRADE"
+      },
+      {
+        "start": 6176,
+        "end": 6718,
+        "text": "participation score is extremely high for people who provide insights that help everyone see the\\nmain points of a discussion or who are actively participating to illustrate a point or do a complex\\ncalculation, those people who systematically have high quality comments have a higher overall\\nscore and a better ranking.\\nI will share the ranking of students according to participation halfway through the course.\\nPlease don’t get too comfy with the ranking then because the rankings are dynamic and change\\nevery day until the last day of class.",
+        "label": "GRADE"
+      },
+      {
+        "start": 6719,
+        "end": 6737,
+        "text": "Midterm exam (20%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 6738,
+        "end": 7060,
+        "text": "The midterm exam is IN CLASS. It will be based on the cases read until that day and on things\\ndiscussed in class. On the day of the exam there will be a set of questions you will need to\\nanswer in blue books by hand, no laptops or electronics allowed. The questions will be fair and\\nshort enough to complete in 80 minutes.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 7061,
+        "end": 7221,
+        "text": "You cannot bring printed notes, cases or reading\\nsummaries, or any other auxiliary notes. Phones, computers, and all your bags will be in the\\nfront of the room.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 7222,
+        "end": 7451,
+        "text": "You won’t need to memorize anything; the questions are made for you to think and apply what\\nyou have learned so far. There will be a prep session with the TA before the exam in which\\nstudents will go over a similar case analysis.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 7452,
+        "end": 7770,
+        "text": "The midterm exam is to give you an idea of how you are doing in class. If you get a terrible grade\\nin the midterm, it is unlikely that you will be able to handle the individual writeup and final\\npresentation, so a discussion with the professor is recommended at this point to see if it is\\nnecessary to drop the course.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 7822,
+        "end": 7857,
+        "text": "Excel and Tableau Assignments (15%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 7858,
+        "end": 8417,
+        "text": "Excel Assignment 1 (PIVOT tables for data analysis)\\nPosted: Sep 12 (Wal-Mart case, Session 5)\\nDue: Oct 3 (Session 10 – WhatsApp case, before class)\\nExcel Assignment 2 (Discounted cash flows and company valuation)\\nDue: Oct 3 (Session 10 – WhatsApp case, before class)\\n*please note both excel assignments are due on the same day.\\nTableau Assignmnet (data visualization)\\nPosted: Oct 28 (Session 17 – Two-Sided Platforms)\\nDue: Nov 4 (Session 19 – Wii case, end of day)\\nTask: Use Tableau to analyze a two-sided platform dataset; submitted visualization due online.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 8418,
+        "end": 8443,
+        "text": "Written Assignments (20%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 8444,
+        "end": 8470,
+        "text": "(5%) Written Assignment #1",
+        "label": "GRADE"
+      },
+      {
+        "start": 8473,
+        "end": 8683,
+        "text": "Rent the Runway business model analysis\\nPosted: for the Oct 10 class (Midterm Prep, Session 11)\\nDue: Oct 10 (same day before class)\\nTask: 1-page (≤500 words) business memo analyzing cost structure & break-even.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 8688,
+        "end": 8713,
+        "text": "5%) Written Assignment #2",
+        "label": "GRADE"
+      },
+      {
+        "start": 8716,
+        "end": 8857,
+        "text": "ESG Indicators\\nDue: Oct 21 (Session 14, before class)\\nTask: Identify weak ESG indicators + compare Delta vs. American Airlines with 2 graphs.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 8858,
+        "end": 8885,
+        "text": "(10%) Written Assignment #3",
+        "label": "GRADE"
+      },
+      {
+        "start": 8888,
+        "end": 9040,
+        "text": "SoundCloud Business Model\\nDue: Nov 7 (Session 20)\\nTask: 700 words + 2 graphs. Analyze SoundCloud’s business model and propose monetization\\nimprovements.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 9041,
+        "end": 9310,
+        "text": "All assignments are graded on a check mark/half check mark/ no check mark basis.\\nNot turning in an assignment gives you zero points, but also adds a red flag—I use this to decide\\nwhere to put people in the subjective rankings as well, whether someone deserves a D, etc.",
+        "label": "GRADE"
+      },
+      {
+        "start": 9311,
+        "end": 9341,
+        "text": "Final Team Presentations (15%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 9342,
+        "end": 11592,
+        "text": "There are two presentations of the final project. Teams of 2-3 should send a proposal for the\\nfinal project as soon as we cover the innovation section of the course. The professor has to\\napprove your topic before you develop it. The deliverable is an amazing presentation in teams\\nand a deck of slides. Please try to use CANVA, it’s so much better than Google Slides or\\nPowerPoint.\\nTEAMS of 2-3 people MAX\\nDeliverable: an amazing Canva presentation. I strongly encourage you to learn to use CANVA,\\nit’s so much better than Google Slides or PowerPoint. Using ChatGPT’s Canva tool is also\\nstrongly recommended.\\nASSIGNMENT:\\n1. Business model analysis using whatever is necessary to understand the competitive\\nadvantage of your firm in 1 slide!!! (Five Forces, Competitor Analysis, Cost Analysis, Resources,\\nBetter off/Ownership test, Value Chain, SIT innovation, two-sided platforms, social strategies,\\netc.)\\n2. What are the key advantages and disadvantages of the business model? What needs to happen\\nfor this firm to succeed financially?\\n3. Are they successful financially? If not, why not. If yes, please explain how. (Things you can\\ndo, analyze the trends in sales, number of stores/products/accounts sold, variable costs are\\nlow/high, fixed costs are low/high, hard to break even… etc…). Unprofitable firms will be more\\nfun to analyze.\\n3. You will need to tell us how AI is going to transform this business. Do this in a very structured\\nway. How is AI going to help the company sell more (top line), increase willingness to pay\\n(marketing), or how it is going to help them to reduce costs or customer acquisition costs and\\nthus improve the bottom line (net profits). That is, explain how AI will change the value stick.\\n4. What are the risks of the business model? Will AI solve the issues you outline? What can go\\nwrong?\\nAll of this in five minutes. What? Yes, five minutes… You are probably thinking “impossible.”\\nNo, it’s doable and everyone in class will appreciate it. It will help you guys get rid of all the fluff\\nand focus on what matters. It’s the best critical thinking exercise.\\nTwo rounds of presentations. First, present the rough idea, listen to questions and improve it\\nfor the second round of presentations on the last day of class.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 11992,
+        "end": 12187,
+        "text": "Finally, don’t just come and present the optimistic side of the product (don’t just drink the kool\\naid). Show all angles, tell us about risks, possible problems, etc. Display your analyst skills.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 11593,
+        "end": 11991,
+        "text": "Please be original. At this point you know more strategy than 95% of the world, so your analysis\\nis better than almost anything out there. Feel free to use generative AI to help you, but make\\nsure you are using it to help you do the analysis YOU want, instead of doing whatever it wants (I\\n5\\n\\ncan tell when someone is doing the analysis using our frameworks and when ChatGPT is doing\\nthe analysis).",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 12188,
+        "end": 12414,
+        "text": "Disabilities\\nIf you are a student with a documented disability on record at Brandeis University and\\nwish to have a reasonable accommodation made for you in this class, please see me\\nimmediately before or after the first class.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 12415,
+        "end": 12822,
+        "text": "Student Athletes\\nIf you are a student athlete, please send me an email and let me know if there are any\\nongoing tournaments/games/events that may interfere with your class engagement. I will try to\\naccommodate as much as I can. If there is any event that may interfere with team presentations,\\nyou need to tell me early in the semester to rearrange the schedule. Last minute events will not\\nbe accommodated.",
+        "label": "LATE"
+      },
+      {
+        "start": 12823,
+        "end": 12966,
+        "text": "There is no need to bother your coaches with emails and letters as long as\\nyou conduct yourself with honesty and the highest ethical standards.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 12967,
+        "end": 13848,
+        "text": "Academic Integrity\\nYou are expected to be honest in all of your academic work. Please consult Brandeis\\nUniversity Rights and Responsibilities for all policies and procedures related to academic integrity.\\nStudents may be required to submit work to TurnItIn.com software to verify originality (If\\nturnitin is showing a red flag it means you have plagiarized more than 10-20% of the essay,\\nplease fix it before resubmitting). Remember to use quotation marks when citing other people’s\\nwork and to avoid red flags on turnitin. Violations of academic integrity give students the\\nlowest possible grade (remember people are ranked for all assignments) and can also be\\nforwarded to the Director of Academic Integrity. Sanctions for academic dishonesty can include\\nfailing grades and/or suspension from the university. Citation and research assistance can be\\nfound at LTS - Library guides.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 13849,
+        "end": 14006,
+        "text": "Office hours\\nOffice hours are scheduled on demand and according to student and faculty availability. Please\\nemail me to sign up for a 20-30 minute time slot.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 14007,
+        "end": 14401,
+        "text": "Teaching assistant\\nThe teaching assistant is someone who was a very good student in the previous iteration of the\\ncourse. It doesn’t mean that he/she/they know everything. It is also not the TA job to teach you\\nthings you should know from other courses, such as accounting and the basics of financial\\nanalysis. The TA can clarify key concepts and frameworks and share tips in Excel and Tableau.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 14402,
+        "end": 14714,
+        "text": "Please DO NOT bother them with questions about the Excel and Tableau assignment the day\\nbefore the deadline. Do not complain about grades or the TA’s work directly to them, it’s not\\nprofessional. With any issues write to me directly and make sure it is a valid complaint,\\notherwise it will reflect poorly on you.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 14715,
+        "end": 14852,
+        "text": "LEARNING BY THE CASE METHOD\\nBecause this course is based on the case method of learning, class participation by all\\nstudents is critical.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 15244,
+        "end": 15397,
+        "text": "• Presence: You are expected to prepare for and attend all class sessions. It is your\\nresponsibility to catch up on material for any class that you miss.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 15401,
+        "end": 15877,
+        "text": "• Preparation: You are expected to do the class assignments and be ready to start class or\\nanswer assigned questions if called on. In addition, it means that you have analyzed the case\\nand exhibits, not just read them lightly. Where there is numerical analysis to be done to\\nunderstand the financials or economics of the case, you will be expected to do this. It is often\\nextremely useful to work in groups in preparing the cases for each class; you are encouraged\\nto do this.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 15878,
+        "end": 15917,
+        "text": "(THERE ARE COLD CALLS in EVERY SESSION)",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 15918,
+        "end": 16264,
+        "text": "• Participation: You are expected to share your views and questions in class. Your class\\nparticipation grade will depend on the cumulative quality of your contributions in class.\\nThere is no makeup work if you miss class and no special discussion of the case during office\\nhours. If you have an unexcused absence, you are responsible to catch up.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 16265,
+        "end": 16396,
+        "text": "We may have to switch to zoom for health reasons, if we have a remote guest, or in case we have\\nan issue doing the class in person.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 16397,
+        "end": 17892,
+        "text": "In case we need to switch to Zoom, here is the etiquette I\\nexpect from everyone:\\n• Don’t be late. I always play music 10 minutes before class starts. If you come in and the\\nmusic is over, you are late!\\n• Cameras should be on, with mics muted, at all times. Unmute only when you’re called on\\nto speak. Keep the camera on, it’s disrespectful to keep the camera off. If you have an\\nissue with this just reach out and explain.\\n• Raise your hand if you want to participate. Yet the professor will manage the queue, so\\nraising your hand early may not give you first dibs. Also, do NOT leave your hand up ALL\\nthe time. That usually signals that you’re not trying to speak to connect with the\\nconversation. I reserve the right to clear the hands up queue every time we change\\ntopics.\\n• Try to find a quiet place with good light to join class. Try to have the light in front of you,\\nrather than behind you. If for any circumstance you cannot find a quiet place to join the\\nclass please send me a note to explain the situation and we will find an appropriate\\nsolution.\\n• If you have a poor internet connection or you need to be on your cell phone for any\\nreason, please send me a note with enough time. I may allow people to have camera’s off\\nunder those circumstances. Yet, please do not connect to class if you’re doing other\\nthings, moving backgrounds or being at the gym will be distracting to others. If you\\ncannot commit to attend class during the predetermined times please drop the course.\\nThanks.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 17896,
+        "end": 46389,
+        "text": "Course Outline\\nSession\\nDate Topic Readings and questions to prepare\\n1 Friday Strategy and Introduction to strategy\\nAugust Competitive\\n29th, 2025 Advantage **If you know you are staying, buy the Harvard Case\\nCoursepack:\\nLINK HERE\\n**if you are unsure, the reading is here: “Creating\\nComparative Advantage” (read at least until p. 10 and then\\nskim as most of the material will be used on our third\\nsession)\\nQuestions to prepare for class:\\nWhat is strategy?\\nWhat is comparative advantage? How do companies create\\nvalue?\\nWhat types of competitive advantage are there?\\nINTRO SLIDES\\n**If you are staying in class please provide some\\ninformation to get to know you better HERE\\nPart I. Basic Frameworks to Study Competitive Advantage and Corporate Advantage\\n2 Tuesday Michael Readings:\\nSeptember Porter's Five \"The Five Competitive Forces that Shape Strategy,”\\n2nd Forces Porter;\\n“Apple Computer 2006” HBS Case (in case packet)\\nQuestions to prepare:\\n• Why did Apple lose market share so drastically in\\nthe early 1990s?\\n• Do Five Forces analysis of the PC market in the\\nearly 1990s (tag each of the forces as HIGH, MED,\\nLOW)? Is this a good industry to be in? What are the\\nchallenges? (See if you can explain Apple’s failure\\nin this industry context)\\n• Make sure to go over all the exhibits and to write a\\nnote of what each exhibit is adding to understand\\nthe case. In particular, look at the financials of\\nApple. What story do they tell us? How is Apple\\ndifferent from its competitors? What seems\\ndifferent? Are its margins(ROS) and ROE/ROA\\nhigher, lower?\\n8\\n\\n• Was Steve Jobs a genius? What explains his success\\nafter 2006 when he launched the iPod?\\n• Get ready for cold calls on five forces\\n3 Friday Competitive “Creating Competitive Advantage” (Pages 10-18)\\nSeptember advantage\\n5 Study Questions:\\n1. What is competitive advantage? How do we know if\\na company creates value?\\n2. How do strategists measure value?\\n3. What is the value chain?\\n4. Use the Apple Computer 2006 case and think about\\nthe value chain of a personal computer, compare\\nsay a macbook with a dell and an HP laptop. How\\ndoes the value chain look for each of them? What\\nactivities does each company choose to do and\\nwhich ones do they outsource? Where is the value\\ncreated for each of these computers?\\n**VALU E CHAIN SLIDES WE WILL USE IN CLASS HERE\\n4 Tuesday Capabilities & “Competing on Resources” and the Amazon 2024 Annual\\nSeptember Core Report\\n9 Competencies\\n***In the age of AI you will be required to work with large\\ndocuments to produce business analysis. Here is your first\\ntry. Download the 2024 Annual Report of Amazon. Then\\nwork with it either in Notebook LM (free account) or in\\nwhatever Gen AI program you use. I like Notebook LM\\nbecause it restricts itself to the text you provide, it doesn’t\\nbring outside knowledge. Then figure out Amazon as a\\ncompany.\\nStudy Questions:\\n1. Make sure to read the note on resources and figure\\nout when they are a source of competitive\\nadvantage? What type of resources are there? Etc.\\n2. What business is Amazon in? Is it spreading itself\\ntoo thin or is it well positioned for the future?\\n3. Who are Amazon’s competitors in each business?\\nWhat is Amazon’s competitive advantage? What\\nare its core competencies?\\n4. What are the most profitable business lines at\\nAmazon? Where is most of the net income made\\n(not revenues)?\\n5. Does it make sense for Amazon to have a Studio?\\n6. Does it make sense for it to have WholeFoods?\\n7. What resources give Amazon competitive\\nadvantage?\\n***please note that the answers you are going to get are\\ngoing to be biased because of the narrative (the kool-aid)\\nthe company wants you to believe (the kool-aid it wants\\n9\\n\\nyou to drink). So be careful and use critical thinking to\\nform your own opinion.\\n5 Friday Operational “Wal-Mart Stores in 2003” HBS Case packet + EXCEL\\nSeptember efficiency and SESSION #1\\n12 competitor\\nanalysis\\n*Review financial ratios:\\nhttps://www.youtube.com/watch?v=0wTR2Up7RKA\\nStudy Questions:\\n1. What are Wal-Mart’s sources of competitive\\nadvantage in discount retailing? Examine the value\\nchain at Wal-Mart and explain the advantages\\nWal-Mart has in each part of the value chain\\n2. Compare the financial performance and cost\\nstructure of Wal-Mart to that of its competitors\\n(focus on Target and K-mart) and explain the\\ndifferences that you see (work with the exhibits\\nand CREATE a table comparing them according to\\nkey financial and operational indicators). In fact,\\nsee if by looking at the comparison in financials\\nyou can come up with a story of why Wal-Mart is\\nthe leader retailer in the world.\\n3. Why are many communities so resistant to allow\\nWal-Mart to establish locally? Is Wal-Mart good or\\nbad for the local community?\\n#EXCEL SESSION 1 TODAY, PLEASE BRING YOUR LAPTOP...\\nI want to take the last 30 minutes of class to go over basic\\nexcel commands and functions that are useful for\\nbusiness. This will help you get started for the Pivot Table\\nsession we will have later in the semester. Here is the\\nHANDOUT that summarizes what I will cover.\\nWhen in person, class will be done with a PC. So have\\nready the commands for Mac to avoid confusion. If they\\nare not in the handout look Here .\\n***Here is the database we are going to use today to do\\nsome basic things. If you want to follow and do things\\ny ourself, have it ready.\\n6 Tuesday Economies of Learn about economies of scale. Here is how:\\nSeptember scale and - read this first\\n16 learning: -Use your favorite Gen AI assistant and ask it to give you a\\nTESLA tutorial of what economies of scale are but tailor the\\nexplanation to you “make it fun for an undergraduate\\nbusiness student” “explain it intuitively, not with math”\\netc…\\nREADING:\\n\"Tesla in 2023: ‘Electrified’ Competition\" HBS case\\n10\\n\\nStudy Questions:\\n1. What are economies of scale? How can we figure\\nout if Tesla is enjoying economies of scale? Open\\nthis worksheet and create a copy. Use it to calculate\\naverage cost per car produced and see if you can\\nfigure out if Tesla is enjoying economies of scale.\\n(see if the cost per unit has gone down as they have\\nincreased output… how much has it gone down in\\nperiods in which they doubled output?).\\nFrom the case:\\n2. Is Tesla at a competitive advantage or\\ndisadvantage vs. other EV manufacturers?\\n3. From the case, Analyze the value chain in the\\nautomobile industry from suppliers of autoparts to\\nconsumers. What activities do traditional car\\nmanufacturers do? What activities does Tesla do? What are\\nthe main differences?\\n4. What are the main features/components of\\ninternal combustion engine cars? Which features were\\ndiscarded by Tesla? What did Tesla add? How did they\\ntransform the automobile?\\n5. What barriers to entry did Tesla have to\\novercome? Can other companies follow suit?\\n6. What are the biggest threats for the Tesla\\nbusiness model in the near future? Do 5 forces analysis\\nand figure out where the weak points are. What resources\\ndoes Tesla have that are capabilities?\\n7 Friday TA session: ***You will review the basics of financial accounting that\\nSeptember Financial we will need for the course.\\n19 accounting\\nreview This is a TA-led session.\\n##WRITTEN ASSIGNMENT #1\\nWrite a business memo of less than 500 words analyzing\\nthe cost structure of Rent the Runway. Figure out what\\ntheir business model is and explain how the business\\nmodel is reflected in the financials of this firm. Write it as\\na quick business memo in less than one full page (less\\nthan 500 words) answering clearly the following two\\nquestions:\\nUse the 2024 annual report. For simplicity let’s all use\\ninformation on subscribers from the “Key Operating and\\nFinancial Results” on p. 65 and for financials use the\\nstatement of operations (like a profit and loss statement)\\nfrom p. 89.\\nQuestion 1.\\n1. How many more subscriptions do they need to sell to\\nbreak even? (calculate the average subscription price\\nusing the average revenue until January 31, 2025 and the\\n11\\n\\naverage active subscribers, both from the “Key Operating\\nand Financial Results” on p. 65)\\nQuestion 2\\n2. What’s the problem with the business model?\\nWhy is it that despite growth in subscriptions they haven’t\\nmanaged to cover their “fixed” costs?\\nAI assistants to help you read through huge documents?\\nTry the AI assistant of Adobe Acrobat, it’s not the best but\\nit’s right there next to your PDF or try\\nGoogle’s NotebookLM and ask questions about the text.\\n8 Friday Excel with ##WRITTEN ASSIGNMENT #1 due before class\\nSeptember pivot tables\\n26th (work EXCEL SESSION #2: pivot tables and graphs\\nfrom TA SESSION #2\\nhome)\\nPlease watch the videos I will post here on Pivot Tables\\nand do the excel assignment for pivot tables\\nUse the time for this session to work on the Excel\\nassignment 2\\nWe will continue to work with This database.\\nAI TOOL: Ask Gemini, Chat GPT or Claude to create a Pivot\\nTable tutorial for you. Make sure your prompt mentions\\nthat you want a friendly tutor who is going to be\\nsupportive even if you ask basic questions. You can even\\nsay that you want a tutor that speaks like a 21 year old and\\nresponds with emojis and the like. My daughter has a GPT\\nmath tutor that is a teenager swiftie. Try customizing your\\nt utor!\\n9 Tuesday Economies of \"Choosing Corporate and Global Scope\" and\\nSeptember Scope: DISNEY \"Reawakening the Magic: Bob Iger and the Walt Disney\\n30 Company\" in HBS Case Packet\\nStudy Questions:\\n**In the note, figure out what the better off test and the\\nownership tests are. Why do we care about these tests?\\n**A student did this flow chart to try to summarize the\\nlogic of these tests. I also put together some examples for\\neach outcome here. To help you make sense please do the\\nEconomies of Scope reading first\\nFor the case:\\n1. Why has Disney been successful for so long (do full\\nanalysis using all frameworks)?\\n12\\n\\n2. Does Disney have the right corporate scope or is it too\\ndiversified? Think of each of the Disney businesses and\\nthink about whether they pass the better-off test and/or\\nthe ownership test? Does it make sense to own ABC?\\n3. Given what you find, is this a company that is going to\\nsustain competitive advantage in the long run?\\n10 Friday Corporate \"$19B 4 txt app WhatsApp…omg!\" HBS Case\\nOctober scope and\\n3rd mergers and\\nacquisitions ##Excel assignment 2 due before class (see below)!!!\\nStudy Questions:\\n1. Using the frameworks we have studied, explain the\\nbusiness model of WhatsApp. How do they make money?\\nHow can they make more money?\\n2. If you were working for Facebook, how do you come\\nup with the valuation of WhatsApp? How do companies\\nvalue target firms for acquisitions?\\n3. Was Facebook's acquisition of WhatsApp for $22\\nbillion the most outrageous waste of shareholder funds or\\nthe deal of the century? (explain the analysis that supports\\nyour position)\\n##Excel Assignment 2 (due before class):\\nRead the case first. Then work on this:\\nLet's pretend we are Mike Zuckerberg and play around\\nwith the discounted cash flow he could have used to do the\\nvaluation of Whatsapp!\\nUsing this Excel, assume a reasonable net income in YEAR\\n0 (cell B18) and a reasonable growth rate of net income\\n(cell C9) and let the model give you the acquisition price of\\nWhatsapp. The mission is for you to figure out what\\nassumptions you need to input in this excel to give you an\\nacquisition price near $19 billion dollars.\\nDon’t turn in an excel, just a simple word doc or PDF in\\nwhich you screenshot the top of the excel and show us\\nyour assumptions for Year 0 income, the growth rate and\\nthe valuation you get.\\nThen please write what key assumptions you are making\\nto get to this valuation (it has to be near $19-20 billion\\ndollars) and whether they are realistic according to what is\\nin the case.\\nHERE IS A QUICK COURSE on Discounted Cash Flows:\\nDefinitions\\nhttps://www.investopedia.com/terms/d/dcf.asp\\nhttps://en.wikipedia.org/wiki/Discounted_cash_flow\\nWatch this video to refresh what you know\\nAlso, feel free to create an AI chat that tutors you on how\\n13\\n\\nto understand discounted cash flows and company\\nvaluations. Ask about the assumptions DCFs need. Then\\nplay around with the spreadsheet and understand the\\nkinds of assumptions you need to get to a valuation of\\n$19-20 billion dollars.\\n11 Friday Excel-Pivot First half of class:\\nOctober 10 Tables and\\nmidterm\\nreview EXCEL SESSION #2: pivot tables and graphs\\nProfessor Musacchio will lead this session\\nPlease watch the videos I will post here on Pivot Tables and\\ndo the excel assignment for pivot tables\\nTutorial\\nUse the time for this session to work on the Excel\\nassignment 2\\nWe will continue to work with this database.\\nAI TOOL: Ask Gemini, Chat GPT or Claude to create a Pivot\\nTable tutorial for you. Make sure your prompt mentions\\nthat you want a friendly tutor who is going to be supportive\\neven if you ask basic questions. You can even say that you\\nwant a tutor that speaks like a 21 year old and responds\\nwith emojis and the like. My daughter has a GPT math tutor\\nthat is a teenager swiftie. Try customizing your tutor!\\nMidterm Prep . We will go over everything we have done\\nand consolidate our basic frameworks. Here are examples\\nof previous year’s exams with different formats:\\nBUS260 Midterm 2024 case\\nBUS 260a Midterm 2024 with answer key\\nBUS 160 Midterm 2024 with answer key\\nBUS 260a Midterm Spring 2025 (to be discussed in class,\\nanswer key for question 1 here and the answer key for the\\nr est is HERE)\\n12 Thursday MIDTERM MIDTERM EXAM IN CLASS (80 minutes)\\nOctober ***Bring a calculator\\n16th\\n(in class The midterm will either be a case analysis (you will read\\nexam) the case or annual report before class) or alternatively it\\nwill have 4-5 questions about the big concepts of the\\ncourse and how we applied them in different cases. The\\nquestions will provide contexts/case situations to apply\\nthe concepts (hopefully you don’t need to memorize\\n14\\n\\nanything other than the BAND-AID quality of resources\\nand the better off and the ownership tests).\\n***No printed notes, no case/reading summaries, please.\\nPart II. Sources of Competitive Advantage: Environmental, Social and Governance Metrics and\\nCompetitive Advantage\\n13 Friday GUEST Generative AI applications to business\\nOctober 17 SPEAKER\\n##Excel assignment 1 due before class as well!\\nWe will review some of the main applications that help you\\nsolve common problems you run into in business analysis.\\nIf you want, get free accounts in them to play around while\\nwe discuss them in class. We will review:\\n• NotebookLM–processing large amounts of text\\n• ChatGPT/NotebookLM–for writing\\n• Napkin AI- for writing business analysis with cool\\ncharts that are often time consuming\\n• Gamma/Canva – Text to fancy presentations in no\\ntime\\nGUEST: Varun P. Edupuganti MBA (‘24), expert on\\nGenerative AI applications for business. My personal guru.\\nHe is currently Product Manager at Humata Health. While\\nhe was an MBA he launched a startup, won a fellowship to\\nMassChallenge with it, and among other things developed\\nan AI agent for product management support. He also\\nc reated an AI tool to apply for jobs.\\nPart II. Sources of Competitive Advantage: ESG and Innovation as a Source of Competitive\\nAdvantage\\n14 Tuesday Discussion of Eccles and Serafim, The Performance Frontier: Innovating\\nOctober 21 ESG standards for a Sustainable Strategy, HBR Article\\nand\\ngreenwashing **From this short article think about how we should\\nmeasure impact?\\nYour second assignment for today is to ask a Generative AI\\nassistant about ESG scores and how they are calculated.\\nThen you will work with the ESG indicators we commonly\\nuse to measure environmental, social and governance\\nperformance of companies taken from Refinitiv, a financial\\ndata platform. These indicators have many issues, so while\\nyou learn about them also think about what problems they\\nmay have, such as how much they are self-reported vs.\\nobjective measures, etc.\\n###WRITTEN ASSIGNMENT #2 ESG INDICATORS. DUE\\nTODAY BEFORE CLASS\\nQuestion 1.\\n15\\n\\nGive two examples of ESG indicators that may not be\\nobjective enough. That is, indicators that may rely too\\nmuch on self reporting.\\nQuestion 2.\\nCompare the environmental performance of Delta and\\nAmerican Airlines using this spreadsheet. Create two\\ngraphs to compare up TWO indicators of environmental\\nperformance and show clearly which company does better.\\nMake sure to use indicators to compare companies like-to-\\nlike. For example, do not compare CO2 emissions in tons,\\nfind a way to compare like to like. Add a sentence or two\\nexplaining which company does better according to your\\nanalysis.\\n15 Friday How do Firms We will start with an interactive session in which we will\\nOctober Innovate review a simple framework to think about innovation,\\n24th known as Systemic Innovative Thinking or Systematic\\nInventive Thinking or SIT for short. Interactive Lecture.\\nTo prepare read/see this:\\n1) read the wikipedia page of Systematic Inventive\\nThinking;\\n2) watch this video of how Dyson innovates and think\\nabout how they are using SIT to innovate…\\n#####Start working on the final presentation in teams of\\n2-3 people\\nSign up with your group here: Google doc\\nFINAL PRESENTATION\\nTEAMS of 2-3 people MAX\\nDeliverable: an amazing Canva presentation. I strongly\\nencourage you to learn to use CANVA, it’s so much better\\nthan Google Slides or PowerPoint. Using ChatGPT’s Canva\\ntool is also strongly recommended.\\nASSIGNMENT:\\n1. Business model analysis using whatever is necessary to\\nunderstand the competitive advantage of your firm in 1\\nslide!!! (Five Forces, Competitor Analysis, Cost Analysis,\\nResources, Better off/Ownership test, Value Chain, SIT\\ninnovation, two-sided platforms, social strategies, etc.)\\n2. What are the key advantages and disadvantages of the\\nbusiness model? What needs to happen for this firm to\\nsucceed financially?\\n3. Are they successful financially? If not, why not. If yes,\\nplease explain how. (Things you can do, analyze the trends\\nin sales, number of stores/products/accounts sold, variable\\ncosts are low/high, fixed costs are low/high, hard to break\\neven… etc…). Unprofitable firms will be more fun to\\nanalyze.\\n16\\n\\n3. You will need to tell us how AI is going to transform this\\nbusiness. Do this in a very structured way. How is AI going\\nto help the company sell more (top line), increase\\nwillingness to pay (marketing), or how it is going to help\\nthem to reduce costs or customer acquisition costs and\\nthus improve the bottom line (net profits). That is, explain\\nhow AI will change the value stick.\\n4. What are the risks of the business model? Will AI solve\\nthe issues you outline? What can go wrong?\\nAll of this in five minutes. What? Yes, five minutes… You\\nare probably thinking “impossible.” No, it’s doable and\\neveryone in class will appreciate it. It will help you guys get\\nrid of all the fluff and focus on what matters. It’s the best\\ncritical thinking exercise.\\nTwo rounds of presentations. First, present the rough idea,\\nlisten to questions and improve it for the second round of\\npresentations on the last day of class.\\nPlease be original. At this point you know more strategy\\nthan 95% of the world, so your analysis is better than\\nalmost anything out there. Feel free to use generative AI to\\nhelp you, but make sure you are using it to help you do the\\nanalysis YOU want, instead of doing whatever it wants (I\\ncan tell when someone is doing the analysis using our\\nframeworks and when ChatGPT is doing the analysis).\\nFinally, don’t just come and present the optimistic side of\\nthe product (don’t just drink the kool aid). Show all angles,\\ntell us about risks, possible problems, etc. Display your\\nanalyst skills.\\n17 Tuesday Strategy in “Strategies for Two-Sided Markets”\\nOctober Two-Sided\\n28th Platforms ***Tableau tutorial\\n**BEfore class please get and install the free student\\nversion of Tableau\\nhttps://www.tableau.com/academic/students\\n##Tableau assignment posted\\nStudy Questions For 2 Sided-Markets:\\n1. What are the components of a two-sided platform?\\n2. What are network externalities? What role do they\\nplay in two-sided platforms?\\n3. Think of a site/app like TikTok or YouTube.\\na. What’s the current business model of TikTok?\\nWhat’s the money side? What’s the subsidy side?\\nb. What’s the value proposition for users? What’s the\\nvalue proposition for influencers?\\nc. Is there anything in this business model that\\ndoesn’t fit the two-sided platform framework?\\n17\\n\\n18 Friday Disruptive \"Haier's U.S. Refrigerator Strategy\"\\nOctober 31 Innovation\\n(dynamic What is Disruptive Innovation?” HBR Article\\nstrategy) Interview with Clay Christensen on disruptive innovation\\nStudy Questions:\\n1. Map the competitors in the refrigerator market by\\nsegment (more features and space to less features\\nand space)? Map them according to price vs.\\nfeatures/size/quality.\\n2. Why did Haier enter the compact refrigerator\\nmarket first?\\n3. Should Haier build a plant in South Carolina? What\\nare the pro's and con's?\\n4. Should the big three be afraid of Haier? Should\\nthey have reacted differently to Haier's entry?\\n5. Complete Exhibit 10 using the Excel file provided\\nhere.\\nPart III. Competing with Platforms\\n19 Tuesday Competition \"Responding to the Wii?\" HBS Case\\nNovember in Platforms:\\n4th Videogame ##Elements of the innovation project (in class)\\nconsoles ##Tableau assignment due at the end of the day\\nStudy Questions:\\n1. Analyze the videogame console as a 2-sided\\nplatform for Atari, Nintendo, SEGA and the Wii…\\n(you can go all the way to XBOX and Playstation if\\nyou know about them)\\n2. Why did ATARI & Nintendo lose leadership in the\\n1990s? What did they do right? Why did each fail?\\n3. How attractive is the video game console industry\\nin 2008? (do five forces analysis)\\n4. What are Sony's strategic options? What should\\nKazuo Hirai do about the Wii?\\nCase Summary:\\nAfter years of gaming console industry leadership, how\\nshould Sony respond to the overwhelming success of\\ncompetitor Nintendo's user-friendly Wii over Sony's\\nhigh-tech PlayStation 3? It was August 2008 and Kazuo\\nHirai, chief executive of Sony Computer Entertainment\\nInc. (SCEI), was contemplating questions from reporters\\nabout how Sony planned to respond to Nintendo's Wii\\nconsole, which was dramatically leading Sony's\\nPlayStation 3 and Microsoft's Xbox 360 consoles in sales.\\n18\\n\\n20 Friday Regulatory Reading Assignment:\\nNovember arbitrage as “Uber in China: Driving in the Gray Zone\"\\n7th business Study Questions:\\nmodel 1. What is Uber's value proposition? Explain their\\nbusiness model using what we know about 2-sided\\nplatforms.\\n2. What are the major risks to their business model in\\nthe United States and Europe?\\n3. Would you invest in Uber if you could?\\n4. Now, explain why Uber failed at outcompeting its\\nChinese peers?\\n5. Why did they end up doing a joint venture with Didi\\n(explain it using what we know of strategy)?\\n###Written assignment #3 (MAXIMUM LENGTH is 700\\nwords and two graphs).\\nGo to the current page of Soundcloud and analyze its\\nbusiness model. Make sure you\\n1. Describe the business model of Soundcloud. Who is\\nthe money side? Who is the subsidy side? Are there\\nmore than two sides?\\n2. How do they monetize their business model?\\n3. They have been losing money for over a decade, so\\nclearly they haven’t figured out a business model\\nthat works. What would you recommend that they\\ndo to fix the monetization strategy?\\nYou want an AI assistant to make your report look\\nbetter. Try Napkin AI (the free version). Upload\\nsome of your analysis and ask for diagrams,\\nf lowcharts, etc. to make it look nicer.\\n21 Tuesday FIRST ROUND OF STUDENT PRESENTATIONS\\nNovember ## Submit your presentation before class\\n11th ## Final (long) strategy writeup posted (see Dec. 10 for\\nassignment details)\\n•\\nFINAL PRESENTATION\\n• TEAMS of 2-3 people MAX\\n• Deliverable: an amazing Canva presentation. I\\nstrongly encourage you to learn to use CANVA, it’s\\nso much better than Google Slides or PowerPoint.\\nUsing ChatGPT’s Canva tool is also strongly\\nrecommended.\\nASSIGNMENT:\\n1. Business model analysis using whatever is necessary to\\nunderstand the competitive advantage of your firm in 1\\nslide!!! (Five Forces, Competitor Analysis, Cost Analysis,\\nResources, Better off/Ownership test, Value Chain, SIT\\ninnovation, two-sided platforms, social strategies, etc.)\\n2. What are the key advantages and disadvantages of the\\nbusiness model? What needs to happen for this firm to\\n19\\n\\nsucceed financially?\\n3. Are they successful financially? If not, why not. If yes,\\nplease explain how. (Things you can do, analyze the\\ntrends in sales, number of stores/products/accounts sold,\\nvariable costs are low/high, fixed costs are low/high, hard\\nto break even… etc…). Unprofitable firms will be more fun\\nto analyze.\\n4. You will need to tell us how AI is going to transform this\\nbusiness. Do this in a very structured way. How is AI going\\nto help the company sell more (top line), increase\\nwillingness to pay (marketing), or how it is going to help\\nthem to reduce costs or customer acquisition costs and\\nthus improve the bottom line (net profits). That is, explain\\nhow AI will change the value stick.\\n5. What are the risks of the business model? Will AI solve\\nthe issues you outline? What can go wrong?\\nAll of this in five minutes. What? Yes, five minutes… You\\nare probably thinking “impossible.” No, it’s doable and\\neveryone in class will appreciate it. It will help you guys\\nget rid of all the fluff and focus on what matters. It’s the\\nbest critical thinking exercise.\\nTwo rounds of presentations. First, present the rough\\nidea, listen to questions and improve it for the second\\nround of presentations on the last day of class.\\nPlease be original. At this point you know more strategy\\nthan 95% of the world, so your analysis is better than\\nalmost anything out there. Feel free to use generative AI to\\nhelp you, but make sure you are using it to help you do the\\nanalysis YOU want, instead of doing whatever it wants (I\\ncan tell when someone is doing the analysis using our\\nframeworks and when ChatGPT is doing the analysis).\\nFinally, don’t just come and present the optimistic side of\\nthe product (don’t just drink the kool aid). Show all\\nangles, tell us about risks, possible problems, etc. Display\\nyour analyst skills.\\n22 Friday Social **SECOND DAY OF PRESENTATIONS [IF NEEDED]\\nNovember Strategies\\n14th “Competing with Social Networks: Social Failures” HBS\\nnote\\nAssignment questions:\\n1. What are social failures? Why do they exist?\\n2. What two main types of social failures are there?\\n3. What are the main four causes of social failure?\\n4. From the point of view of social failures, how can\\nsocial platforms add value? What do they have to\\ndo to add value?\\n5. Think about platforms that you use such as\\nTikTok, Instagram, Twitter(X), match.com,\\nTinder... rate them at how good/bad they are to\\n20\\n\\nsolve or reduce breadth, display, search, and\\ninteraction failures?\\nPart IV. Social Strategies\\n23 Tuesday Using two- Understanding META\\nNovember sided Study questions:\\n18th platforms and *The cold call in class will be about these slides HERE.\\nbusiness Take a look at them and see what you make of Meta.\\nmodel analysis\\nto make HEre is also a link to the Brandeis Library Business\\nforecasts Research Guide. There, find a link to Statista and do some\\nresearch on META.\\nThe kinds of questions we want to address are:\\nHow does Facebook make money? How much do they\\nmake per active user?\\nWhy do they have their slides disaggregated by\\ngeography? Why does it matter? Where do they do better?\\nWhy?\\nDo they make you optimistic/pessimistic?\\nTry to figure out what is going on at Facebook, what\\nstrategy are they following?\\nWhere are they expanding?\\nWhat strengths do you see? Where are the weaknesses?\\nWill they be the leading social platform in 10-15 years?\\nWhy or why not?\\nHow many minutes do people spend on the META\\nplatforms on average per day? Per month? How does that\\ncompare to other platforms? How does it compare to\\ntraditional and cable TV?\\n24 Friday “Social Strategy at Nike”\\nNovember\\n21 Study Questions:\\n1. Evaluate the Nike+ ecosystem as a foundation for the\\ncompany’s social strategy\\n2. What’s unique about the way Nike uses Facebook,\\nTwitter and YouTube for its digital strategy?\\n3. What’s its digital strategy? What is its social strategy?\\nWhy are these two different? How does Nike integrate its\\ndigital strategy with its social strategy?\\n4. What kind of capabilities did Nike have that allowed it to\\ndevelop a rich, integrated social and digital strategy? Can\\nReebok or New Balance replicate it?\\n5. Was the social strategy of Nike+ a success?\\n25 Tuesday TBD\\nNovember\\n25th\\nGUEST\\n26 Tuesday\\nDecember\\n2nd F inal student presentations\\n21\\n\\n26 Friday LAST DAY OF Final student presentations\\nNovember CLASSES\\n5th\\n22",
+        "label": "SCHEDULE"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
   }
 ]
