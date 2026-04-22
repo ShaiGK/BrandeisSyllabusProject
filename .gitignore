@@ -17,3 +17,4 @@ Thumbs.db
 
 label_studio_tasks.json
 .annotate_config.json
+data/
