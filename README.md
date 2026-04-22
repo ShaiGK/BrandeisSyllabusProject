@@ -230,13 +230,7 @@ annotation guidelines. The next time someone runs `python annotate.py start`, th
 
 After annotation is complete, run the following steps in order to train and evaluate all three models.
 
-### 1. Install additional dependencies
-
-```bash
-pip install transformers torch datasets sklearn-crfsuite pytorch-crf matplotlib seaborn joblib scikit-learn
-```
-
-### 2. Convert annotations to line-level data
+### 1. Convert annotations to line-level data
 
 ```bash
 python convert_to_sentences.py
@@ -244,7 +238,7 @@ python convert_to_sentences.py
 
 Reads `label_studio_tasks.json` and `annotations/all_annotations.json`. Splits each syllabus into lines, assigns each line the label of the span covering >50% of its characters (or `"O"` if none). Writes `data/sentences.jsonl`.
 
-### 3. Compute inter-annotator agreement (if you double-annotated any docs)
+### 2. Compute inter-annotator agreement (if you double-annotated any docs)
 
 ```bash
 python compute_iaa.py
@@ -252,7 +246,7 @@ python compute_iaa.py
 
 Finds doc_ids annotated by multiple people, computes Cohen's κ and per-label F1, and saves a confusion matrix to `results/iaa_results.json`.
 
-### 4. Split into train / dev / test
+### 3. Split into train / dev / test
 
 ```bash
 python split_data.py
@@ -260,7 +254,7 @@ python split_data.py
 
 Splits at the **document level** (80 / 10 / 10) so no syllabus leaks across splits. Writes `data/train.jsonl`, `data/dev.jsonl`, `data/test.jsonl`.
 
-### 5. Train the CRF baseline
+### 4. Train the CRF baseline
 
 ```bash
 python train_crf.py
@@ -268,7 +262,7 @@ python train_crf.py
 
 Trains a linear-chain CRF with hand-crafted features (bag-of-words, position, keyword groups, window context). Runs a full hyperparameter grid search over `c1`, `c2`, `max_iterations`, and `algorithm`. Saves the best model to `models/crf_model.pkl` and results to `results/crf_results.json`.
 
-### 6. Fine-tune RoBERTa
+### 5. Fine-tune RoBERTa
 
 ```bash
 # Recommended: run on Colab with GPU
@@ -280,7 +274,7 @@ python train_roberta.py --smoke-test
 
 Fine-tunes `roberta-base` for 13-class sentence classification. Full grid search over learning rate, epochs, batch size, warmup ratio, and weight decay. Saves the best model to `models/roberta/` and also exports per-line logit vectors for all splits to `data/cls_logits_*.npy` (needed for the next step).
 
-### 7. Train RoBERTa + CRF
+### 6. Train RoBERTa + CRF
 
 ```bash
 python train_roberta_crf.py
