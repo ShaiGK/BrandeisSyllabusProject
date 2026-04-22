@@ -106,5 +106,131 @@
     ],
     "validity": "Valid",
     "notes": ""
+  },
+  {
+    "doc_id": "251FIN 231F 1 Private Equity Philippe Wells",
+    "semester": "Spring Semester 2025 (251)",
+    "school": "International Business School",
+    "department": "Finance",
+    "course_name": "251FIN 231F 1 Private Equity Philippe Wells",
+    "annotator": "shai",
+    "spans": [
+      {
+        "start": 0,
+        "end": 1062,
+        "text": "FIN 231F\\nBrandeis University\\nInternational Business School\\nPRIVATE EQUITY\\nCOURSE SYLLABUS\\nSpring 2025\\nClass Hours: Mon/Wed, 5:40 - 7:00 p.m.\\nGuest speaker classes range in length from 60 to 80 minutes,\\ndepending on the availability and calendar of our visitors.\\nLocation International Hall (Sacchar 116)\\n(& Zoom Link): Remote speakers will join us via Zoom (check LATTE) at\\nhttps://brandeis.zoom.us/j/95360953634\\nOffice Hours: Schedule with calendly.com/philippewells (use the calendly.com\\nlink for both in person and Zoom office hours)\\n● Tuesdays (Zoom or in-person), 2:00 p.m. - 3:00 p.m.\\n● Fridays (Zoom only), 9:00 a.m. - 11:00 a.m.\\nTuesdays are either in-person or via Zoom, depending on what\\nworks best for you. Friday office hours are all via Zoom.\\nPlease email me if you need to schedule a different time.\\nOffice Location Lemberg 253\\n(& Zoom Link): https://brandeis.zoom.us/j/94408813875 (for remote office hours)\\nTA Usho Manzawa - umanzawa@brandeis.edu\\nPhilippe Wells\\nProfessor of the Practice, Entrepreneurial Finance\\n(617) 721-6733\\npwells@brandeis.edu",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1066,
+        "end": 2683,
+        "text": "Overview of the Course\\nPrivate equity (PE) funds have a sizeable and growing influence on worldwide capital\\nmarkets. In this course, we examine the PE industry, with a particular focus on the US\\nLeveraged Buyout industry – why has it been so successful at attracting capital, and\\nwhat do firms do to generate returns for themselves and their investors. That includes\\nnot only finance, but also the strategic and operational factors that create a successful\\ninvestment. Topics include:\\n● The Private Equity industry – its history, structure, players and adjacent\\nindustries\\n● What kind of company makes an attractive private equity investment?\\n● How do private equity funds add value to their investments (operational\\nimprovement, management incentives, balance sheet)\\n● What do private equity funds do when ‘things go wrong’?\\n● How do private equity funds create successful exits from their investments?\\nThe course is designed to be relevant not only to students considering a career in\\nprivate equity, but to those in related careers: investment banking, commercial banking,\\nfund placement and line management of leveraged companies.\\nLearning Goals\\nAt the conclusion of this course, the student should be able to understand:\\n● Why has PE become such a major force in global capital markets?\\n● How does the PE industry work?\\n● What are the common themes that define and create PE successes?\\n● What do PE firms do when ‘things go wrong?’\\n● What are the differences and commonalities between leveraged buyouts and\\nventure capital (VC)?\\n● How can I make better lending and investment decisions by thinking like a PE\\npro?",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 2931,
+        "end": 3308,
+        "text": "Materials:\\nThe case studies in this course are all provided for free on LATTE. In addition to class\\ndiscussions and case study preparation, students are required to complete the Wall\\nStreet Prep LBO modeling modules. The Wall Street Prep materials cost $100. You can\\nsign up using\\nhttps://gv142.infusionsoft.com/app/manageCart/addProduct?productId=8021\\n[gv142.infusionsoft.com]",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 3309,
+        "end": 3402,
+        "text": "The final exam for the course is a modeling exercise based on the Wall Street Prep\\nmaterials.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 3706,
+        "end": 4176,
+        "text": "Class Participation: Class participation is expected of everyone in this course, and\\nsynchronous class attendance is required. If you have obligations that will require you\\nto miss more than one class during the term, you should not enroll in this class. You are\\npermitted one absence for no reason (i.e. it does not need to be excused) and your TA\\nand I will keep a record of class participation. Value will be placed on the quality, not\\nthe quantity, of your comments.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 4177,
+        "end": 4267,
+        "text": "Perfect attendance but no participation receives a grade of “C+“ toward the overall\\ngrade.",
+        "label": "GRADE"
+      },
+      {
+        "start": 4268,
+        "end": 4672,
+        "text": "Contributions during Guest Speaker Sessions : You will be expected to ask relevant\\nquestions during the guest speaker sessions. Please come prepared with questions in\\nadvance (so you are ready to ask something if I prompt you). Also, during the session,\\nthink of questions that relate to what the speaker is sharing.\\nValue will be placed on the quality, not the quantity, of your questions/contributions.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 4673,
+        "end": 4774,
+        "text": "Grading in each speaker session is based on your best contribution for the day and is\\nnot cumulative.",
+        "label": "GRADE"
+      },
+      {
+        "start": 4775,
+        "end": 5098,
+        "text": "Short Assignments: All written assignments must be submitted on MOODLE.\\nIndividual assignments are to be completed with NO OUTSIDE ASSISTANCE – no data\\nsources beyond what is provided in the case, no discussion with current or former class\\nmembers – if you have questions or need help, you should talk to me or the TA only.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 5099,
+        "end": 5422,
+        "text": "Short assignment answers will be graded on a three point scale with 0.5 points awarded\\nfor an incomplete answer, 1 point for a basic answer, 2 points for a good\\nanalysis/response, and 3 points for an excellent analysis/response (this is rare). A score\\nof 2 points across all questions translates into a 93 on a point scale.",
+        "label": "GRADE"
+      },
+      {
+        "start": 5426,
+        "end": 6025,
+        "text": "Special Accommodation. Brandeis seeks to welcome and include all students. If you\\nare a student who needs accommodations as outlined in an accommodations letter,\\nplease talk with me and present your letter of accommodation as soon as you can. I\\nwant to support you. In order to provide test accommodations, I need the letter more\\nthan 72 hours in advance. I want to provide your accommodations, but cannot do so\\nretroactively. If you have questions about documenting a disability or requesting\\naccommodations, please contact Student Accessibility Support (SAS) at 781-736-3470 or\\naccess@brandeis.edu",
+        "label": "ACCOM"
+      },
+      {
+        "start": 6026,
+        "end": 6194,
+        "text": "Final Exam: This course will have a 70 minute final exam, which will take place in class\\non Tuesday, Oct 11. The final exam incorporates the Wall Street Prep materials.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 6195,
+        "end": 6506,
+        "text": "Grading\\n● Class Participation INDIVIDUAL 25%\\n● Guest Speaker session contributions INDIVIDUAL 20%\\n● Take-private deal proposal & pitch GROUP 20%\\n● Final Exam INDIVIDUAL 20%\\nShort Assignments:\\n● Hubbardton Forge LBO model INDIVIDUAL 5%\\n● Construction Partners INDIVIDUAL 5%\\n● ShopKeep short answers INDIVIDUAL 5%",
+        "label": "GRADE"
+      },
+      {
+        "start": 6507,
+        "end": 8139,
+        "text": "Take-private deal proposal & short pitch. In recent years, Private Equity firms have\\nincreasingly turned to public markets as a deal source. Rather than buying companies in\\nthe private market, they instead choose to take a public company private. In 2022, for\\ninstance, Vista Equity Partners and Elliott Management teamed up to acquire\\ncloud-computing company Citrix Systems. This short pitch will be graded as part of\\nyour take-private deal proposal.\\nFor this assignment you will be assigned (by Tues, Jan 30) to a team of 4-6 students.\\nYour team is required to put together a pitch deck presenting a take-private deal\\nproposal to the investment committee at your private equity firm. The deck should\\ninclude approximately 12 - 18 slides (plus appendix materials if needed). Include the\\nfollowing points:\\n● Company to be acquired and acquisition price range\\n● Industry overview\\n○ What makes this industry attractive for PE?\\n○ Competitor analysis\\n○ Industry trends\\n○ Drivers, Risks\\n● Comparable deals (comps), if applicable\\n● Value creation strategy/Deal Thesis\\n○ There are many different ways to create value. What makes most sense\\nhere?\\n4\\n\\n■ Are there any comparables, i.e. other companies that have pursued\\nsimilar or related strategies? Other PE deals in this sector that you\\nthink provide guideposts for what can be done?\\n● Exit strategy\\n● LBO model with assumptions\\n● MOIC and IRR calculations\\nYour team will also prepare a no more than 7\\nminute pitch to present in class. You can designate two team members to present.\\nChoose 3-5 slides from your full pitch deck to present the highlights and key points\\nunderlying your idea.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 8347,
+        "end": 9326,
+        "text": "Academic Honesty. You are expected to be honest in all of your academic work. Please\\nconsult Brandeis University Rights and Responsibilities for all policies and procedures\\nrelated to academic integrity. Students are required to submit work to TurnItIn.com\\nsoftware to verify originality. Citation and research assistance can be found at LTS -\\nLibrary guides.\\nUnder no circumstance may you search the internet for answers or background material\\nto help you prepare case based assignments. You are not allowed to discuss the case\\nwith current or former students with the exception of your teammates on team\\nassignments (or turn to any other outside source) for any information regarding these\\ncases without my permission. Failure to comply with this directive is cheating and\\nwill result in your violation being forwarded to the Brandeis University Director of\\nAcademic Integrity. Sanctions for academic dishonesty can include failing grades\\nand/or suspension from the university.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 9327,
+        "end": 13917,
+        "text": "Class Sessions\\nWED, JAN 15\\nIntroduction to Private Equity Funds\\nIn this introductory lecture we will answer the following questions, which will provide\\nthe foundation for our remaining sessions:\\no Why do we have a ‘Private Equity’ industry? Where did it come from and what\\nis its unique role in capital markets? How does it differ from other family run or\\nother private businesses?\\n5\\n\\no What is the structure of the global Leveraged Buyout (LBO) industry? How is\\nthe same and how is it different in major geographies around the world?\\no Where does Private Equity money come from? Why do limited partners invest?\\nWhat are they trying to achieve?\\no Given the above, what are the motivations for a PE investor? Where are they\\nconvergent and divergent vs. their limited partners and financing sources?\\nTUES (Brandeis Monday), JAN 21\\nWhat makes an attractive Private Equity Deal?\\nCase: Hubbardton Forge (A) (via MOODLE)\\n<> Hubbardton Forge LBO model due <>\\nBunker Hill Capital is considering an acquisition of Hubbardton Forge, a lighting\\ncompany. Is Hubbardton Forge a “good business”? What valuation would you put on\\nthe business? What are your primary risks and concerns?\\nWe will introduce the class to ‘LBO math’, using a real LBO deal as an example,\\nanswering the following:\\no What types of businesses make attractive LBO investments and why?\\no How does LBO financing produce such high returns?\\no What are the similarities and differences between an attractive LBO and an\\nattractive corporate M&A transaction?\\nWe will also establish the basic ‘Private Equity Success Formula’ that we will explore in\\nsubsequent classes, using the example of Hubbardton Forge:\\nBuy Right + Add Value + Exit Well = Attractive PE Returns\\nWED, JAN 22\\nJon Ginns, ACON Investments - Guest Speaker\\nMON, JAN 27\\nAdd Value & Growth Equity - Exit or No Exit?\\nCase: Marlin Outdoor (via MOODLE)\\nWe will go over the Marlin Outdoor case == Birmingham Capital has the opportunity to\\ntake a quick gain on its Marlin Outdoor investment. Should it sell now, or hold on for\\nthe hope of a higher return later? Read the case and come to class prepared to discuss.\\n6\\n\\nWED, JAN 29\\nAdd Value Approaches / Strategics\\nWe will explore how private equity funds add value to their portfolio companies,\\ndiscussing:\\no How are PE firms organizing themselves to add value to their portfolios?\\no What are the most important tools that a PE owner will use to add value?\\no How can acquisitions add value to a portfolio company?\\no How do PE firms incent their managers to add value?\\no What governance structures do funds employ to provide oversight to their\\nportfolio company investments?\\nMON, FEB 3\\nHugh MacArthur, Bain & Company PE practice - Guest Speaker\\nWED, FEB 5\\nExit or Add Value?\\nCase: Construction Partners (via MOODLE)\\n<> Construction Partners writeup due <>\\nGuest Speaker: Mike McKay, Bain and Company. CPI has been an awesome\\ninvestment, but – is it time to exit? Or recap? Or IPO? Wow – so many choices!\\nMON, FEB 10\\nBuy and Build / Dividend Recaps\\nThe need to exit and the positioning for exit is a critical difference between a PE buyer\\nand a corporate buyer. We will address the following:\\no What are the major opportunities for exit, and when is each most appropriate?\\no What are the specific things that a private equity owner will do to position a\\nportfolio company for attractive sale?\\no When is the ‘optimal’ time for exit? How do PE funds manage the ongoing\\ntension between ‘declaring victory’ and getting cash back to investors vs.\\ncontinuing to compound capital and hope for a larger payday later?\\n7\\n\\nWhat is a dividend recap, and when is it an appropriate part of an exit strategy?\\nWED, FEB 12\\nRiddhish Rege, JLC Infrastructure - Guest Speaker.\\nMON, FEB 24\\nAlumni Day / Take-private deal presentations\\n<> Full deal proposals due noon, today <>\\nToday, each team will have no more than 7 minutes to present their take-private deal\\nproposal. Use this time efficiently to emphasize what makes this a good deal. Please do\\nnot run over the 7 minute maximum time allotment. Your grade will be reduced if you\\ndo.\\nWED, FEB 26\\nAlumni Day / Take-private deal presentations continued\\nToday we will welcome a few Fin231 alumns who are now working in PE. They will\\nshare their story and you will have an opportunity to ask questions about their work\\nand how they got to where they are.\\nMON, MAR 3\\nVenture Capital\\nCase: ShopKeep - Taking Back Mainstreet through Payments and Points of Sale. (via\\nMOODLE)\\n<> ShopKeep short answers due <>\\nGuest Speaker: Brian Hirsch, Tribeca Venture Capital\\nWED, MAR 5\\nFinal Exam (70 minutes) - in class.",
+        "label": "SCHEDULE"
+      },
+      {
+        "start": 2684,
+        "end": 2907,
+        "text": "Success in this two-credit course is based on the expectation that students will spend a\\nminimum of 9 hours of study time per week in preparation for class (readings, papers,\\nmodeling exercises, preparation for exams, etc.)",
+        "label": "ADMIN"
+      },
+      {
+        "start": 3403,
+        "end": 3705,
+        "text": "Prerequisites: FIN 202a and FIN 212a or equivalents. The course assumes that you\\nhave a working knowledge of accounting and financial ratios. I would strongly urge\\nyou to retake this course at a later date if you do not have a sufficient finance,\\naccounting and financial statement analysis background.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 8140,
+        "end": 8346,
+        "text": "Class Format. Classes will be a mix of lectures, guest speakers and case discussions.\\nGuest speaker classes range in length from 60 to 80 minutes, depending on the\\navailability and schedule of our visitors.",
+        "label": "DESCRIP"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
   }
 ]
