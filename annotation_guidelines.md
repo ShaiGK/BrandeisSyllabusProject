@@ -162,6 +162,11 @@ If a section mixes topics, only select the portion that clearly belongs to the l
 
 **Example:** A paragraph that opens with course objectives (DESCRIP) and then transitions into the grading breakdown (GRADE) — annotate them as two separate spans with their respective labels, not as one combined span.
 
+### Page numbers embedded in the text
+When a syllabus is extracted from a PDF, bare page numbers (e.g., a lone "3" on its own line) often appear in the middle of a section. **Include them inside your span** — do not stop and restart the span around them. These page-number lines are automatically filtered out during data processing, so including them has no effect on the final labels.
+
+**Example:** If a GRADE section runs across pages 4 and 5, select from the first line of the section straight through to the last line, dragging over the "5" that appears between the pages. Do not split it into two separate GRADE spans.
+
 ---
 
 ## 8. Splitting Spans for Different Categories
