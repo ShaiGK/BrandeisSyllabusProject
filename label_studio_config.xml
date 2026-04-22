@@ -4,32 +4,47 @@
   Paste this into: Project Settings > Labeling Interface > Code editor
 -->
 <View>
-    <!-- METADATA HEADER -->
-    <View style="background: #f0f4f8; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-family: monospace; font-size: 14px;">
+    <!-- STICKY LABEL TOOLBAR CSS -->
+    <Style>
+        .sticky-labels {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #ffffff;
+            padding-top: 10px;
+            border-bottom: 2px solid #e5e7eb;
+            margin-bottom: 12px;
+        }
+    </Style>
+
+    <!-- METADATA HEADER (not sticky) -->
+    <View style="background: #f0f4f8; padding: 12px 16px; border-radius: 8px; margin-bottom: 10px; font-family: monospace; font-size: 14px;">
         <Text name="meta" value="$meta_display"/>
     </View>
 
-    <!-- INSTRUCTIONS REMINDER -->
-    <View style="background: #fffbe6; padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; font-size: 13px; border: 1px solid #ffe58f;">
+    <!-- INSTRUCTIONS REMINDER (not sticky) -->
+    <View style="background: #fffbe6; padding: 8px 14px; border-radius: 6px; margin-bottom: 10px; font-size: 13px; border: 1px solid #ffe58f;">
         <Header value="Highlight spans of text and assign a label. Annotate based on meaning, not formatting."
                 size="5"/>
     </View>
 
-    <!-- LABELS + TEXT -->
-    <Labels name="label" toName="text">
-        <Label value="ACCOM" background="#8B5CF6"/>
-        <Label value="ATTEND" background="#3B82F6"/>
-        <Label value="GRADE" background="#10B981"/>
-        <Label value="ASSIGN" background="#F59E0B"/>
-        <Label value="MATERIAL" background="#6366F1"/>
-        <Label value="INTEGRITY" background="#EC4899"/>
-        <Label value="SCHEDULE" background="#F97316"/>
-        <Label value="CONDUCT" background="#64748B"/>
-        <Label value="DESCRIP" background="#06B6D4"/>
-        <Label value="ADMIN" background="#FFA39E"/>
-        <Label value="CTF" background="#D4380D"/>
-        <Label value="LATE" background="#FFC069"/>
-    </Labels>
+    <!-- STICKY LABELS ONLY -->
+    <View className="sticky-labels">
+        <Labels name="label" toName="text">
+            <Label value="ACCOM" background="#8B5CF6"/>
+            <Label value="ADMIN" background="#FFA39E"/>
+            <Label value="ASSIGN" background="#F59E0B"/>
+            <Label value="ATTEND" background="#3B82F6"/>
+            <Label value="CONDUCT" background="#64748B"/>
+            <Label value="CTF" background="#D4380D"/>
+            <Label value="DESCRIP" background="#06B6D4"/>
+            <Label value="GRADE" background="#10B981"/>
+            <Label value="INTEGRITY" background="#EC4899"/>
+            <Label value="LATE" background="#FFC069"/>
+            <Label value="MATERIAL" background="#6366F1"/>
+            <Label value="SCHEDULE" background="#F97316"/>
+        </Labels>
+    </View>
 
     <Text name="text" value="$text" granularity="word"/>
 
