@@ -28,7 +28,6 @@ Output:
   results/crf_confusion_matrix.png
 
 Run:
-  pip install sklearn-crfsuite scikit-learn joblib matplotlib seaborn
   python train_crf.py
 """
 
