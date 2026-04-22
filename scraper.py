@@ -21,8 +21,9 @@ import config
 def get_session():
     """Create a requests session with the user's Moodle cookie."""
     if not config.MOODLE_SESSION_COOKIE:
-        print("ERROR: You need to set MOODLE_SESSION_COOKIE in config.py")
-        print("See the instructions in config.py for how to get it.")
+        print("ERROR: MOODLE_SESSION_COOKIE is not set.")
+        print("Create a .env file (copy .env.example) and add your cookie value there.")
+        print("See the README for step-by-step instructions.")
         exit(1)
 
     session = requests.Session()

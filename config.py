@@ -2,18 +2,28 @@
 Configuration for the Brandeis Moodle Syllabus Scraper.
 
 INSTRUCTIONS:
-1. Log into moodle.brandeis.edu in your browser
-2. Open DevTools (F12 or right-click → Inspect)
-3. Go to the "Application" tab (Chrome) or "Storage" tab (Firefox)
-4. Under "Cookies" → click on "https://moodle.brandeis.edu"
-5. Find the cookie named "MoodleSession" and copy its Value
-6. Paste it below between the quotes
+1. Copy .env.example to .env  (it is gitignored — never commit it)
+2. Log into moodle.brandeis.edu in your browser
+3. Open DevTools (F12 or right-click → Inspect)
+4. Go to the "Application" tab (Chrome) or "Storage" tab (Firefox)
+5. Under "Cookies" → click on "https://moodle.brandeis.edu"
+6. Find the cookie named "MoodleSession" and copy its Value
+7. Paste it as the value of MOODLE_SESSION_COOKIE in your .env file
 """
+
+import os
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed; fall back to reading os.environ directly
 
 # ============================================================
 # REQUIRED: Your MoodleSession cookie value
+# Set this in a .env file (see .env.example) — never in code.
 # ============================================================
-MOODLE_SESSION_COOKIE = ""
+MOODLE_SESSION_COOKIE = os.environ.get("MOODLE_SESSION_COOKIE", "")
 
 # ============================================================
 # SCRAPING OPTIONS

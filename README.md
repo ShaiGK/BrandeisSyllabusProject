@@ -98,13 +98,21 @@ You need to give the script your login cookie so it can access Moodle as you.
 
 ### 2. Configure
 
-Open `config.py` and paste your cookie value:
+Copy the example env file and paste your cookie into it:
 
-```python
-MOODLE_SESSION_COOKIE = "paste_your_cookie_value_here"
+```bash
+cp .env.example .env
 ```
 
-Which semesters to scrape is also configured in `config.py` — no need to change unless you're a group member adjusting
+Then open `.env` and replace the placeholder with your cookie:
+
+```
+MOODLE_SESSION_COOKIE=your_actual_cookie_value_here
+```
+
+`.env` is listed in `.gitignore` — it will never be committed. Do not paste the cookie anywhere else.
+
+Which semesters to scrape is configured in `config.py` — no need to change unless you're a group member adjusting
 the data scope.
 
 ### 3. Run the scraper
@@ -123,7 +131,7 @@ deduplicates across semesters by course title and instructor name.
   grab a fresh cookie from your browser.
 - **Be respectful**: The default delay is 0.5 seconds between requests. Don't lower this — Moodle is a shared resource
   for the whole university.
-- **Don't commit your cookie**: Clear the cookie value from `config.py` before pushing, or move it to a `.env` file.
+- **Don't commit your cookie**: Keep it in `.env` only — it is gitignored. Never paste it into `config.py` or any other tracked file.
 
 ---
 
