@@ -17,4 +17,7 @@ Thumbs.db
 
 label_studio_tasks.json
 .annotate_config.json
+
+# Generated data and model weights (reproducible from annotations/ + code)
 data/
+models/
