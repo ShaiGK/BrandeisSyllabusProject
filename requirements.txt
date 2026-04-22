@@ -12,3 +12,4 @@ seaborn
 joblib
 numpy
 scikit-learn
+accelerate>=1.1.0
