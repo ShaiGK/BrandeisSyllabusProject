@@ -16,7 +16,6 @@ Hyperparameter grid (evaluated on dev macro F1):
   weight_decay   : [0.0, 0.01, 0.1]
 
 Run on GPU (Colab recommended):
-  pip install transformers datasets torch scikit-learn
   python train_roberta.py
 
 To run a quick smoke-test on CPU (small subset, fewer HP combos):
@@ -28,6 +27,7 @@ import itertools
 import json
 import os
 import sys
+import tempfile
 from collections import defaultdict
 
 import numpy as np
@@ -156,7 +156,7 @@ def save_embeddings(split_name, cls_emb, logits, labels, doc_ids):
 # ── Single training run ────────────────────────────────────────────────────────
 
 def run_training(train_dataset, dev_dataset, lr, epochs, batch_size,
-                 warmup_ratio, weight_decay, output_dir, seed=42):
+                 warmup_ratio, weight_decay, seed=42):
     model = AutoModelForSequenceClassification.from_pretrained(
         MODEL_NAME,
         num_labels=len(LABELS),
@@ -165,42 +165,49 @@ def run_training(train_dataset, dev_dataset, lr, epochs, batch_size,
         ignore_mismatched_sizes=True,
     )
 
-    args = TrainingArguments(
-        output_dir=output_dir,
-        num_train_epochs=epochs,
-        per_device_train_batch_size=batch_size,
-        per_device_eval_batch_size=64,
-        learning_rate=lr,
-        warmup_ratio=warmup_ratio,
-        weight_decay=weight_decay,
-        eval_strategy="epoch",
-        save_strategy="epoch",
-        load_best_model_at_end=True,
-        metric_for_best_model="macro_f1",
-        greater_is_better=True,
-        seed=seed,
-        logging_steps=50,
-        fp16=torch.cuda.is_available(),
-        report_to="none",
-        dataloader_num_workers=0,
-    )
+    # Use a temp directory for checkpoints so they are automatically cleaned up.
+    # load_best_model_at_end=True needs checkpoints on disk during the run, but
+    # we don't want to keep 225 × 10 epochs worth of 500MB RoBERTa checkpoints.
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        train_args = TrainingArguments(
+            output_dir=tmp_dir,
+            num_train_epochs=epochs,
+            per_device_train_batch_size=batch_size,
+            per_device_eval_batch_size=64,
+            learning_rate=lr,
+            warmup_ratio=warmup_ratio,
+            weight_decay=weight_decay,
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+            metric_for_best_model="macro_f1",
+            greater_is_better=True,
+            seed=seed,
+            logging_steps=50,
+            fp16=torch.cuda.is_available(),
+            report_to="none",
+            dataloader_num_workers=0,
+        )
 
-    trainer = Trainer(
-        model=model,
-        args=args,
-        train_dataset=train_dataset,
-        eval_dataset=dev_dataset,
-        compute_metrics=hf_compute_metrics,
-        callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
-    )
-    trainer.train()
+        trainer = Trainer(
+            model=model,
+            args=train_args,
+            train_dataset=train_dataset,
+            eval_dataset=dev_dataset,
+            compute_metrics=hf_compute_metrics,
+            callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
+        )
+        trainer.train()
 
-    # Return best dev macro_f1 from trainer log history
-    best_f1 = max(
-        (log["eval_macro_f1"] for log in trainer.state.log_history if "eval_macro_f1" in log),
-        default=0.0,
-    )
-    return trainer.model, best_f1
+        # Read best dev F1 before the temp dir is deleted
+        best_f1 = max(
+            (log["eval_macro_f1"] for log in trainer.state.log_history if "eval_macro_f1" in log),
+            default=0.0,
+        )
+        best_model = trainer.model
+    # tmp_dir and all checkpoints are deleted here automatically
+
+    return best_model, best_f1
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -274,7 +281,6 @@ def main():
     search_log  = []
 
     for i, (lr, epochs, bs, wr, wd) in enumerate(combos, 1):
-        run_dir = f"models/roberta_hp_runs/run_{i}"
         print(f"  [{i:>3}/{len(combos)}] lr={lr}  epochs={epochs}  batch={bs}"
               f"  warmup={wr}  wd={wd}")
 
@@ -282,7 +288,6 @@ def main():
             train_dataset, dev_dataset,
             lr=lr, epochs=epochs, batch_size=bs,
             warmup_ratio=wr, weight_decay=wd,
-            output_dir=run_dir,
         )
 
         params = {"lr": lr, "epochs": epochs, "batch_size": bs,

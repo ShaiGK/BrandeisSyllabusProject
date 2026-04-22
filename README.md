@@ -294,10 +294,10 @@ Loads the pre-saved RoBERTa logits and trains a CRF transition matrix on top usi
 
 All three models write their test-set metrics to `results/` as JSON files and save confusion matrix PNGs. A summary of the comparison:
 
-| Model | What it captures |
-|---|---|
-| CRF | Keyword features + label transitions, no neural language model |
-| RoBERTa | Pre-trained language understanding, each line classified independently |
+| Model         | What it captures                                                       |
+|---------------|------------------------------------------------------------------------|
+| CRF           | Keyword features + label transitions, no neural language model         |
+| RoBERTa       | Pre-trained language understanding, each line classified independently |
 | RoBERTa + CRF | Pre-trained language understanding + learned label transition patterns |
 
 ---
