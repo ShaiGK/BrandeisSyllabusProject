@@ -179,6 +179,7 @@ def run_training(train_dataset, dev_dataset, lr, epochs, batch_size,
             weight_decay=weight_decay,
             eval_strategy="epoch",
             save_strategy="epoch",
+            save_total_limit=1,        # keep only the latest checkpoint → caps disk use to ~1 GB
             load_best_model_at_end=True,
             metric_for_best_model="macro_f1",
             greater_is_better=True,
