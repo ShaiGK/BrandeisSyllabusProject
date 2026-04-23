@@ -192,6 +192,16 @@ This will:
 In Label Studio, click **Label All Tasks** to start. For each syllabus, highlight spans of text and assign labels from
 the toolbar (ACCOM, ATTEND, GRADE, etc.). Click **Submit** after each document.
 
+### Annotate for IAA
+
+```bash
+python annotate.py start --iaa
+```
+
+This will load a predefined set of syllabuses that each annotator will annotate so that inter-annotator agreement can be computed.
+
+**Make sure this is done.**
+
 ### Finish a session
 
 When you're done, go back to your terminal and run:
