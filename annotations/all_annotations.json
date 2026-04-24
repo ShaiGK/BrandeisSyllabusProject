@@ -6526,5 +6526,635 @@
     ],
     "validity": "Valid",
     "notes": ""
+  },
+  {
+    "doc_id": "251FIN 231F 1 Private Equity Philippe Wells",
+    "semester": "Spring Semester 2025 (251)",
+    "school": "International Business School",
+    "department": "Finance",
+    "course_name": "251FIN 231F 1 Private Equity Philippe Wells",
+    "annotator": "sam",
+    "spans": [
+      {
+        "start": 0,
+        "end": 1062,
+        "text": "FIN 231F\\nBrandeis University\\nInternational Business School\\nPRIVATE EQUITY\\nCOURSE SYLLABUS\\nSpring 2025\\nClass Hours: Mon/Wed, 5:40 - 7:00 p.m.\\nGuest speaker classes range in length from 60 to 80 minutes,\\ndepending on the availability and calendar of our visitors.\\nLocation International Hall (Sacchar 116)\\n(& Zoom Link): Remote speakers will join us via Zoom (check LATTE) at\\nhttps://brandeis.zoom.us/j/95360953634\\nOffice Hours: Schedule with calendly.com/philippewells (use the calendly.com\\nlink for both in person and Zoom office hours)\\n● Tuesdays (Zoom or in-person), 2:00 p.m. - 3:00 p.m.\\n● Fridays (Zoom only), 9:00 a.m. - 11:00 a.m.\\nTuesdays are either in-person or via Zoom, depending on what\\nworks best for you. Friday office hours are all via Zoom.\\nPlease email me if you need to schedule a different time.\\nOffice Location Lemberg 253\\n(& Zoom Link): https://brandeis.zoom.us/j/94408813875 (for remote office hours)\\nTA Usho Manzawa - umanzawa@brandeis.edu\\nPhilippe Wells\\nProfessor of the Practice, Entrepreneurial Finance\\n(617) 721-6733\\npwells@brandeis.edu",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1066,
+        "end": 2907,
+        "text": "Overview of the Course\\nPrivate equity (PE) funds have a sizeable and growing influence on worldwide capital\\nmarkets. In this course, we examine the PE industry, with a particular focus on the US\\nLeveraged Buyout industry – why has it been so successful at attracting capital, and\\nwhat do firms do to generate returns for themselves and their investors. That includes\\nnot only finance, but also the strategic and operational factors that create a successful\\ninvestment. Topics include:\\n● The Private Equity industry – its history, structure, players and adjacent\\nindustries\\n● What kind of company makes an attractive private equity investment?\\n● How do private equity funds add value to their investments (operational\\nimprovement, management incentives, balance sheet)\\n● What do private equity funds do when ‘things go wrong’?\\n● How do private equity funds create successful exits from their investments?\\nThe course is designed to be relevant not only to students considering a career in\\nprivate equity, but to those in related careers: investment banking, commercial banking,\\nfund placement and line management of leveraged companies.\\nLearning Goals\\nAt the conclusion of this course, the student should be able to understand:\\n● Why has PE become such a major force in global capital markets?\\n● How does the PE industry work?\\n● What are the common themes that define and create PE successes?\\n● What do PE firms do when ‘things go wrong?’\\n● What are the differences and commonalities between leveraged buyouts and\\nventure capital (VC)?\\n● How can I make better lending and investment decisions by thinking like a PE\\npro?\\nSuccess in this two-credit course is based on the expectation that students will spend a\\nminimum of 9 hours of study time per week in preparation for class (readings, papers,\\nmodeling exercises, preparation for exams, etc.)",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 2931,
+        "end": 3308,
+        "text": "Materials:\\nThe case studies in this course are all provided for free on LATTE. In addition to class\\ndiscussions and case study preparation, students are required to complete the Wall\\nStreet Prep LBO modeling modules. The Wall Street Prep materials cost $100. You can\\nsign up using\\nhttps://gv142.infusionsoft.com/app/manageCart/addProduct?productId=8021\\n[gv142.infusionsoft.com]",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 3309,
+        "end": 3705,
+        "text": "The final exam for the course is a modeling exercise based on the Wall Street Prep\\nmaterials.\\nPrerequisites: FIN 202a and FIN 212a or equivalents. The course assumes that you\\nhave a working knowledge of accounting and financial ratios. I would strongly urge\\nyou to retake this course at a later date if you do not have a sufficient finance,\\naccounting and financial statement analysis background.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 3706,
+        "end": 4176,
+        "text": "Class Participation: Class participation is expected of everyone in this course, and\\nsynchronous class attendance is required. If you have obligations that will require you\\nto miss more than one class during the term, you should not enroll in this class. You are\\npermitted one absence for no reason (i.e. it does not need to be excused) and your TA\\nand I will keep a record of class participation. Value will be placed on the quality, not\\nthe quantity, of your comments.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 4177,
+        "end": 4267,
+        "text": "Perfect attendance but no participation receives a grade of “C+“ toward the overall\\ngrade.",
+        "label": "GRADE"
+      },
+      {
+        "start": 4268,
+        "end": 4774,
+        "text": "Contributions during Guest Speaker Sessions : You will be expected to ask relevant\\nquestions during the guest speaker sessions. Please come prepared with questions in\\nadvance (so you are ready to ask something if I prompt you). Also, during the session,\\nthink of questions that relate to what the speaker is sharing.\\nValue will be placed on the quality, not the quantity, of your questions/contributions.\\nGrading in each speaker session is based on your best contribution for the day and is\\nnot cumulative.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 4775,
+        "end": 4846,
+        "text": "Short Assignments: All written assignments must be submitted on MOODLE.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 4847,
+        "end": 5098,
+        "text": "Individual assignments are to be completed with NO OUTSIDE ASSISTANCE – no data\\nsources beyond what is provided in the case, no discussion with current or former class\\nmembers – if you have questions or need help, you should talk to me or the TA only.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 5099,
+        "end": 5422,
+        "text": "Short assignment answers will be graded on a three point scale with 0.5 points awarded\\nfor an incomplete answer, 1 point for a basic answer, 2 points for a good\\nanalysis/response, and 3 points for an excellent analysis/response (this is rare). A score\\nof 2 points across all questions translates into a 93 on a point scale.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 5426,
+        "end": 6025,
+        "text": "Special Accommodation. Brandeis seeks to welcome and include all students. If you\\nare a student who needs accommodations as outlined in an accommodations letter,\\nplease talk with me and present your letter of accommodation as soon as you can. I\\nwant to support you. In order to provide test accommodations, I need the letter more\\nthan 72 hours in advance. I want to provide your accommodations, but cannot do so\\nretroactively. If you have questions about documenting a disability or requesting\\naccommodations, please contact Student Accessibility Support (SAS) at 781-736-3470 or\\naccess@brandeis.edu",
+        "label": "ACCOM"
+      },
+      {
+        "start": 6026,
+        "end": 6194,
+        "text": "Final Exam: This course will have a 70 minute final exam, which will take place in class\\non Tuesday, Oct 11. The final exam incorporates the Wall Street Prep materials.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 6195,
+        "end": 6506,
+        "text": "Grading\\n● Class Participation INDIVIDUAL 25%\\n● Guest Speaker session contributions INDIVIDUAL 20%\\n● Take-private deal proposal & pitch GROUP 20%\\n● Final Exam INDIVIDUAL 20%\\nShort Assignments:\\n● Hubbardton Forge LBO model INDIVIDUAL 5%\\n● Construction Partners INDIVIDUAL 5%\\n● ShopKeep short answers INDIVIDUAL 5%",
+        "label": "GRADE"
+      },
+      {
+        "start": 8140,
+        "end": 8346,
+        "text": "Class Format. Classes will be a mix of lectures, guest speakers and case discussions.\\nGuest speaker classes range in length from 60 to 80 minutes, depending on the\\navailability and schedule of our visitors.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 8347,
+        "end": 9326,
+        "text": "Academic Honesty. You are expected to be honest in all of your academic work. Please\\nconsult Brandeis University Rights and Responsibilities for all policies and procedures\\nrelated to academic integrity. Students are required to submit work to TurnItIn.com\\nsoftware to verify originality. Citation and research assistance can be found at LTS -\\nLibrary guides.\\nUnder no circumstance may you search the internet for answers or background material\\nto help you prepare case based assignments. You are not allowed to discuss the case\\nwith current or former students with the exception of your teammates on team\\nassignments (or turn to any other outside source) for any information regarding these\\ncases without my permission. Failure to comply with this directive is cheating and\\nwill result in your violation being forwarded to the Brandeis University Director of\\nAcademic Integrity. Sanctions for academic dishonesty can include failing grades\\nand/or suspension from the university.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 6507,
+        "end": 8139,
+        "text": "Take-private deal proposal & short pitch. In recent years, Private Equity firms have\\nincreasingly turned to public markets as a deal source. Rather than buying companies in\\nthe private market, they instead choose to take a public company private. In 2022, for\\ninstance, Vista Equity Partners and Elliott Management teamed up to acquire\\ncloud-computing company Citrix Systems. This short pitch will be graded as part of\\nyour take-private deal proposal.\\nFor this assignment you will be assigned (by Tues, Jan 30) to a team of 4-6 students.\\nYour team is required to put together a pitch deck presenting a take-private deal\\nproposal to the investment committee at your private equity firm. The deck should\\ninclude approximately 12 - 18 slides (plus appendix materials if needed). Include the\\nfollowing points:\\n● Company to be acquired and acquisition price range\\n● Industry overview\\n○ What makes this industry attractive for PE?\\n○ Competitor analysis\\n○ Industry trends\\n○ Drivers, Risks\\n● Comparable deals (comps), if applicable\\n● Value creation strategy/Deal Thesis\\n○ There are many different ways to create value. What makes most sense\\nhere?\\n4\\n\\n■ Are there any comparables, i.e. other companies that have pursued\\nsimilar or related strategies? Other PE deals in this sector that you\\nthink provide guideposts for what can be done?\\n● Exit strategy\\n● LBO model with assumptions\\n● MOIC and IRR calculations\\nYour team will also prepare a no more than 7\\nminute pitch to present in class. You can designate two team members to present.\\nChoose 3-5 slides from your full pitch deck to present the highlights and key points\\nunderlying your idea.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 9327,
+        "end": 13917,
+        "text": "Class Sessions\\nWED, JAN 15\\nIntroduction to Private Equity Funds\\nIn this introductory lecture we will answer the following questions, which will provide\\nthe foundation for our remaining sessions:\\no Why do we have a ‘Private Equity’ industry? Where did it come from and what\\nis its unique role in capital markets? How does it differ from other family run or\\nother private businesses?\\n5\\n\\no What is the structure of the global Leveraged Buyout (LBO) industry? How is\\nthe same and how is it different in major geographies around the world?\\no Where does Private Equity money come from? Why do limited partners invest?\\nWhat are they trying to achieve?\\no Given the above, what are the motivations for a PE investor? Where are they\\nconvergent and divergent vs. their limited partners and financing sources?\\nTUES (Brandeis Monday), JAN 21\\nWhat makes an attractive Private Equity Deal?\\nCase: Hubbardton Forge (A) (via MOODLE)\\n<> Hubbardton Forge LBO model due <>\\nBunker Hill Capital is considering an acquisition of Hubbardton Forge, a lighting\\ncompany. Is Hubbardton Forge a “good business”? What valuation would you put on\\nthe business? What are your primary risks and concerns?\\nWe will introduce the class to ‘LBO math’, using a real LBO deal as an example,\\nanswering the following:\\no What types of businesses make attractive LBO investments and why?\\no How does LBO financing produce such high returns?\\no What are the similarities and differences between an attractive LBO and an\\nattractive corporate M&A transaction?\\nWe will also establish the basic ‘Private Equity Success Formula’ that we will explore in\\nsubsequent classes, using the example of Hubbardton Forge:\\nBuy Right + Add Value + Exit Well = Attractive PE Returns\\nWED, JAN 22\\nJon Ginns, ACON Investments - Guest Speaker\\nMON, JAN 27\\nAdd Value & Growth Equity - Exit or No Exit?\\nCase: Marlin Outdoor (via MOODLE)\\nWe will go over the Marlin Outdoor case == Birmingham Capital has the opportunity to\\ntake a quick gain on its Marlin Outdoor investment. Should it sell now, or hold on for\\nthe hope of a higher return later? Read the case and come to class prepared to discuss.\\n6\\n\\nWED, JAN 29\\nAdd Value Approaches / Strategics\\nWe will explore how private equity funds add value to their portfolio companies,\\ndiscussing:\\no How are PE firms organizing themselves to add value to their portfolios?\\no What are the most important tools that a PE owner will use to add value?\\no How can acquisitions add value to a portfolio company?\\no How do PE firms incent their managers to add value?\\no What governance structures do funds employ to provide oversight to their\\nportfolio company investments?\\nMON, FEB 3\\nHugh MacArthur, Bain & Company PE practice - Guest Speaker\\nWED, FEB 5\\nExit or Add Value?\\nCase: Construction Partners (via MOODLE)\\n<> Construction Partners writeup due <>\\nGuest Speaker: Mike McKay, Bain and Company. CPI has been an awesome\\ninvestment, but – is it time to exit? Or recap? Or IPO? Wow – so many choices!\\nMON, FEB 10\\nBuy and Build / Dividend Recaps\\nThe need to exit and the positioning for exit is a critical difference between a PE buyer\\nand a corporate buyer. We will address the following:\\no What are the major opportunities for exit, and when is each most appropriate?\\no What are the specific things that a private equity owner will do to position a\\nportfolio company for attractive sale?\\no When is the ‘optimal’ time for exit? How do PE funds manage the ongoing\\ntension between ‘declaring victory’ and getting cash back to investors vs.\\ncontinuing to compound capital and hope for a larger payday later?\\n7\\n\\nWhat is a dividend recap, and when is it an appropriate part of an exit strategy?\\nWED, FEB 12\\nRiddhish Rege, JLC Infrastructure - Guest Speaker.\\nMON, FEB 24\\nAlumni Day / Take-private deal presentations\\n<> Full deal proposals due noon, today <>\\nToday, each team will have no more than 7 minutes to present their take-private deal\\nproposal. Use this time efficiently to emphasize what makes this a good deal. Please do\\nnot run over the 7 minute maximum time allotment. Your grade will be reduced if you\\ndo.\\nWED, FEB 26\\nAlumni Day / Take-private deal presentations continued\\nToday we will welcome a few Fin231 alumns who are now working in PE. They will\\nshare their story and you will have an opportunity to ask questions about their work\\nand how they got to where they are.\\nMON, MAR 3\\nVenture Capital\\nCase: ShopKeep - Taking Back Mainstreet through Payments and Points of Sale. (via\\nMOODLE)\\n<> ShopKeep short answers due <>\\nGuest Speaker: Brian Hirsch, Tribeca Venture Capital\\nWED, MAR 5\\nFinal Exam (70 minutes) - in class.",
+        "label": "SCHEDULE"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
+  },
+  {
+    "doc_id": "253LING 120B 1 Syntax I Lotus Goldberg",
+    "semester": "Fall Semester 2025 (253)",
+    "school": "College of Arts and Sciences",
+    "department": "Linguistics",
+    "course_name": "253LING 120B 1 Syntax I Lotus Goldberg",
+    "annotator": "sam",
+    "spans": [
+      {
+        "start": 0,
+        "end": 1049,
+        "text": "Fall 2025 Brandeis University\\nLinguistics 120b: Syntax I\\nCourse Information and Syllabus — Wednesday, August 27, 2025\\nNOTE: This course was previously called Syntactic Theory. It has the same content as the prior course.\\nClass Meetings: Mon, Wed, & Thurs, 10:10-11:00am – Volen 119\\nObligatory Recitation: Fridays 2:20-3:40pm – Volen 119\\nThis is an in-person course.\\nInstructor: Lotus Goldberg (she/her) lmgold@brandeis.edu\\nPhone: (781) 736-3265 Mailbox: Volen 261 [Computer Science/Ling Office]\\nOffice: Volen 252\\n• Office hours for the first week of classes:\\n– Thursday, August 28, 1:30-2:30pm (by appointment at calendly.com/lotusgoldberg)\\n– Friday August 29, 10:30-11:30am (drop in; no appointment needed!)\\n• Exceptionally, if you need to join office hours on Zoom, the link is here (Password 873256)\\nand on our Moodle page\\nTeaching Assistant: Dya Acharjee (he/they), acharjee@brandeis.edu\\nGroup Address for Emailing All TA(s) + Prof. Goldberg: syntax-prof-and-tas-group@brandeis.edu\\nRegular Instructor & TA office hours times will be posted soon!",
+        "label": "ADMIN"
+      },
+      {
+        "start": 1050,
+        "end": 2700,
+        "text": "COURSE DESCRIPTION AND OBJECTIVES\\nThis course provides an introduction to the process of syntactic analysis, to generative syntactic theory, and\\nto many major syntactic phenomena of English and other languages. Topics covered include a detailed\\nexamination of the basic clausal architecture, the lexicon, and various types of syntactic movement,\\nfocusing primarily on A-Movement (also called NP Movement)—including passives. We will finish with\\nan examination of a portion of English infinitival structures.\\nEvaluation of work in this course will be primarily through solutions (written up in full prose) to weekly\\nproblem set assignments, some done individually and some done in small groups (read on for details!)—\\nplus longer take-home problem set assignments, done individually, which will serve as the Midterm and\\nFinal Exam. Homework, Midterm, and Final Exam solutions will be evaluated equally on their empirical\\nand analytic content. Both should be laid out fully, explicitly, and clearly, in full-paragraph prose format.\\nWithin the grading for analytic content, equal weight is given to the actual content of the proposal and to\\nthe clarity and logic with which it is motivated and argued for. For full details, see the detailed guidelines\\nhandouts for homework solutions and the sample assignment write-up to be given out during the first few\\nweeks of the term, and which we will refer to and discuss all semester.\\nLearning Goals\\nAs a result of taking this course and fully engaging with the material and required work, students will:\\n• significantly deepen their understanding of the descriptive (rather than prescriptive) approach used in",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 2772,
+        "end": 5761,
+        "text": "linguistics; the sorts of knowledge that speakers have of the syntactic patterns in their native language,\\nusually without being aware of it; the defining empirical traits of English syntax, and of the major\\nsyntactic phenomena of English; major ways in which syntactic structures vary from one language to\\nanother;\\n• attain a solid foundation in the analytic approaches to natural language syntax used in modern\\ngenerative linguistics, including the fundamental tenets and assumptions of Chomskyan generative\\nsyntactic theory (i.e. of generative theories of natural language syntax that use movement);\\n• strengthen and deepen their ability to identify and clearly articulate the patterns and generalizations\\npresent in a given set of syntactic data; to formulate reasonable next questions to ask, or identify the\\nsort of additional examples that would need to be gathered and examined, in order to fully discover\\nthe empirical generalizations present in a set of syntactic data, or to choose between competing\\nhypotheses about the data;\\n• develop and refine the ability to formulate well-reasoned hypotheses and analyses of the facts present\\nin a set of syntactic data; to demonstrate how well a given analysis does or does not work to fully\\ncapture the facts that it aims to explain; to evaluate competing analyses as to which should be chosen\\nas the best account available, in terms of both empirical adequacy and theoretical merits;\\n• improve and deepen their ability to write clearly and concisely, in the scientific style of writing used\\nthroughout linguistics (and in many other scientifically oriented fields)—with prose that is lucid,\\nlogical, careful, precise, and complete, both in laying out its empirical descriptions and in proposing\\nand arguing for an analysis over plausible alternatives; this goal helps the course to satisfy the Writing\\nIntensive requirement for the Linguistics major.\\nThese goals are advanced in all work for the course, and the grading criteria for each assignment are\\ndesigned to provide explicit feedback on each of these goals. This allows students to gradually build up\\ntheir strengths in each area as the semester proceeds.\\nFor only the Computational Linguistics (CL) MS students enrolled in the course, additional learning goals\\ninclude:\\n• attain a general familiarity with how syntactic constructions learned in our class for English work in\\nan array other languages, and with some additional major constructions not studied in the regular part\\nof the course;\\n• begin thinking about some of the basic initial issues involved in implementing a syntactic generator or\\nparser for a natural language such as English in a computer programming language such as Python.\\nAs graduate students, the enrolled CL MS students will have a slightly different workload for the\\nassignments, and will also attend several separate CL MS-only recitation meetings with content specifically\\nfor them. This will be explained at the end of the first recitation meeting.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 5762,
+        "end": 6320,
+        "text": "Credit hours and Workload\\nSuccess in this 4-credit course is based on the expectation that students will spend a minimum of 12 hours\\nof study time per week in preparation for class (going over your notes, working out solutions to the assigned\\nwork, writing these solutions up, etc.). Note that this is just a minimum expectation of outside class time.\\nLike the other linguistics core courses beyond LING 100-Intro to Linguistics, this is a more intensive\\ncourse, and students typically spend a good deal of time on its assigned work: more than in the average",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 6392,
+        "end": 6732,
+        "text": "Brandeis course, and more than in the non-core linguistics courses. It is important to plan for this each\\nweek, and in your other course selections for this semester. Because of this course’s significant and rigorous\\nworkload, it is not recommended for undergraduates to take 5 courses during the semester in which a student\\ntakes Syntax I.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 6733,
+        "end": 7119,
+        "text": "Prerequisites\\nThis course can be taken without completing specific prerequisites. However, for undergraduate students,\\nhaving taken and done well in LING 100–Introduction to Linguistics is strongly recommended. Students\\nwho earned below a B+ or B in LING 100 and/or who struggled with its content will find that Syntax I goes\\nbetter if taken after first completing LING 110-Phonology I.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 7140,
+        "end": 7887,
+        "text": "Course Component Percent of Final Grade\\nIndividual Assignments\\n• 3-4 total Individual Assignments + an Individual re-write of A2 40%\\n• A1 and Rewrite of A2 each count as ½ an assignment\\nAverage Scores from Your Part of Each Group Exercise Assignment\\n10%\\n• 5-6 total Group Exercise Assignments\\nTake-Home Midterm Exam (may have a small in-class component) 25%\\nTake-Home Final Exam (may have a small in-class component) 25%\\nFinal Course Grade 100%\\nAll grades for the course are on a scale of 6 total points, broken down as follows:\\nA range = 5 to 6: C range = 2.5 and up: F = below 1.5\\n5.3 and up: A 3.2 up: C+\\n5.0 up: A- 2.8 up: C\\n2.5 up: C-\\nB range = 3.5 and up:\\n4.5 up: B+ D range = 1.5 and up:\\n4.0 up: B 2.2 up: D+\\n3.5 up: B- 1.8 up: D\\n1.5 up: D-",
+        "label": "GRADE"
+      },
+      {
+        "start": 7888,
+        "end": 8632,
+        "text": "Textbook/Readings, Other Class Materials, the Use of Moodle as Our Class’ Electric Home\\nThere is no textbook nor outside class readings to buy or do, and, as explained below, it is not permitted\\nfor you to find or use any. I will frequently give out handouts (in hard copy form in class and posted on\\nMoodle) that you do need to read and absorb.\\nMoodle will be the electric home for our course: all major course announcements will be posted on Moodle,\\nas well as emailed from Moodle to each individual student. All handouts and assignments will be posted\\nthere. Coursework will be handed in by both uploading it to Moodle and either also uploaded to\\nGradescope, or submitted in hard copy form; the details will be announced for each assignment.",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 8647,
+        "end": 8749,
+        "text": "As noted above, there will be roughly one problem set due each week. We will then solve the assignment\\n",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 8821,
+        "end": 9346,
+        "text": "together in class on the day due (generally on Wednesdays and Thursdays, for work due on a Wednesday),\\ndecide on the best analysis of the data, and add that to a working class model of English syntax that we\\ngradually build up over the course of the term. You will then get the next assignment generally on\\nThursdays (again with possible adjustments on weeks with holidays), and typically have 6 days to solve\\nit—nearly a full week. Explicit guidelines on how to do these assignment write-ups will be given out as\\nwe proceed.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 9347,
+        "end": 9828,
+        "text": "When to Hand in Assignments\\nAll assigned work is due at the start of class on its due date. No late work is accepted, since we will\\ndiscuss the content of the assignment in class on the day it is handed in. You are responsible for submitting\\nall assigned work by the due date and time, even if you are not in class that day, or arrive late. Please\\ncontact me before an assignment is due if illness or other extraordinary circumstances prevent you from\\nhanding in your work on time.",
+        "label": "LATE"
+      },
+      {
+        "start": 9829,
+        "end": 10442,
+        "text": "A note for those with accommodations for limited extensions on assignment deadlines: for nearly all of the\\nassigned work in this course, the Student Accessibility Services office has explained that this\\naccommodation unfortunately does not apply, since nearly all are solved in class the day they are handed\\nin (and additionally, for the Group Exercise Assignments, since they are done as a group). The one\\nassignment for which this accommodation can be used is the Rewrite of Assignment 2, since it involves a\\nproblem set that we will have already solved as a class. Please let me know if you have any questions.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 10443,
+        "end": 10846,
+        "text": "Students who have time conflicts or delays due to religious observance, significant obligations to care for\\nfamily, student athletics, or have other significant personal issues are encouraged to contact me as soon as\\nthey see a problem. However, the fact that there will be at least 6 days to complete each full assignment\\nwill generally still give enough time to complete work, by planning accordingly.",
+        "label": "LATE"
+      },
+      {
+        "start": 10847,
+        "end": 12272,
+        "text": "Take-Home Midterm and Final Exams\\nThere will be a take-home Midterm Exam between half-way and two-thirds of the way through the course,\\nand a take-home Final Exam due during Finals Week. Both may have a short in-class component, and will\\ninvolve slightly longer problem sets than the usual assignments, but be solved and written up in the same\\nfashion. Therefore, the best ways to prepare for these exams and do well on them involve the same\\nthings that will allow you to well in the course overall.\\nMain Recommendations for Doing Well in All Work for the Course\\n• keep up with the regular group and individual assignments in the course;\\n• carefully read any associated handouts;\\n• follow along with the class discussion of each assignment;\\n• carefully read the grading feedback we give you on each assignment;\\n• come to office hours when you have questions or need to better understand any of the above;\\n• incorporate what you learn into your future work, so that your skills and understanding grow and\\ndevelop as the course proceeds.\\nSubmitting Work\\nUnless stated otherwise, each piece of assigned work is due at the start of class the day it is due (or other\\nstated deadline, if not due on a day when class or recitation meets), in two forms:\\n• Moodle submission is required for all assigned work (both group and individual)\\n• Additionally, it is required to submit the assignment either on Gradescope or as a hard copy. I",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 12344,
+        "end": 12418,
+        "text": "will let you know on each assignment handout which of the two is required.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 24091,
+        "end": 26032,
+        "text": "Week of Topics Covered (Dates Subject to Change) Work Due\\n1. Wed Aug 27 Grammaticality and ungrammaticality; non-standard,\\ninformal, ambiguous, and semantically bizarre sentences; the\\nIndividual A1\\n2. Mon Sept 1 concept of a formal grammar – what it does (and doesn't) aim\\n(Mon Sept 2=Off for Labor Day) to capture, and its basic workings; trees\\n3. Mon Sept 8 Empirical vs. explanatory adequacy; constituency and tests\\nfor it; establishing a basic system of phrase structure;\\nGroup Ex 1,\\npossessives; establishing a foundation in best practices for\\nIndividual A2\\nsyntactic writing (and linguistic writing more broadly) to be\\n4. Mon Sept 15\\nused in assigned work write-ups\\n5. Mon Sept 22\\n(Tu-W Sept 23-24=Off for Rosh Hashanah)\\nIndividual A2\\nThe distinction between complements and adjuncts; the\\n6. Mon Sept 29 Rewrite,\\n(W-Th Oct 1-2=Off for Yom Kippur) lexicon and subcategorization; X’-Theory\\nGroup Ex 2\\n7. Mon Oct 6\\n(Tu Oct 7=Off for 1st Day of Sukkot)\\n8. Mon Oct 13\\n(M=Off for Indigenous Peoples Day; The auxiliary system; VP Ellipsis and constituency; more on Individual A3,\\nTu=Off for Shmini Atzeret;\\nTh=Off for Brandeis Tues) subcategorization and the architecture of the clause Group Ex 3\\n9. Mon Oct 20\\n10. Mon Oct 27 Individual A4,\\nYes-No Questions; Wh-Questions\\n11. Mon Nov 3 Group Ex 4\\n12. Mon Nov 10 Midterm\\nPassive; θ (Semantic)-Roles; expletive it subjects\\n(Individual)\\n13. Mon Nov 17\\n14. Mon Nov 24\\n(W,Th,F Nov 26-28=Off for\\nThanksgiving) Group Ex 5\\nInfinitival structures and related clause types; even more on\\n15. Mon Dec 1 (if time, Group\\nθ-Roles and the lexicon\\nEx 6)\\n16. Mon Dec 8\\n(Thurs Dec 11=\\nLast Day of Classes)\\n• Take-home portion of Final Exam is due tentatively Fri Dec Final Exam\\n16, 11:59pm (Individual)\\nFinals Week\\n• There will most likely be an in-class portion of the Final\\n(Thurs Dec 15-Fri Dec 22)\\nExam held during our Final Exam slot in the Registrar’s\\nFinal Exam schedule, so be sure to be in town for it!",
+        "label": "SCHEDULE"
+      },
+      {
+        "start": 22324,
+        "end": 24010,
+        "text": "Laptops and Other Electronic Devices\\nIt is very important to me that students who come to course meetings be able to be here—or watch a\\nrecording—with full presence and attention, engaging as fully as possible with the class material and\\ndiscussions. Therefore, there is a strict policy that no laptops, phones, tablets, or other electronic devices\\nare allowed to be open or used during class, with the exception of tablets used solely for taking notes.\\nDevices used to take notes cannot be used for any other purpose. No apps are allowed to be open\\nother than the one being used to take notes. It is crucial to draw many syntactic trees in your notes, and\\nso being able to use a stylus if taking notes electronically is very helpful; typing does not work well.\\nAbsolutely no web browsing, texting, or other device use is allowed during class, with no exceptions.\\nIf you watch any class recordings, I also strongly recommend that you keep all programs and apps closed\\nbesides what you use to watch the recording, have no other tabs or windows open in that program/app, and\\ntake notes as you watch. This will allow you to absorb the content with greatest success.\\nOne reason why taking notes by hand is so important in this course is that the detailed tree representations\\nof syntactic structures that we will be drawing all semester are done much faster and more accurately by\\nhand, and the exercise of drawing them by hand greatly speeds up and deepens your ability to understand\\nthese structures. For this reason, drawing the trees in your assignment by hand (and despite typing the prose\\nin your assignments), rather than generating them electronically, is also strongly recommended.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 20213,
+        "end": 21779,
+        "text": "I am interested in your solution, and the thought process that went in to it.\\nYou are expected to be familiar with and follow the University’s policies on academic integrity. You are\\nexpected to be honest in all of your academic work. Please consult Brandeis University Rights and\\nResponsibilities for all policies and procedures related to academic integrity. Allegations of alleged\\nacademic dishonesty will be forwarded to Student Rights and Community Standards. Sanctions for\\nacademic dishonesty can include failing grades and/or suspension or withdrawal from the\\nuniversity. Citation and research assistance can be found on the library website, but you will not cite work\\nsince NO accessing of outside resources is allowed. If you have any questions about Brandeis’ rules, please\\ncontact Alex Rossett (arossett@brandeis.edu), Assistant Dean, Student Rights and Community Standards.\\nAssignments must all be submitted to Compilatio software, to verify originality.\\nAbsolutely No Use of ChatGPT or Any Other Language Generation Tools or Methods Allowed\\nThis course’s Learning Goals include developing and refining your ability to write scientifically. Therefore,\\nall writing handed in must be your own, devised and carried out solely by you, from start to finish. The use\\nof any tools to create your work is strictly prohibited, severely violates the Brandeis academic integrity\\npolicy, and will be forwarded to Student Rights and Community Standards. Such use also deprives you of\\nthe learning opportunity to improve your writing abilities that this course offers.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 21780,
+        "end": 22323,
+        "text": "Seeking Support at Brandeis beyond Our Course\\nBrandeis University is committed to supporting all of our students so that they can thrive. Resources are\\navailable to help with the many academic and non-academic factors that contribute to student success,\\nincluding finances, health, food supply, housing, mental health counseling, academic advising, and physical\\nand social activities. Please consult the Support at Brandeis webpage to find out more about the resources\\nthat Brandeis provides to help you and your classmates to achieve success.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 17855,
+        "end": 19097,
+        "text": "Accommodations\\nBrandeis seeks to create a learning environment that is welcoming and inclusive of all students, and I want\\nto support you in your learning. If you think you may require disability accommodations, you will need to\\nwork with Student Accessibility Support (SAS). You can contact them at 781-736-3470, email them\\nat access@brandeis.edu, or visit the Student Accessibility Support home page. You can find helpful student\\nFAQs and other resources on the SAS website, including guidance on how to know whether you might be\\neligible for support from SAS.\\nIf you already have an accommodation letter from SAS, please provide me with a copy as soon as you can\\nso that I can ensure effective implementation of accommodations for this class. In order to coordinate exam\\naccommodations, ideally you should provide the accommodation letter at least 48 hours before an exam.\\nAgain, as noted in the Assigned Work section above, accommodations for limited extensions on assignment\\ndeadlines can only be used in this course on the Rewrite of Assignment 2 and the Final Exam, since all\\nother assigned work involves a problem set that will be solved in class the day it’s due (and the Group\\nExercise Assignments, furthermore, involve group work).",
+        "label": "ACCOM"
+      },
+      {
+        "start": 19098,
+        "end": 20141,
+        "text": "Academic Integrity and Plagiarism\\nAs in some other Brandeis linguistics courses, you are allowed (and encouraged) to work on Individual\\nAssignments with other students in our class. If you do this, you must list their name(s) at the top of your\\nassignment, and you must then leave the group, and plan out and write up your answer entirely on your\\nown, all in your own words, in full adherence to the Brandeis policies on academic integrity.\\nThis means that it is not permitted to share—whether by hard copy or electronically, e.g. via email or\\nFacebook—any portion of your written-up assignment or assignment draft with any other student(s).\\nHanding in work as your own that has been reworded from the work of another student is a violation of\\nacademic honesty, and is not permitted. In this course, you are also not permitted to consult outside\\nbooks, readings, websites, or students outside our class for any reason whatsoever, including\\nregarding assigned work. I take violations of this policy very seriously. For each homework assignment,",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 16306,
+        "end": 17805,
+        "text": "listing of all office hour times, locations, and Zoom links can always be found at the top of our Moodle\\nhomepage.\\nContacting Us and Getting Help\\nThe best way to contact us is either by dropping in to any office hour (no appointment needed!), or by\\nwriting to our single group email for Prof. Goldberg and the TA(s), syntax-prof-and-tas-\\ngroup@brandeis.edu, which you can always find at the top of this handout and our Moodle page. We will\\naim to reply to all emails that arrive during the week within one business day, i.e. 24 hours. For emails that\\narrive Friday nights, over the weekend, or on holidays, we will do our best to reply as soon as we can, but\\nat the latest these will receive a reply on Monday or whatever day we return from the holiday. Emails sent\\nat night will not receive a reply until the next morning, at the earliest. This unfortunately means that, for\\nemails sent the night before an assignment is due, we will generally not be able to reply before class meets\\nthe next day.\\nPlease do your best to see us during the scheduled office hours times, if at all possible, when you need help\\nwith the material. If you are unable to attend any of the coming scheduled office hour times, or you need\\nmore one-on-one time than is possible during regular office hours, please send an email to our group\\naddress, listing some times that you can make over the next several days, and one of us will do our best to\\nsee you in an individual appointment within a week of receiving your email.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 12419,
+        "end": 15030,
+        "text": "Class Participation, Absences, and the Importance of Attending Classes and Recitations\\nYou are responsible for the content of the entire session at every class meeting and recitation, whether or\\nnot you are present. You are also responsible for participating in each Group Exercise Assignment,\\nincluding working as directed with the other member(s) of your assigned group.\\nWe take attendance at each class and recitation, and your final grade may be lowered by 5-10% for failure\\nto attend and/or participate regularly. I construe participation, minimally, as being present in all classes\\nand recitation, actively and attentively listening to the discussion, and participating fully in all Group\\nAssignments. Asking questions and contributing observations is also very encouraged. Any credit/no\\ncredit assignments I may give are considered part of this assessment of your attendance and participation.\\nSince there is no textbook for this course—and, as described below, no consulting of outside textbooks,\\nother books, websites, or any other sources or people outside our class is allowed—it is class meetings,\\nrecitations, and assignment work (rather than outside sources or reading) that present all course content.\\nThis means that the class and recitation content is extremely important. It is not possible to pass the course\\nwithout attending and absorbing the class and recitation material. This course involves learning about\\nnatural language syntax—and about how to make generalizations and form theories about syntactic\\npatterns—not from me telling you about this, but instead by teaching you how to do this yourself. It is not\\npossible to recover class material from outside reading.\\nNotes on missing class due to illness (including COVID), or religious observances:\\n• This is an in-person course. Classes/recitations will NOT be streamed live; you must attend in person.\\nI have set up our classroom to automatically record each class and recitation session, and you can\\naccess these recordings from a link on our Moodle page. Watching the recording does NOT give you\\ncredit for attendance in class that day, but it will be crucial to watch the recording and/or get the class\\nnotes from another student for any sessions that you come to late, leave early, or miss.\\n• If you come down with COVID or another illness and are not able to be in class for more than two\\nsessions, let me know, and I will work with you on ways to keep up with the class material. I will take\\nyour efforts in catching up and/or staying caught up into account in assessing attendance and\\nparticipation at the end of the semester.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 15031,
+        "end": 16234,
+        "text": "Policy on Cancelled Classes\\nIn the event that campus is closed, has a delayed start, or closes early due to weather issues or other\\nemergencies, please check your email for an announcement from me or the TA(s) regarding any ways that\\nour course is impacted, including affected class meetings, recitations, office hours, and assignment due\\ndates. I will generally try to hold class on Zoom if I can, in such situations. In the event that this happens,\\nstudents will be encouraged to attend synchronously (i.e. live) if possible, but will not be penalized if they\\nneed to join asynchronously by watching the recording.\\nCONTACTING US AND GETTING HELP IN THE COURSE\\nOffice Hours\\nOffice hours are times when Prof. Goldberg or a TA is scheduled to be present so that students in our course\\ncan come in to get help with the material. For our course, no appointments are needed to attend office hours\\n– you can just drop in. There will be one office hours session with either Prof. Goldberg or a TA most\\nweekday that an assignment is being worked on. We encourage attending in person whenever possible, but\\nyou can join on Zoom, if this allows you to attend when you wouldn’t otherwise be able to. An up-to-date",
+        "label": "ADMIN"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
+  },
+  {
+    "doc_id": "253PHIL 107B 1 Kant's Moral Theory Kate Moran",
+    "semester": "Fall Semester 2025 (253)",
+    "school": "College of Arts and Sciences",
+    "department": "Philosophy",
+    "course_name": "253PHIL 107B 1 Kant's Moral Theory Kate Moran",
+    "annotator": "sam",
+    "spans": [
+      {
+        "start": 0,
+        "end": 148,
+        "text": "PHILOSOPHY 107B - KANT'S MORAL THEORY\\nMondays, Wednesdays, ursdays 11:15–12:05\\nProf. Kate Moran (kmoran@brandeis.edu)\\nOFFICE HOURS : Mondays, 9-11a",
+        "label": "ADMIN"
+      },
+      {
+        "start": 149,
+        "end": 1208,
+        "text": "COURSE OVERVIEW\\nis course focuses on Immanuel Kant's moral philosophy, which he took to include both ethics\\nand legal/political philosophy. e first few weeks of the course will be devoted to understanding\\nhis foundational ethical arguments in the Groundwork for the Metaphysics of Morals. Aer that,\\nwe will focus on specific topics in Kant's moral philosophy. Your major project in this class is a\\nterm paper on a topic of your choosing.\\nLEARNING GOALS\\nContent – By the end of the semester, you should have a clear understanding of the foundational\\nclaims and arguments in Kant's moral philosophy, how these compare to other moral theories,\\nand how these foundational claims inform specific moral questions.\\nSkills–iscourseshouldhelpyoudevelopskillsinreadingandanalyzingtexts,hearingandan-\\nalyzingarguments,organizingideasinwritingandspeech,anddevisinganddevelopingawritten\\nargument. is course also fulfills the digital literacy requirement for the philosophy major. You\\nwill learn about various digital research and writing methods useful in philosophy.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 1222,
+        "end": 1660,
+        "text": "Attendance is essential to your success in this course. In past semesters there has been a direct cor-\\nrelation between students' attendance and their course grade. It is very difficult to understand\\nKant the first time around just by reading the text!\\nStudents are expected to come to class having done the reading carefully. A good sign that you\\nhavedonethereadingcarefullyisthatyouhaveawell-formulatedquestionorcommentaboutthe\\nreading.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 1661,
+        "end": 2114,
+        "text": "Studentsshouldalwayshavetherequiredreadingsforthatclasssessionwiththeminclass.Itistypi-\\ncal for students in philosophy seminars to annotate their readings with comments and questions\\nbefore class and during class discussion.\\nSuccess in this 4 credit hour course is based on the expectation that students will spend a\\nminimum of 9 hours of study time per week in preparation for class (readings, papers, discussion\\nsections, preparation for exams, etc.).",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 5574,
+        "end": 7426,
+        "text": "AUGUST 27 – SEPT 29: THE GROUNDWORK FOR THE METAPHYSICS OF MORALS\\nDuring this section of class, we will work our way through Kant's\\nGroundwork. Readings will be anounced as we go along. Please\\nstart by reading the Preface for the first two days of class.\\nOCTOBER 6–10: ORAL MIDTERMS\\nese will take place in my office (Mandel 111) or via Zoom, in\\ncase of illness or emergency.\\nOCTOBER 15: FINAL PAPER DISCUSSION\\nWe will discuss the final paper and how to use digital resources to\\nfind sources for philosophy papers, etc.\\nOCTOBER 20–23: (WHY) DOES THE MORAL LAW APPLY TO ME? THE 'FACT OF REASON'\\n(i) Review section III of the Groundwork\\n(ii) Critique of Practical Reason, V 19–41\\nOCTOBER 27–30: MORAL MOTIVATION: RESPECT AND SYMPATHY\\n(i) Critique of Practical Reason Book 1, Chapter III (On the\\nIncentives of Pure Practical Reason), V 71–89\\n(ii) Doctrine of Virtue (second part of e Metaphysics of Morals),\\n§34 and 35.\\nNOVEMBER 3–6: ETHICS VS. RIGHT\\n(i) Introduction to e Metaphysics of Morals\\n(i) Introduction to the Doctrine of Right (first part of the MM)\\nNOVEMBER 10–13: LYING - TO YOURSELF AND OTHERS\\n(i) Doctrine of Virtue, VI 429–431\\n(ii) \"On a Supposed Right to Lie from Philanthropy\" (LATTE)\\nNOVEMBER 13: Guest Speaker/Q&A, Jens Timmermann, author of Kant and e\\nSupposed Right to Lie (Cambridge, 2025)\\nNOVEMBER 17–20: SEX AND MARRIAGE\\n(i) Doctrine of Right, §1-10 and §22-27\\n(ii) Doctrine of Virtue VI 417–428\\nNOVEMBER 24: CATH-UP DAY OR DISCUSSION\\n- 4 -\\n\\nDECEMBER 1–4: CHARITY AND DEMANDINGNESS\\n(i) Review discussions of imperfect duty from Groundwork 1 & 2\\n(ii) Doctrine of Virtue, VI 386–394 (from the Introduction to the\\nDoctrine of Virtue) and §23–33 (duties of love, beneficence,\\ngratitude)\\nDECEMBER 8–11: COSMOPOLITAN RIGHT\\nDoctrine of Right, §53–Conclusion (not including appendix)\\n\"Toward Perpetual Peace\" (appendix optional) (LATTE)",
+        "label": "SCHEDULE"
+      },
+      {
+        "start": 4803,
+        "end": 5550,
+        "text": "ACADEMIC INTEGRITY\\nNever represent work or ideas that are not your own as your own. Always use proper citation\\ntechniques, even when you are not quoting another author directly. All instances of suspected\\nacademic dishonsty will be forwarded immediately to Community Standards.\\nUSE OF AI\\nIpresumeyouaretakingthisclasstolearnaboutKantandmoralphilosophy,somethingthatwill\\nbe hindered or prevented by excessive use of AI for your assignments. If you use such resources\\n(e.g.inyourfinalpaperorduringweeklyreadingresponses),thesemustbecited.Pleasenotethat\\nyouwillnothaveaccesstotheinternetduringtheoralmidtermorthefinalpaperdiscussion,and\\nthat I may ask you about any resources mentioned in your final paper or during the midterm and\\nfinal discussions.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 4600,
+        "end": 4802,
+        "text": "ACCOMODATIONS\\nIf you are a student with a documented disability on record at Brandeis University and wish to\\nhave a reasonable accommodation made for you in this class, please check in with Prof. Moran.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 4268,
+        "end": 4599,
+        "text": "COMMUNICATION\\nPlease make sure that you check the email associated with your LATTE registration on a regular\\nbasis. is is how I will send messages about the class, including any messages about late starts or\\ncanceledclasses.Ifclassneedstobecanceledbecauseofillness/weather,wewillmakeeveryeffort\\nto hold that class session on Zoom.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 3630,
+        "end": 4260,
+        "text": "TEXTS\\n(1) Groundwork for the Metaphysics of Morals, trans. Mary Gregor and Jens Timmermann (Cam-\\nbridge University Press). German-English edition also available.\\n(2) Critique of Practical Reason, trans. Werner Pluhar (Hackett)\\n(3)Metaphysics of Morals, trans. Lara Denis (Cambridge University Press).\\nSome helpful commentaries (not required):\\nKate Moran, Kant's Ethics (Cambridge University Press, 2022)\\nJens Timmermann, Kant's Groundwork of the Metaphysics of Morals: A Commentary (Cambridge,\\n2007)\\nJohn Callanan, Kant's Groundwork of the Metaphysics of Morals: An Edinburgh Philosophical\\nGuide (Edinburgh University Press, 2013)",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 2176,
+        "end": 2636,
+        "text": "Before each Wednesday meeting, you will fill out an online form that asks you to reflect on the\\nreading (usually a specific passage from the reading) and the class lecture/discussion. You will\\nalsohaveanopportunitytotellmewhatpointsarestillunclearordifficultforyou.Reflectionsbe-\\ngin on September 17, aer the add/drop deadline. ese are graded on a scale of 0-10. ere will\\nbe 11 reflections, and your lowest grade (or one missing reflection) will be dropped.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 2671,
+        "end": 2953,
+        "text": "AconversationwithProf.MoranabouttheGroundworkandKant'sargumentsinthattext.Please\\nuse the sign up sheet to secure a time. ese will be held in Prof. Moran's office (Mandel 111), or\\nvia Zoom in case of illness or emergency. ere will be no class held during the week of oral\\nmidterms.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 2989,
+        "end": 3243,
+        "text": "A 6-8 page paper on a topic of your own choosing. e paper should consult at least two sec-\\nondary sources, and we will discuss how to find and use these in class. You will also complete a\\nform discussing which digital resources you used or found useful.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 3273,
+        "end": 3439,
+        "text": "During the final exam period, you will meet with me to discuss your final paper and the sec-\\nondary sources that you consulted. Plan on a meeting of about 30 minutes.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 3440,
+        "end": 3629,
+        "text": "Graduate Students: final grade will reflect the oral midterm (20%), class participation (including\\ngraduate session, if applicable), and a term paper of ca. 15 pages, due December 10 (60%).",
+        "label": "GRADE"
+      },
+      {
+        "start": 3244,
+        "end": 3272,
+        "text": "Final Paper Discussion (20%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 2954,
+        "end": 2988,
+        "text": "Final Paper - Due December 8 (30%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 2637,
+        "end": 2670,
+        "text": "Oral Midterm – October 6–10 (30%)",
+        "label": "GRADE"
+      },
+      {
+        "start": 2147,
+        "end": 2175,
+        "text": "Ten weekly reflections (20%)",
+        "label": "GRADE"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
+  },
+  {
+    "doc_id": "261FA 110B 1 Senior Studio II Lu Heintz & Joseph Wardwell",
+    "semester": "Spring Semester 2026 (261)",
+    "school": "School of Arts, Humanities, and Culture",
+    "department": "Fine Arts",
+    "course_name": "261FA 110B 1 Senior Studio II Lu Heintz & Joseph Wardwell",
+    "annotator": "sam",
+    "spans": [
+      {
+        "start": 267,
+        "end": 559,
+        "text": "Day Monday/Wednesday\\nTime 2:30 pm – 5:20 pm\\nLocation Epstein 164\\nInstructors Joe Wardwell and Lu Heintz (she/they)\\nOffice hours Joe, Mondays and Wednesdays 1:15-2:15\\nand by appointment\\nLu, Mondays and Wednesdays 1:15-2:15\\nand by appointment\\nContact wardwell@brandeis.edu\\nluheintz@brandeis.edu",
+        "label": "ADMIN"
+      },
+      {
+        "start": 880,
+        "end": 2385,
+        "text": "SENIOR STUDIO CLASS OBJECTIVES\\nIn this course, students will be expected to develop a thorough body of work throughout the\\nsemester. Student work can be undertaken in sculpture, painting, or intermedia. Students\\nshould work within a consistent subject matter across a grouping of numerous works of art. At\\nthe same time, students will be expected to challenge the limits of their own subject matter.\\nThe body of work is the equivalent of a thesis project in other studies, which will culminate in\\nthe final exhibition at the end of the semester. All students enrolled in Senior Studio must\\nparticipate in the final exhibition. By the end of the semester, students should be confident in\\ntheir ability to be self-directed, critical thinkers, and creative makers. This should be evident in\\nthe high quality of artworks in the final exhibition in both concept and craft.\\nCOURSE EXPECTATIONS\\n• Attendance: Be in class and be on time\\n• Openness to risk-taking and experimentation\\n• Timeliness: Completion of projects to meet course schedule\\n• Full engagement in all critiques (individual and group)\\n• Thoughtful and skillful documentation of all artworks*\\n• Willingness to contribute to and care for our creative studio community\\n• Willingness to maintain our shared studio workspaces\\n• Commitment to work outside of class (minimum 8 hours per week for 4 credit course)\\n\\n*Documentation: Students are required to upload their images/files to a cloud-based storage\\n(Google Drive) as designated by the instructor.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 8470,
+        "end": 9034,
+        "text": "ACADEMIC INTEGRITY\\nYou are expected to be honest in all of your academic work. Please consult Brandeis\\nUniversity's Rights and Responsibilities for all policies and procedures related to academic\\nintegrity. Citation and pulling from other artists is a welcome practice, but you must make your\\nmark on ideas.\\nArtificial Intelligence\\nAI may help generate ideas, but you must simultaneously learn to find inspiration and unique\\ncreative ideas for yourself. Also consider the energy and environmental effects of using AI and\\ndeciding when the cost is worth the reward.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 7888,
+        "end": 8469,
+        "text": "ACCOMODATIONS\\nBrandeis (and I) seek to welcome and include all students. If you are a student who needs\\naccommodations as outlined in an accommodation letter, please talk with me and present your\\nletter of accommodation as soon as possible. I want to provide your accommodations, but\\ncannot do so retroactively. I want to support and work with you to establish how your\\naccommodations can be used for our course. If you have questions about documenting a\\ndisability or requesting accommodations, please contact Student Accessibility Support at 781-\\n736-3470 or access@brandeis.edu.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 6869,
+        "end": 7887,
+        "text": "Attendance Policy\\n• Chronic tardiness (more than five tardies) results in an absence.\\n• 30 minutes late is an absence\\n• Leaving early, 30 minutes or more, is an absence\\n• 2 unexcused absences will automatically decrease your final grade\\n• If you know you will be late or absent due to religious observance or extenuating\\ncircumstance, email us in advance. It is your responsibility to discuss your absence with\\nus, and to make-up missed work.\\n• Absences may be excused in the event of religious observance or extenuating\\ncircumstances: serious illness, hospitalization, family emergency. Plan your holiday\\ntravel wisely to avoid missing class.\\nLate work and extensions\\nDue dates are hard deadlines. Deadlines are a part of life. Learn to love and abide by them.\\nIf an emergency or illness arises that does not allow you to complete your work on time, then\\nyou must communicate the need for an extension at least one class ahead of a due date.\\nDepending on the circumstances, you may or may not be granted an extension.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 5692,
+        "end": 6868,
+        "text": "GRADING\\nGrading in this course will be based primarily on the quality of and devotion to the body of\\nwork generated throughout the semester. All completed course work is due at the end of the\\nsemester prior to the last scheduled day of finals. Attendance is mandatory and participation in\\nindividual critiques and group critiques is required. Students who do not work outside of the\\nMonday and Wednesday 2:30-5:30pm class time will be ineligible to receive an “A” grade in\\nthe course. Exhibition at the end of the semester is equivalent to a final exam.\\nProjects are marked as complete or incomplete. Projects and assignments are considered\\ncomplete when they have been critiqued. The level of engagement and feedback during crit is\\na measure of its success as an artwork.\\nMajor Projects 40%\\nBased on ambition, quality of execution, depth of thinking, and timeliness.\\nAssignments 20%\\nBased on experimentation, depth of thinking, and timeliness.\\nAttendance/Engagement 20%\\nCritiques 20%\\nBased on the effort to give feedback and grow from feedback.\\n\\n**You must complete all projects, assignments, engage in critiques, and show in the final\\nexhibition in order to pass this class.",
+        "label": "GRADE"
+      },
+      {
+        "start": 4425,
+        "end": 4704,
+        "text": "Course Announcements\\nImportant course updates come in the form of Moodle message posts. Please note that all\\nMoodle communications and my messages will go only to your Brandeis email account. You are\\nresponsible for checking Moodle each week to keep up with course announcements.",
+        "label": "ADMIN"
+      },
+      {
+        "start": 4705,
+        "end": 5691,
+        "text": "CRITIQUES\\n“While creativity is strongly bound to individualism, it is entirely dependent, especially within\\nan art context, on the collective.” Allan DeSouza How Art Can be Thought\\nGROUP CRITS\\nArtists do not live in a vacuum, and critique is a healthy and necessary way to work through\\nideas. It is not a space to rip people apart, nor is it a space for empty compliments. Through\\ngroup critique, we will be working together to discuss each of your works and how they are\\ndeveloping, and how they can continue to build. We will have a series of small group critiques,\\nwrapping up just after midterm.\\nINDIVIDUAL CRITS\\nThroughout the semester, individual critiques will be conducted with the professor during class\\ntime. Students will be expected to respond to suggestions from the professor within the\\nframework of their studio practice. In addition, students will be required to contact other faculty\\nfrom the fine arts department and schedule two individual visits with studio faculty.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 2386,
+        "end": 3593,
+        "text": "REQUIRED COURSEWORK\\n• Minimum of five significant artworks in mediums of your choosing\\nStudents are expected to complete at least four to five significant works of art. All work should\\nbe generally impressive in both scale and ambition. Numerous exceptions for larger work are\\nacceptable\\n• Three works based on assignment prompts\\n• Process work\\nStudents are expected to conduct creative research and make a range of drawings,\\nphotographs, small sculptures, and/or small paintings that serve to feed, question, and nurture\\nthe more ambitious works of art along. These works are made in addition to the five significant\\nworks and are based on assigned projects from the assignment categories listed below (these\\nassignments must be done in conjunction with larger works and count towards the final grade).\\n• Documentation of artworks\\nAssignments Prompts\\n1. Small Gestures series\\nProvocation toward issues of intent, time, scale, commitment, practice and play\\n10 small works, one per day, one organizing principle.\\n2. Antidote\\nProvocation toward issues of affinity, taste, aesthetics, collapse and repair\\n3. Five impossible Actions\\nProvocation toward issues of means, method, obstacle, determination and desire",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 3594,
+        "end": 4423,
+        "text": "CLASS STRUCTURE\\nAs an advanced studio class, you must take the reins of your art practice and work on your own\\nvolition. Class is based in studio time which is student-led, self-motivated, mandatory time\\nduring which students can work towards completing significant artworks and assignments. You\\nmust be accountable, prepared with all necessary materials, and on time to maximize your use\\nof the valuable studio time. During classes, Lu and Joe will meet with students to provide 1:1\\nin-progress guidance and feedback. Classes may involve class check-ins, presentations, guest\\nvisitors, and documentation time. Creative research assignments will be initiated through in-\\nclass workshops. Making significant artworks is a privilege of time and requires hard, dedicated\\nwork. This means you will have to work outside of class time.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 9036,
+        "end": 11089,
+        "text": "COMMUNITY\\nBasic Guidelines for How to Respect Identity and Ability\\nUse it if someone tells you their pronoun, chosen name, or racial identity. If you find that you’ve\\nmisgendered or misidentified someone, simply correct yourself at the moment.\\nIf someone’s name, pronouns, cultural frameworks, or neurodivergent approaches are\\ncontinually misunderstood or impinged upon, please feel free to speak to your professors so\\nthat we may resolve any concerns. We aim to support all students and create an inclusive and\\nequitable community.\\nSTUDIO\\nEpstein Access Students have 24 hour access to the facility through the use of a card key\\nauthorized by the department. Please be responsible with this unlimited access, if disruption,\\nirresponsible or unsafe incidents occur access to the building will be reduced to 9 to 5 access.\\nSupplies They are all around! Search and you shall find! Specialty or large quantities of supplies\\nare your responsibility to source outside of baseline studio materials available.\\nKitchen Open use of kitchen is permitted, please do not leave food lying around, clean dishes,\\nand throw away old food.\\nSafety\\nDo not use hazardous materials into your studios. See studio safety sheet for more details.\\nYou have access to your studios 24/7 but use common sense and rest when you need it and\\nhave a buddy when you are working in the shop or with sharp or dangerous tools.\\nSolvents and Rags: Please dispose of all solvents and rags in the appropriate bins near the\\nentrance to the Senior Studio area.\\nTool usage: Wood shop is open for students to use but DO NOT operate any tool if you have\\nnot been shown the proper safety demonstration on how to use it. If you are uncomfortable\\nusing any power tool in the shop you should not use it, unless under the supervision of\\ninstructor, shop tech, or building tech.\\nTo gain access to the shop you will need to complete a training with the studio tech , contact\\ninfo below.\\nRebecca Strauss, Studio Art Eli Epstein, Studio Art Technician\\nTechnician rstrauss@brandeis.edu eliepstein@brandeis.edu",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 11101,
+        "end": 12351,
+        "text": "Contemporary Art Journals and Magazines\\nBoston Art Review - reviews on local shows, artists, and art events in the greater Boston Area.\\nHyperallergic - essays, opinions, news, and reviews that look at pressing issues and ideas in\\ncontemporary art.\\nBomb Magazine - is a long-running magazine dedicated to interviews with artists.\\nTriple Canopy - experimental journal featuring artist projects, creative writing, and essays on\\ncontemporary life.\\nArtForum - the most name-recognition art magazine in the US, a helpful guide for learning\\nabout international and national art news and artists.\\nE-flux - intellectual art criticism, great for getting into the weeds of art theory and rabbit holes\\nabout art, philosophy, politics, and contemporary issues.\\nVideo Series\\nhttps://channel.louisiana.dk/\\nArt 21\\nFree Brandeis\\nExpenses at college pile up, but there's funding here to help, including grants for laptops,\\nbooks, health insurance, food, and the Brandeis Emergency Fund for other needs. Every\\nBrandeis student can get free New York Times and Wall Street Journal access, download\\nMicrosoft Office 365 and other software, and borrow laptops, cables, sun lamps, and drives\\nfrom the library. Anyone can receive free mental health services and medical care.",
+        "label": "MATERIAL"
+      },
+      {
+        "start": 12352,
+        "end": 12882,
+        "text": "SCHEDULE/SAVE THE DATES\\nJANUARY 21 Small Gestures due\\nJan 21, 26, 28 group crits\\nFEBRUARY 11 The Rose Art Museum: Photorealism with Lou Maisel 4-5\\nFEBRUARY 23 Antidote due\\nFeb 23/25 group crits\\nMARCH 23 Five Impossible Actions due\\nMar 23, 25, 30 group crits\\nAPRIL 29 SENIOR FINAL EXHIBIT: Drietzer Gallery, Opening APRIL 29 5-7\\nAt the end of the semester the course will culminate in an exhibit in the Drietzer gallery at the\\nSpingold building. Participation is mandatory in both the exhibition and the mounting of the\\nexhibition.",
+        "label": "SCHEDULE"
+      },
+      {
+        "start": 0,
+        "end": 265,
+        "text": "SENIOR STUDIO Spring 2026\\n“We never look at just one thing; we are always looking at the relation between things\\nand ourselves.” John Berger Ways of Seeing\\nMaybe if I really believe in me, trust me without any calculated plan, who knows what\\nwill happen?” Eva Hesse",
+        "label": "ADMIN"
+      },
+      {
+        "start": 560,
+        "end": 879,
+        "text": "We come together on the ancestral lands of the Massachusett and Pawtucket people, past and\\npresent. We acknowledge our neighboring nations and peoples in Dawnland (New England),\\nincluding the Agawam, Naumkeag, Nipmuc, and Wampanoag, and how their perspective and\\nrepresentation is often omitted due to colonial erasure.",
+        "label": "ADMIN"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
+  },
+  {
+    "doc_id": "242HS 249F 1 Social Justice, Management, and Policy ",
+    "semester": "Summer Semester 2024",
+    "school": "Heller School Social Pol & Mgt",
+    "department": "Heller School",
+    "course_name": "242HS 249F 1 Social Justice, Management, and Policy ",
+    "annotator": "sam",
+    "spans": [
+      {
+        "start": 0,
+        "end": 194,
+        "text": "HS249F-1: Social Justice, Management, and Policy\\nSummer 2024 – Module\\n5/29; 6/5; 6/10; 6/26; 7/3; 7/10\\n2:00pm to 4:50pm\\nInstructor: Monica L. Zeno-Martin Room: G1\\nEmail: mzenomartin@brandeis.edu",
+        "label": "ADMIN"
+      },
+      {
+        "start": 195,
+        "end": 2480,
+        "text": "Description and Purpose:\\nSocial Justice means different things to different people, in different places, and at different times. It is\\ninvoked to support and justify a multiplicity of causes that range along the entire continuum of political,\\neconomic, social, technological, and environmental (PESTE) issues. In order for managers to be effective\\nsocial and organizational change agents and be prepared for managing in environments with value\\nconflicts and diversity of all kinds, they must first understand what social justice means to them, how\\ndefinitions and meanings are derived, and how, why, when and where they develop their own values\\nand meanings of social justice. How do our own identities, shaped by the intersecting forces of class,\\ngender, race, sexuality, immigration etc., mold our social justice lens and our subsequent decisions as\\nmanagers?\\nThis course will examine the mission driven sector – what does the sector and its ecosystem look like\\nand how do social justice missions shape the work of organizations? What choices are made or not\\nmade that either strengthen or dilute the impact of what an organization sets out to do? How do\\nmanagers lead in organizations with social justice missions? Are there specific considerations,\\nchallenges, and opportunities in such settings? Are managers called upon to use a different set of\\ndecision-making tools and filters in these settings?\\nAs current and aspiring leaders in business, government, philanthropy, and the non-profit/social impact\\nsector, it is critical to understand the implications of social justice in the work you do; and strategies and\\ntactics that facilitate or hinder social justice in the workplace and society as a whole. In other words, this\\ncourse is an examination of some of the management and policy opportunities and challenges inherent\\nin the Heller mission “Knowledge Advancing Social Justice.” It has the primary goal of preparing students\\nto transition to careers that require leadership at the intersection of management and social justice. This\\ncourse is less about concrete tools and more about a “way of thinking”, about the questions you bring to\\nthe management problems at hand, and about the lens you use to deconstruct the exercise of power\\nand agency in organizational settings.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 2482,
+        "end": 4904,
+        "text": "LEADERSHIP AT THE INTERSECTION OF MANAGEMENT SCIENCE AND SOCIAL JUSTICE\\n\"KNOWLEDGE ADVANCING SOCIAL JUSTICE\"\\nTeaching and Learning Culture and Expectations:\\nThis class will be a combination of facilitated discussion, lecture on key concepts, small group work, and\\nreflections on readings and speakers’ presentations. The experience of the class will be only as positive\\nas what you plan to bring to the “learning community” that we will create – as such, all of us must take\\nresponsibility for making it the best learning environment possible. Facilitated discussion will raise\\nchallenges and issues that will feel hard at some moments – the goal of the class is to push each one of\\nus beyond our comfort zone to a place of engagement with new ideas and ways of thinking. The\\npresumption is that transformation/change is never a smooth/easy process, but it is a necessary process\\nif we are to grow as managers and people.\\nWe understand that the learning environment is made more complicated by the COVID 19 realities and\\nwill make appropriate adjustments accordingly. The expectation is that we will create a community of\\ncaring colleagues and hold the principles of inclusion, respect for others’ ideas, and responsibility for\\none’s own and each other’s learning.\\nSome guiding principles for our learning culture:\\n● The class environment will reflect respect for different opinions, even as we push each other\\nconstructively to learn new ways of thinking and examining our own positions on important\\nsocial justice issues;\\n● We will have read and thought about the material, class, and speaker presentations and will\\ntake our own and each other’s learning seriously;\\n● All written work will be original and carefully completed – there are no shortcuts to learning;\\nrev. 5/31/24 Page 2 of 9\\n\\n● Speaking in class is not the only way to show participation – but engagement is important;\\n● We will bring our whole selves to class – it is the only way to learn and we all need the practice\\nto become impactful managers.\\nWe will use a combination of strategies to make class engaging and productive. I will invite speakers\\nfrom mission-driven organizations during some of the classes. We will take breaks at least every 60 to 75\\nminutes; use small group discussions; watch short video clips to break up the format. Sometimes I will\\nassign a video to watch outside of class, on your own time, and shorten the class for that day.",
+        "label": "DESCRIP"
+      },
+      {
+        "start": 4938,
+        "end": 4994,
+        "text": "A. Attendance and participation in class exercises – 20%",
+        "label": "GRADE"
+      },
+      {
+        "start": 4995,
+        "end": 5378,
+        "text": "Full attendance is expected for this class.\\nParticipation is linked to making valuable contributions to the class, attending office hours,\\ncompleting impromptu questions about class discussion that might be sent out, offering\\nsuggestions, sending follow-up emails with thoughts from class, and generally showing\\nengagement with and interest in the material and the class discussions.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 5379,
+        "end": 5632,
+        "text": "Office Hours will be held once a week via Zoom on Fridays at 11am ET. Zoom details are below.\\nSpecial requests are available as needed.\\nhttps://us02web.zoom.us/j/87615795627?pwd=gtfMHb7zcjWahbSvNlmncCfGvVf40l.1\\nMeeting ID: 876 1579 5627\\nPasscode: 002158",
+        "label": "ADMIN"
+      },
+      {
+        "start": 5686,
+        "end": 5726,
+        "text": "Checklist - 30%. Final assignment - 50%.",
+        "label": "GRADE"
+      },
+      {
+        "start": 5727,
+        "end": 6082,
+        "text": "This is a two-step assignment. We encourage you to complete this assignment in pairs. If done in\\npairs, both partners will receive the same grade. The presumption is that the opportunity to\\nbrainstorm with another student should yield a more extensive and a richer analysis, and it will\\nprepare you for team projects that are fundamental to any workplace.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 6085,
+        "end": 6143,
+        "text": "Social Justice Organization Checklist – 30% of total grade",
+        "label": "GRADE"
+      },
+      {
+        "start": 6144,
+        "end": 6433,
+        "text": "Assignment due no later than 11:59pm ET on Friday, June 14, 2024\\nPopulate the categories of a template that I will provide, with four to five questions\\nunder each category that will help you to assess a social justice organization’s alignment\\nof practice with its stated mission and goals.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 6434,
+        "end": 6495,
+        "text": "• Social Justice Organizational Research – 50% of total grade",
+        "label": "GRADE"
+      },
+      {
+        "start": 6496,
+        "end": 6968,
+        "text": "Assignment due by 11:59pm ET on Friday, July 18, 2024\\nBased on the framework that you build in the checklist, pick four categories that you are\\nmost interested in analyzing, and research a non-profit organization of your\\nchoice/interest to see how well that organization fits or does not fit into the categories\\n(in the framework) that you have picked to analyze. Explain whether the organization is\\n“aligned” or “misaligned” with its mission and goals for social justice.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 6995,
+        "end": 8128,
+        "text": "Prepare four to five slides to show how the organization is aligned or misaligned based\\non your framework.\\nThe research should consider the organization’s website, its publicly available materials\\nsuch as Form 990 and other organizational documents, media items/stories, any\\nadditional information that students may already have about the organization, or any\\nadditional material that you are able to access from previous knowledge of the\\norganization. What questions were you not able to answer based on public information?\\nPlease refer to and incorporate at least three to four references to readings/ class\\ndiscussions to meaningfully ground your responses.\\nOn the last day of class, you will be paired with one other group or individual and\\ndiscuss your projects with each other. The goal will be to provide feedback on your\\nclassmates’ work and thinking, serve as a critical friend to help strengthen their thinking,\\nand learn how you might incorporate something valuable into your project.\\nFollowing this opportunity for sharing and discussion, you will finalize your slides and\\nsubmit by the final project submission deadline.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 8129,
+        "end": 8663,
+        "text": "Academic Integrity:\\nYou are responsible for learning and understanding the Heller School policy on Citation and Academic\\nIntegrity as established by the Brandeis guide for Student Rights and Responsibilities. Violations of\\nUniversity policies on academic integrity, described in Section 3 of Rights and Responsibilities, may\\nresult in failure in the course or on the assignment, and could end in suspension from the University. If\\nyou are in doubt about the completion of any assignment in this course, you must ask for clarification.",
+        "label": "INTEGRITY"
+      },
+      {
+        "start": 8664,
+        "end": 9021,
+        "text": "Accessibility Accommodations:\\nThe Heller School seeks to welcome and include all students. If you are a student who needs\\naccommodations, please talk with the Professor as soon as possible.\\nIf you have questions about documenting a disability or requesting accommodations, please\\ncontact Student Accessibility Support at 781.736.3470 or\\naccess@brandeis.edu.",
+        "label": "ACCOM"
+      },
+      {
+        "start": 9833,
+        "end": 10117,
+        "text": "In-Person Attendance: This is an in-person class and there is no zoom link available for it. If you are not\\nwell, please visit the University Health Services. There may be out-of-town class speakers who will\\npresent on Zoom since they are not available to travel for our presentation.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 9524,
+        "end": 9806,
+        "text": "Attendance is Required: If you are going to miss one class, or are going to be late or need to leave early,\\nplease let the Professor know ahead of time. The class only meets six times this summer and your\\nattendance and involvement is important. Please be prepared to begin on time.",
+        "label": "ATTEND"
+      },
+      {
+        "start": 9048,
+        "end": 9523,
+        "text": "Cell phones: Please turn down all cell phones before joining class. If you are experiencing an emergency\\nand need to be reachable, please let the Professor know before class.\\nLaptops: Although it is fine to take notes on your laptop, there is enough of a temptation to check and\\nrespond to emails and other messages and surf the web while in class. Please exercise self-discipline if\\nyou need to have your laptop open so that you can be fully present for class participation.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 10118,
+        "end": 10236,
+        "text": "COVID 19 Related Policies:\\nPlease see Brandeis University’s COVID 19 Response and adhere to these policies as updated.",
+        "label": "CONDUCT"
+      },
+      {
+        "start": 10277,
+        "end": 10500,
+        "text": "Please complete the required readings and review the required resources before each class.\\nRecommended readings will help you deepen your knowledge base, and may be referenced during class\\ndiscussions, but are not required.",
+        "label": "ASSIGN"
+      },
+      {
+        "start": 10501,
+        "end": 20663,
+        "text": "Class 1: Wednesday, May 29\\nUnderstanding Social Justice Issues That Face Us\\nRequired Readings/Resources:\\nCollective Impact Form 2021 Collective Impact Convening Keynote Address – Rev. Dr. William Barber Key\\n(You are welcome to watch the entire video or you can start at the time stamp at 7:04 minutes.)\\nGil, D. (2004). Perspectives on Social Justice. Reflections: Narrative of Professional Helping, 10(4), pp. 32\\n– 39\\nMy Undocumented Mom, America’s Housekeeper, Luba Cortes, NY Times Opinion Page, June 23, 2016\\nHow Anti-Growth Sentiment, Reflected in Zoning Laws, Thwarts Equality, Conor Dougherty, NY Times\\nBusiness Day, July 3, 2016\\nSAT Scores and Income Inequality: How Wealthier Kids Rank Higher, Josh Zumbrun, Wall Street Journal,\\nOctober 7, 2014\\nBryan Stevenson: Ted Talk - We Need to Talk About an Injustice\\nRecommended Reading:\\nMichelle Alexander, The New Jim Crow: Mass Incarceration in the Age of Color Blindness. The New Press,\\n2012.\\n● Introduction: pp. 1 – 19\\n● The Lockdown: pp. 59 – 96\\n● The Color of Justice: pp. 97 – 139\\nrev. 5/31/24 Page 5 of 9\\n\\nClass 2: Wednesday, June 5\\nSocial Justice in Practice I\\nOrganizations: Social Justice Missions, Values, Practices - Frameworks and Key Questions\\nGuest Speaker: Marji Erickson Warfield, Senior Scientist, Lurie Institute on Disability Policy,\\nCenter for Youth and Communities, Heller School for Social Policy and Management, Brandeis\\nUniversity\\nAs a researcher of social policy with a focus on disabilities, children, youth, and families, Marji\\nErickson Warfield's work seeks to understand and evaluate ways to promote the well-being of\\nchildren, youth and young adults from marginalized communities, often centering individuals\\nwith disabilities and youth in foster care. Current work is investigating an intensive in-home\\ntutoring program designed to enhance the social-emotional and literacy skills of young children\\nin foster care, examining various approaches to connect youth to the workforce in general and\\nSTEM and technical fields in particular, and exploring how to provide more inclusive\\nopportunities for youth with disabilities through connections to college-age mentors.\\nDr. Erickson Warfield has expertise in a variety of qualitative, quantitative and mixed methods\\napproaches to research and evaluation as well as significant experience in survey research. Her\\nwork has been funded by a range of federal and foundation sources.\\nRequired Readings/Resources:\\nHopeWell website\\nWhat Does It take to Deliver on HopeWell’s Promise? Frameworks for Leadership and Management for A\\nSocial Justice and Learning Organization, Hughes, D.M. and Warfield, M.E., 2021.\\nNonprofits in the United States, Robert Glavin and Marco Tavanti, in Nonprofit Management 101: A\\nComplete and Practical Guide for Leaders and Professionals, Second Edition, Wiley Publishers. Eds.,\\nHeyman, Darian Rodriguez and Brenner, Laila, 2019. pp. 5 – 19\\nIntroduction: What is Social Entrepreneurship? Roger Martin and Sally Osberg in Getting Beyond Better,\\nHarvard Business Review Press, 2015. pp: 1 – 24\\nBuilding Resilient Organizations, Maurice Mitchell. The Forge, November 29, 2022\\nInequality Regimes: Gender, Class, and Race in Organizations, Joan Acker. Gender and Society 20.4: pp.\\n441 – 464.\\nLaMarche, Gara. (4 December 2009). Speech: The Corner Office, Non-Profit Edition: A Practitioner’s\\nThoughts on Social Justice Management. The Atlantic Philanthropies.\\nDemocratic Management: Lessons from Worker Cooperatives, Rebecca Bauen. Non-Profit Quarterly,\\nJune 2, 2021.\\nrev. 5/31/24 Page 6 of 9\\n\\nClass 3: Monday, June 10\\nSocial Justice in Practice II\\nOrganizations: Social Justice Missions, Values, Practices - Frameworks and Key Questions\\nGuest Speaker: Heidi Brooks, Chief Operating Officer, National Institute for Children’s Health\\nQuality\\nHeidi Brooks (she/her) serves as Chief Operating Officer (COO) of the National Institute for Children’s\\nHealth Quality (NICHQ), a public health nonprofit driving change to improve children’s health. In this\\nrole, her key responsibilities include overseeing finance, communications, operations, IT and HR. She\\nmost recently served as the COO of YouthBuild USA, the support center for nearly 300 programs in the\\nUS and abroad serving 16- to 24-year-old “opportunity youth” who are not working or in school. Prior to\\njoining YouthBuild, Brooks led finance, operations, programs, strategy and evaluation as COO of the\\nSchott Foundation for Public Education, a charitable intermediary investing in education justice.\\nThe thread that runs through her career is helping people get out of poverty. Brooks started her career\\nin international development, working in 15 countries in Africa, Asia, and Latin America managing,\\ndesigning, and auditing anti-poverty programs for the World Bank and several large NGOs. After moving\\nback to the US for business school, she worked for The Bridgespan Group as a consultant and was then\\nrecruited to become the Director of Community Relations at John Hancock Financial Services, where she\\noversaw $11 million in cash and in-kind annual giving and expanded the MLK Summer Scholars program\\nto provide a record 650 summer jobs for Boston teens. From there she served as head of the Citizens\\nBank Foundation, where she worked with the CEO to set strategy for $18 million in annual giving the\\ninnovative Citizens Helping Citizens employee giving campaign and more than doubled volunteer hours.\\nBrooks holds a B.A. from the University of South Carolina, an M.A. from the Johns Hopkins School of\\nAdvanced International Studies, and an M.B.A. from Harvard Business School. She has been active with a\\nnumber of nonprofits and foundations, and currently serves as vice-chair for the of the Point32 Health\\nCare Foundation and is on the investment committee for an HBS impact investing class. Brooks loves\\nscuba diving, CrossFit and outdoor exploration with her family and is trying to visit 100 countries.\\nRequired Readings/Resources:\\nThe Nonprofit Starvation Cycle, Ann Goggins Gregory & Don Howard, Stanford Social Innovation Review,\\nFall 2009\\nUnleashing Philanthropy’s Big Bets for Social Change. William Foster, Gail Perreault, Bradley\\nSeeman. The Bridgespan Group. Spring 2019.\\nClass 4: Wednesday, June 26\\nOrganizations: The Mission Driven Sector - How to Think About Scale, Sustainability, and Impact\\nRequired Readings/Resources:\\nEarning the Right to Scale, Meehan III and Jonker, Stanford Social Innovation Review, March 30, 2018\\nrev. 5/31/24 Page 7 of 9\\n\\nScaling the Solution, in Roger Martin and Sally Osberg in Getting Beyond Better, Harvard Business\\nReview Press, 2015. pp. 161 – 181\\nFive Programmatic Lessons in Scaling Impact. Katie Mounts, Stanford Social Innovation Review, Jul. 21,\\n2015\\nClass 5: Wednesday, July 3\\nSocial Justice in Practice III\\nOrganizations: Social Justice Missions, Values, Practices - Frameworks and Key Questions\\nGuest Speaker: Tiffany Murphy, Vice President, Program Impact, YouthBuild USA\\nTiffany S. Murphy is the Vice President of DOL YouthBuild Program Impact at YouthBuild USA,\\nwhere she drives the strategy and operations of a $23 million, multi-year, federal technical\\nassistance contract for 200+ U.S. Department of Labor-funded YouthBuild programs. She\\noversees teams responsible for providing comprehensive technical assistance to implement the\\nDOL YouthBuild pre-apprenticeship model. This includes content innovation to scale promising\\npractices, performance data support and impact evaluation, peer-driven in-person and virtual\\ntrainings, coaching, and more.\\nTiffany has over sixteen years of progressive nonprofit leadership experience in criminal justice,\\npostsecondary education, and youth and workforce development. This includes providing\\nthought partnership and leadership to organizational leaders in the private, nonprofit, and\\ngovernment sectors. In her previous role as YouthBuild USA's Associate Director, Postsecondary\\nAccess and Success, Tiffany managed and scaled a national advisory council of first-generation\\ncollege students. This consisted of recommending and refining policies supporting opportunity\\nyouth academically, professionally, and personally as they persist in their educational journeys.\\nTiffany has a Master of Science in nonprofit management from Northeastern University and a\\nBachelor of Science in sociology with a minor in criminal justice from Salem State University.\\nShe also has a paralegal professional certification from Northeastern University.\\nRequired Readings/Resources:\\nYouthBuild USA website\\nDavid P. Weikert Center for Youth Program Quality at the Forum for Youth Investment website\\nPodcast: Artist Christine Wong Yap on her Places of Belonging Project, Othering and Belonging Institute\\nPodcast: Margaret Beale Spencer: Unstacking the Deck—A Call for Candid Self-Interrogation About\\nIdentity and Racism (Part 2), Turnaround for Children\\nA College Degree Doesn’t Get You That Far if You’re Black, John Rice, Fortune, January 28, 2017\\nrev. 5/31/24 Page 8 of 9\\n\\nWe Can’t Recover from a Coronavirus Recession Without Helping Young Workers, Martha Ross and\\nNicole Bateman, Brookings Institute, May 7, 2020\\nRecommended Reading/Resource:\\nSimran Sidhu: Ted X Philadelphia Talk – Meet the Opportunity Youth\\nKnowledge to Power Catalysts website\\nUCLA Center for the Developing Adolescent website\\nClass 6: Wednesday, July 10\\nBringing It All Together – Understanding and Measuring Impact\\nDiscussion of Final Presentations\\nRequired Readings/Resources:\\nBeyond ‘X Number Served’: To cure the social sector’s metric monomania, we must get comfortable with\\ncomplexity. Mona Mourshed, Stanford Social Innovation Review, April 20, 2022\\nTen Reasons Not to Measure Impact—and What to Do Instead. Mary Kay Gugerty & Dean Karlan,\\nStanford Social Innovation Review, Summer 2018\\nBuilding a Model for Change, in Roger Martin and Sally Osberg in Getting Beyond Better, Harvard\\nBusiness Review Press, 2015. pp. 125 – 160\\nAfterword: We All Have the Capacity to Be Social Prophets, Lynne Twist, in Nonprofit Management 101:\\nA Complete and Practical Guide for Leaders and Professionals, Second Edition, Wiley Publishers. Eds.,\\nHeyman, Darian Rodriguez and Brenner, Laila, 2019. pp. 579 – 583.",
+        "label": "SCHEDULE"
+      }
+    ],
+    "validity": "Valid",
+    "notes": ""
   }
 ]
