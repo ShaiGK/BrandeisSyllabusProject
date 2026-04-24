@@ -34,15 +34,12 @@ import numpy as np
 import seaborn as sns
 from sklearn.metrics import (
     classification_report,
-    cohen_kappa_score,
     confusion_matrix,
-    f1_score,
 )
 
 from evaluate import (
     LABELS,
     compute_kappa,
-    load_jsonl,
     save_results,
 )
 
@@ -134,7 +131,7 @@ def fleiss_kappa(ratings_matrix):
     Returns the Fleiss' kappa coefficient (float).
     """
     N, k = ratings_matrix.shape
-    n = ratings_matrix[0].sum()   # number of raters per subject (assumed constant)
+    n = ratings_matrix[0].sum()  # number of raters per subject (assumed constant)
 
     # p_j: proportion of all assignments in category j
     p_j = ratings_matrix.sum(axis=0) / (N * n)
@@ -143,7 +140,7 @@ def fleiss_kappa(ratings_matrix):
     P_i = (np.sum(ratings_matrix ** 2, axis=1) - n) / (n * (n - 1))
 
     P_bar = P_i.mean()
-    P_e   = (p_j ** 2).sum()
+    P_e = (p_j ** 2).sum()
 
     if P_e == 1.0:
         return 1.0
@@ -173,8 +170,8 @@ def build_ratings_matrix(label_sequences, label_list):
 def per_label_f1(y_true, y_pred, label_list):
     """Return {label: f1} for every label in label_list that has support > 0."""
     present = set(y_true)
-    active  = [l for l in label_list if l in present]
-    report  = classification_report(
+    active = [l for l in label_list if l in present]
+    report = classification_report(
         y_true, y_pred, labels=label_list, output_dict=True, zero_division=0
     )
     return {
@@ -207,7 +204,7 @@ def save_confusion_matrix(y_true, y_pred, label_list, path, title):
     active = _active_labels(y_true, label_list)
     cm = confusion_matrix(y_true, y_pred, labels=active)
     row_sums = cm.sum(axis=1, keepdims=True)
-    cm_norm  = np.where(row_sums > 0, cm / row_sums, 0)
+    cm_norm = np.where(row_sums > 0, cm / row_sums, 0)
 
     fig, ax = plt.subplots(figsize=(max(8, len(active)), max(7, len(active) - 1)))
     sns.heatmap(
@@ -236,9 +233,9 @@ def save_pairwise_kappa_chart(pair_labels, kappa_values, path):
                for k in kappa_values]
     fig, ax = plt.subplots(figsize=(max(5, len(pair_labels) * 1.4), 4))
     bars = ax.bar(pair_labels, kappa_values, color=colours, edgecolor="white", width=0.5)
-    ax.axhline(0.8, color="green",  linestyle="--", linewidth=1, label="0.8 (almost perfect)")
+    ax.axhline(0.8, color="green", linestyle="--", linewidth=1, label="0.8 (almost perfect)")
     ax.axhline(0.6, color="orange", linestyle="--", linewidth=1, label="0.6 (substantial)")
-    ax.axhline(0.4, color="red",    linestyle="--", linewidth=1, label="0.4 (moderate)")
+    ax.axhline(0.4, color="red", linestyle="--", linewidth=1, label="0.4 (moderate)")
     for bar, val in zip(bars, kappa_values):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01,
                 f"{val:.3f}", ha="center", va="bottom", fontsize=10)
@@ -256,9 +253,9 @@ def save_label_agreement_chart(label_avg_f1, path):
     """Bar chart of per-label average pairwise F1, sorted descending."""
     os.makedirs(RESULTS_DIR, exist_ok=True)
     labels_sorted = sorted(label_avg_f1, key=label_avg_f1.get, reverse=True)
-    values        = [label_avg_f1[l] for l in labels_sorted]
-    colours       = ["#4C72B0" if v >= 0.7 else "#DD8452" if v >= 0.5 else "#C44E52"
-                     for v in values]
+    values = [label_avg_f1[l] for l in labels_sorted]
+    colours = ["#4C72B0" if v >= 0.7 else "#DD8452" if v >= 0.5 else "#C44E52"
+               for v in values]
 
     fig, ax = plt.subplots(figsize=(max(8, len(labels_sorted) * 0.9), 4))
     bars = ax.bar(labels_sorted, values, color=colours, edgecolor="white")
@@ -289,7 +286,7 @@ def main():
                 print("  Run 'python annotate.py finish' first.")
             sys.exit(1)
 
-    tasks  = load_tasks(TASKS_FILE)
+    tasks = load_tasks(TASKS_FILE)
     by_doc = load_all_annotations(ANNOTATIONS_FILE)
 
     # Keep only docs annotated by at least 2 people
@@ -335,9 +332,9 @@ def main():
     print("  PAIRWISE AGREEMENT")
     print("=" * 60)
 
-    pair_results   = {}   # (a1, a2) → {kappa, f1_per_label, n_lines, n_docs}
-    agg_y1_all     = []   # pooled y_true across all pairs (for aggregate confusion)
-    agg_y2_all     = []   # pooled y_pred across all pairs
+    pair_results = {}  # (a1, a2) → {kappa, f1_per_label, n_lines, n_docs}
+    agg_y1_all = []  # pooled y_true across all pairs (for aggregate confusion)
+    agg_y2_all = []  # pooled y_pred across all pairs
 
     for a1, a2 in pairs:
         y1_flat, y2_flat = [], []
@@ -356,19 +353,19 @@ def main():
         if not y1_flat:
             continue
 
-        kappa  = compute_kappa(y1_flat, y2_flat)
-        pct    = percent_agreement([y1_flat, y2_flat])
-        lf1    = per_label_f1(y1_flat, y2_flat, LABELS)
-        non_o  = {l: v for l, v in lf1.items() if l != "O"}
-        macro  = round(statistics.mean(non_o.values()), 4) if non_o else 0.0
+        kappa = compute_kappa(y1_flat, y2_flat)
+        pct = percent_agreement([y1_flat, y2_flat])
+        lf1 = per_label_f1(y1_flat, y2_flat, LABELS)
+        non_o = {l: v for l, v in lf1.items() if l != "O"}
+        macro = round(statistics.mean(non_o.values()), 4) if non_o else 0.0
 
         pair_results[(a1, a2)] = {
-            "kappa":          kappa,
-            "percent_agree":  round(pct, 4),
-            "macro_f1":       macro,
-            "f1_per_label":   lf1,
-            "n_lines":        len(y1_flat),
-            "n_docs":         n_docs_pair,
+            "kappa": kappa,
+            "percent_agree": round(pct, 4),
+            "macro_f1": macro,
+            "f1_per_label": lf1,
+            "n_lines": len(y1_flat),
+            "n_docs": n_docs_pair,
         }
 
         agg_y1_all.extend(y1_flat)
@@ -510,10 +507,10 @@ def main():
     # ── Save JSON ──────────────────────────────────────────────────────────────
     os.makedirs(RESULTS_DIR, exist_ok=True)
     results = {
-        "annotators":         all_annotators,
-        "num_docs":           len(multi_docs),
+        "annotators": all_annotators,
+        "num_docs": len(multi_docs),
         "avg_pairwise_kappa": round(avg_kappa, 4),
-        "fleiss_kappa":       fleiss_k,
+        "fleiss_kappa": fleiss_k,
         "pairwise": {
             f"{a1}_vs_{a2}": v
             for (a1, a2), v in pair_results.items()

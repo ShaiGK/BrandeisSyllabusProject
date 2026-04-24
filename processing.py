@@ -40,14 +40,14 @@ def dedup(path: Path = ANNOTATIONS_PATH):
 
     print(f"Loaded {len(entries)} entries from {path}")
 
-    seen_keys = {}            # full-content key  -> first index kept
-    by_doc_annotator = {}     # (doc_id, annotator) -> first kept entry
-    by_doc_id = {}            # doc_id -> list of (annotator, entry)
+    seen_keys = {}  # full-content key  -> first index kept
+    by_doc_annotator = {}  # (doc_id, annotator) -> first kept entry
+    by_doc_id = {}  # doc_id -> list of (annotator, entry)
 
     kept = []
     exact_dupes = 0
-    conflict_same_annotator = []   # same doc_id + annotator, different content
-    conflict_diff_annotator = []   # same doc_id, different annotator
+    conflict_same_annotator = []  # same doc_id + annotator, different content
+    conflict_diff_annotator = []  # same doc_id, different annotator
 
     for entry in entries:
         key = _entry_key(entry)

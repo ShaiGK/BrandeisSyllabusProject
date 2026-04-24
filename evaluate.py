@@ -4,8 +4,9 @@ Shared evaluation utilities for all model training scripts.
 
 import json
 import os
-import numpy as np
+
 import matplotlib.pyplot as plt
+import numpy as np
 import seaborn as sns
 from sklearn.metrics import (
     classification_report,
@@ -108,7 +109,7 @@ def plot_confusion_matrix(y_true, y_pred, labels, path):
     fig, ax = plt.subplots(figsize=(14, 11))
     sns.heatmap(
         cm_norm,
-        annot=cm,          # show raw counts in cells
+        annot=cm,  # show raw counts in cells
         fmt="d",
         cmap="Blues",
         xticklabels=labels,

@@ -15,6 +15,7 @@ import os
 
 try:
     from dotenv import load_dotenv
+
     load_dotenv()
 except ImportError:
     pass  # python-dotenv not installed; fall back to reading os.environ directly
@@ -37,7 +38,8 @@ BASE_URL = "https://moodle.brandeis.edu"
 #   ["Spring 2026", "Fall 2025"]
 #   ["2025", "2026"]  (matches any semester containing "2025" or "2026")
 #   ["Spring"]        (matches all Spring semesters)
-SEMESTERS_TO_SCRAPE = ["Spring Semester 2026", "Fall Semester 2025", "Summer Semester 2025", "Spring Semester 2025", "Fall Semester 2024 (243)", "Summer Semester 2024"]  # None = all semesters
+SEMESTERS_TO_SCRAPE = ["Spring Semester 2026", "Fall Semester 2025", "Summer Semester 2025", "Spring Semester 2025",
+                       "Fall Semester 2024 (243)", "Summer Semester 2024"]  # None = all semesters
 
 # Where to save downloaded syllabi
 OUTPUT_DIR = "syllabi"

@@ -25,9 +25,9 @@ FOR INTER-ANNOTATOR AGREEMENT (IAA):
 
 import json
 import os
-import sys
-import subprocess
 import random
+import subprocess
+import sys
 
 # ── Configuration ──────────────────────────────────────────────
 CONFIG_FILE = ".annotate_config.json"
@@ -50,6 +50,8 @@ IAA_DOC_IDS = [
     "261FA 110B 1 Senior Studio II Lu Heintz & Joseph Wardwell",
     "242HS 249F 1 Social Justice, Management, and Policy ",
 ]
+
+
 # ───────────────────────────────────────────────────────────────
 
 
@@ -143,7 +145,10 @@ def find_or_create_project(client):
                 with open(config_path, 'r') as f:
                     local_config = f.read()
                 remote_config = client.projects.get(id=p.id).label_config or ""
-                def norm(s): return ' '.join(s.split())
+
+                def norm(s):
+                    return ' '.join(s.split())
+
                 if norm(local_config) != norm(remote_config):
                     print()
                     print("  WARNING: Label Studio config mismatch detected!")

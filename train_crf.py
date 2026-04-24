@@ -34,7 +34,6 @@ Run:
 
 import argparse
 import itertools
-import json
 import os
 import sys
 from collections import Counter, defaultdict
@@ -58,39 +57,39 @@ CONFUSION_PATH = "results/crf_confusion_matrix.png"
 
 # ── Keyword groups ─────────────────────────────────────────────────────────────
 KEYWORDS = {
-    "grade":     {"grade", "grading", "graded", "point", "points", "percent",
-                  "%", "score", "gpa", "credit", "pass", "fail", "rubric"},
-    "schedule":  {"week", "date", "due", "monday", "tuesday", "wednesday",
-                  "thursday", "friday", "january", "february", "march", "april",
-                  "may", "june", "july", "august", "september", "october",
-                  "november", "december", "deadline", "session", "lecture",
-                  "class", "meeting", "calendar"},
+    "grade": {"grade", "grading", "graded", "point", "points", "percent",
+              "%", "score", "gpa", "credit", "pass", "fail", "rubric"},
+    "schedule": {"week", "date", "due", "monday", "tuesday", "wednesday",
+                 "thursday", "friday", "january", "february", "march", "april",
+                 "may", "june", "july", "august", "september", "october",
+                 "november", "december", "deadline", "session", "lecture",
+                 "class", "meeting", "calendar"},
     "integrity": {"plagiarism", "plagiarize", "cheat", "cheating", "dishonesty",
                   "integrity", "academic", "misconduct", "citation", "cite",
                   "honor", "turnitin"},
-    "late":      {"late", "penalty", "extension", "overdue", "makeup",
-                  "make-up", "missed", "incomplete"},
-    "attend":    {"attendance", "attend", "absent", "absence", "present",
-                  "participation", "tardy", "excused", "unexcused"},
-    "assign":    {"assignment", "homework", "hw", "problem", "exercise",
-                  "project", "submit", "submission", "canvas", "blackboard",
-                  "upload", "paper", "essay", "report"},
-    "material":  {"textbook", "reading", "text", "book", "article", "pdf",
-                  "chapter", "resource", "required", "recommended", "isbn",
-                  "library", "reserve"},
-    "accom":     {"accommodation", "disability", "accessible", "accessibility",
-                  "services", "ada", "support", "special", "need", "request"},
-    "conduct":   {"conduct", "behavior", "respect", "policy", "harassment",
-                  "discrimination", "professional", "classroom", "cell phone",
-                  "device", "laptop"},
-    "admin":     {"office", "hours", "email", "contact", "instructor",
-                  "professor", "ta", "teaching assistant", "syllabus",
-                  "prerequisite", "credit", "department"},
-    "descrip":   {"course", "overview", "objective", "goal", "learn",
-                  "learning", "outcome", "description", "topic", "cover",
-                  "introduction", "focus", "aim"},
-    "ctf":       {"ctf", "capture", "flag", "challenge", "competition",
-                  "hack", "hacking", "security", "cyber"},
+    "late": {"late", "penalty", "extension", "overdue", "makeup",
+             "make-up", "missed", "incomplete"},
+    "attend": {"attendance", "attend", "absent", "absence", "present",
+               "participation", "tardy", "excused", "unexcused"},
+    "assign": {"assignment", "homework", "hw", "problem", "exercise",
+               "project", "submit", "submission", "canvas", "blackboard",
+               "upload", "paper", "essay", "report"},
+    "material": {"textbook", "reading", "text", "book", "article", "pdf",
+                 "chapter", "resource", "required", "recommended", "isbn",
+                 "library", "reserve"},
+    "accom": {"accommodation", "disability", "accessible", "accessibility",
+              "services", "ada", "support", "special", "need", "request"},
+    "conduct": {"conduct", "behavior", "respect", "policy", "harassment",
+                "discrimination", "professional", "classroom", "cell phone",
+                "device", "laptop"},
+    "admin": {"office", "hours", "email", "contact", "instructor",
+              "professor", "ta", "teaching assistant", "syllabus",
+              "prerequisite", "credit", "department"},
+    "descrip": {"course", "overview", "objective", "goal", "learn",
+                "learning", "outcome", "description", "topic", "cover",
+                "introduction", "focus", "aim"},
+    "ctf": {"ctf", "capture", "flag", "challenge", "competition",
+            "hack", "hacking", "security", "cyber"},
 }
 
 
@@ -123,21 +122,21 @@ def line_features(text, position, doc_len, vocab):
     feats["position"] = round(position / max(doc_len - 1, 1), 3)
     feats["pos_bucket"] = str(min(int(position / max(doc_len, 1) * 10), 9))  # 0-9
     feats["is_first"] = position == 0
-    feats["is_last"]  = position == doc_len - 1
+    feats["is_last"] = position == doc_len - 1
 
     # Length features
     n_chars = len(text)
     feats["len_chars"] = min(n_chars, 500)  # cap to avoid outlier dominance
     feats["len_words"] = len(words)
-    feats["is_short"]  = n_chars < 15
-    feats["is_long"]   = n_chars > 200
+    feats["is_short"] = n_chars < 15
+    feats["is_long"] = n_chars > 200
 
     # Header heuristic
     stripped = text.strip()
-    feats["is_all_caps"]    = stripped.isupper() and len(stripped) > 2
-    feats["ends_colon"]     = stripped.endswith(":")
-    feats["starts_number"]  = stripped[:1].isdigit()
-    feats["starts_bullet"]  = stripped[:1] in "-•*"
+    feats["is_all_caps"] = stripped.isupper() and len(stripped) > 2
+    feats["ends_colon"] = stripped.endswith(":")
+    feats["starts_number"] = stripped[:1].isdigit()
+    feats["starts_bullet"] = stripped[:1] in "-•*"
 
     # Keyword groups
     for group, kws in KEYWORDS.items():
@@ -250,8 +249,8 @@ def main():
 
     print("  Loading data...")
     train_seqs, train_labels = load_split("data/train.jsonl")
-    dev_seqs,   dev_labels   = load_split("data/dev.jsonl")
-    test_seqs,  test_labels  = load_split("data/test.jsonl")
+    dev_seqs, dev_labels = load_split("data/dev.jsonl")
+    test_seqs, test_labels = load_split("data/test.jsonl")
     print(f"  Docs  — train: {len(train_seqs)}  dev: {len(dev_seqs)}  test: {len(test_seqs)}")
     print(f"  Lines — train: {sum(len(s) for s in train_seqs)}"
           f"  dev: {sum(len(s) for s in dev_seqs)}"
@@ -263,23 +262,23 @@ def main():
 
     print("  Extracting features...")
     X_train = [doc_to_feature_sequence(seq, vocab) for seq in train_seqs]
-    X_dev   = [doc_to_feature_sequence(seq, vocab) for seq in dev_seqs]
-    X_test  = [doc_to_feature_sequence(seq, vocab) for seq in test_seqs]
+    X_dev = [doc_to_feature_sequence(seq, vocab) for seq in dev_seqs]
+    X_test = [doc_to_feature_sequence(seq, vocab) for seq in test_seqs]
 
     # ── Hyperparameter grid search ─────────────────────────────────────────────
     if args.quick:
         grid = {
-            "c1":             [0.01, 0.1, 1.0],
-            "c2":             [0.01, 0.1, 1.0],
+            "c1": [0.01, 0.1, 1.0],
+            "c2": [0.01, 0.1, 1.0],
             "max_iterations": [200],
-            "algorithm":      ["lbfgs", "pa"],
+            "algorithm": ["lbfgs", "pa"],
         }
     else:
         grid = {
-            "c1":             [0.0, 0.01, 0.05, 0.1, 0.5, 1.0],
-            "c2":             [0.0, 0.01, 0.05, 0.1, 0.5, 1.0],
+            "c1": [0.0, 0.01, 0.05, 0.1, 0.5, 1.0],
+            "c2": [0.0, 0.01, 0.05, 0.1, 0.5, 1.0],
             "max_iterations": [100, 200, 500, 1000],
-            "algorithm":      ["lbfgs", "l2sgd", "pa"],
+            "algorithm": ["lbfgs", "l2sgd", "pa"],
         }
 
     combos = list(itertools.product(
@@ -292,26 +291,26 @@ def main():
     print(f"\n  Hyperparameter search: {total} combinations...")
     print()
 
-    best_f1    = -1
-    best_crf   = None
+    best_f1 = -1
+    best_crf = None
     best_params = None
-    search_log  = []
+    search_log = []
 
     for i, (algo, c1, c2, max_iter) in enumerate(combos, 1):
         crf, f1, err = train_and_eval(
             X_train, train_labels,
-            X_dev,   dev_labels,
+            X_dev, dev_labels,
             algo, c1, c2, max_iter,
         )
         if err:
             continue
 
         search_log.append({"algorithm": algo, "c1": c1, "c2": c2,
-                            "max_iterations": max_iter, "dev_macro_f1": round(f1, 4)})
+                           "max_iterations": max_iter, "dev_macro_f1": round(f1, 4)})
 
         if f1 > best_f1:
-            best_f1     = f1
-            best_crf    = crf
+            best_f1 = f1
+            best_crf = crf
             best_params = {"algorithm": algo, "c1": c1, "c2": c2, "max_iterations": max_iter}
             print(f"  [{i:>4}/{total}] NEW BEST  algo={algo}  c1={c1}  c2={c2}"
                   f"  max_iter={max_iter}  dev_macro_f1={f1 * 100:.2f}")
@@ -326,8 +325,8 @@ def main():
     # ── Retrain on train+dev combined ──────────────────────────────────────────
     print()
     print("  Retraining final CRF on train+dev combined with best hyperparameters...")
-    X_train_dev   = X_train + X_dev
-    y_train_dev   = train_labels + dev_labels
+    X_train_dev = X_train + X_dev
+    y_train_dev = train_labels + dev_labels
     kwargs = dict(
         algorithm=best_params["algorithm"],
         max_iterations=best_params["max_iterations"],
@@ -347,19 +346,19 @@ def main():
     print("  Evaluating final model on test set...")
     y_pred_seqs = final_crf.predict(X_test)
 
-    y_true_flat = [lbl for seq in test_labels   for lbl in seq]
-    y_pred_flat = [lbl for seq in y_pred_seqs   for lbl in seq]
+    y_true_flat = [lbl for seq in test_labels for lbl in seq]
+    y_pred_flat = [lbl for seq in y_pred_seqs for lbl in seq]
 
     metrics = compute_metrics(y_true_flat, y_pred_flat, labels=LABELS)
-    metrics["best_params"]   = best_params
-    metrics["best_dev_f1"]   = round(best_f1, 4)
+    metrics["best_params"] = best_params
+    metrics["best_dev_f1"] = round(best_f1, 4)
     metrics["hyperparameter_search"] = search_log
 
     print_results(metrics, model_name="CRF (test set)")
 
     # Save model and results
-    os.makedirs("models",   exist_ok=True)
-    os.makedirs("results",  exist_ok=True)
+    os.makedirs("models", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     joblib.dump({"crf": final_crf, "vocab": vocab}, MODEL_PATH)
     print(f"  Model saved to {MODEL_PATH}")
 

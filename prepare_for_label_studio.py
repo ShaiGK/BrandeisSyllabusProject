@@ -8,9 +8,9 @@ Walks the syllabi/ folder tree, reads each .txt file, and outputs
 label_studio_tasks.json. Run from the project root.
 """
 
-import os
-import json
 import glob
+import json
+import os
 import re
 
 

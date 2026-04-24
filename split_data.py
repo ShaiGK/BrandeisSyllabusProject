@@ -51,9 +51,9 @@ def print_split_stats(name, records, doc_ids):
 def main():
     parser = argparse.ArgumentParser(description="Split sentences.jsonl into train/dev/test.")
     parser.add_argument("--train", type=float, default=0.80, help="Train fraction (default 0.80)")
-    parser.add_argument("--dev",   type=float, default=0.10, help="Dev fraction (default 0.10)")
-    parser.add_argument("--test",  type=float, default=0.10, help="Test fraction (default 0.10)")
-    parser.add_argument("--seed",  type=int,   default=SEED,  help="Random seed (default 42)")
+    parser.add_argument("--dev", type=float, default=0.10, help="Dev fraction (default 0.10)")
+    parser.add_argument("--test", type=float, default=0.10, help="Test fraction (default 0.10)")
+    parser.add_argument("--seed", type=int, default=SEED, help="Random seed (default 42)")
     args = parser.parse_args()
 
     total_frac = args.train + args.dev + args.test
@@ -87,36 +87,36 @@ def main():
 
     n = len(doc_ids)
     n_train = int(n * args.train)
-    n_dev   = int(n * args.dev)
+    n_dev = int(n * args.dev)
     # test gets whatever is left so rounding doesn't drop any docs
-    n_test  = n - n_train - n_dev
+    n_test = n - n_train - n_dev
 
     train_ids = set(doc_ids[:n_train])
-    dev_ids   = set(doc_ids[n_train:n_train + n_dev])
-    test_ids  = set(doc_ids[n_train + n_dev:])
+    dev_ids = set(doc_ids[n_train:n_train + n_dev])
+    test_ids = set(doc_ids[n_train + n_dev:])
 
     train_records = [r for r in records if r["doc_id"] in train_ids]
-    dev_records   = [r for r in records if r["doc_id"] in dev_ids]
-    test_records  = [r for r in records if r["doc_id"] in test_ids]
+    dev_records = [r for r in records if r["doc_id"] in dev_ids]
+    test_records = [r for r in records if r["doc_id"] in test_ids]
 
     # Sanity check: no doc_id in multiple splits
-    assert train_ids.isdisjoint(dev_ids),  "BUG: doc_id overlap between train and dev"
+    assert train_ids.isdisjoint(dev_ids), "BUG: doc_id overlap between train and dev"
     assert train_ids.isdisjoint(test_ids), "BUG: doc_id overlap between train and test"
-    assert dev_ids.isdisjoint(test_ids),   "BUG: doc_id overlap between dev and test"
+    assert dev_ids.isdisjoint(test_ids), "BUG: doc_id overlap between dev and test"
     assert len(train_ids) + len(dev_ids) + len(test_ids) == n, "BUG: doc count mismatch"
 
     write_jsonl(train_records, "data/train.jsonl")
-    write_jsonl(dev_records,   "data/dev.jsonl")
-    write_jsonl(test_records,  "data/test.jsonl")
+    write_jsonl(dev_records, "data/dev.jsonl")
+    write_jsonl(test_records, "data/test.jsonl")
 
     print()
     print(f"  Split ratios: train={args.train:.0%}  dev={args.dev:.0%}  test={args.test:.0%}  (seed={args.seed})")
     print()
     print_split_stats("Train", train_records, train_ids)
     print()
-    print_split_stats("Dev  ", dev_records,   dev_ids)
+    print_split_stats("Dev  ", dev_records, dev_ids)
     print()
-    print_split_stats("Test ", test_records,  test_ids)
+    print_split_stats("Test ", test_records, test_ids)
     print()
     print("  Files written:")
     print("    data/train.jsonl")

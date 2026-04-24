@@ -33,7 +33,6 @@ import json
 import os
 import sys
 import tempfile
-from collections import defaultdict
 
 import numpy as np
 import torch
@@ -55,9 +54,9 @@ from evaluate import (
     save_results,
 )
 
-MODEL_NAME   = "roberta-base"
-MAX_LENGTH   = 128
-MODEL_DIR    = "models/roberta"
+MODEL_NAME = "roberta-base"
+MAX_LENGTH = 128
+MODEL_DIR = "models/roberta"
 RESULTS_PATH = "results/roberta_results.json"
 CONFUSION_PATH = "results/roberta_confusion_matrix.png"
 
@@ -85,9 +84,9 @@ class SyllabusDataset(Dataset):
 
     def __getitem__(self, idx):
         return {
-            "input_ids":      self.encodings["input_ids"][idx],
+            "input_ids": self.encodings["input_ids"][idx],
             "attention_mask": self.encodings["attention_mask"][idx],
-            "labels":         self.labels[idx],
+            "labels": self.labels[idx],
         }
 
 
@@ -153,7 +152,7 @@ def extract_embeddings(model, tokenizer, records, batch_size=64, device="cpu"):
 def save_embeddings(split_name, cls_emb, logits, labels, doc_ids):
     os.makedirs("data", exist_ok=True)
     np.save(f"data/cls_embeddings_{split_name}.npy", cls_emb)
-    np.save(f"data/cls_logits_{split_name}.npy",     logits)
+    np.save(f"data/cls_logits_{split_name}.npy", logits)
     np.save(f"data/cls_labels_{split_name}.npy",
             np.array([LABEL2ID[l] for l in labels]))
     with open(f"data/cls_docids_{split_name}.json", "w") as f:
@@ -281,14 +280,14 @@ def main():
 
     print("  Loading data...")
     train_records = load_jsonl("data/train.jsonl")
-    dev_records   = load_jsonl("data/dev.jsonl")
-    test_records  = load_jsonl("data/test.jsonl")
+    dev_records = load_jsonl("data/dev.jsonl")
+    test_records = load_jsonl("data/test.jsonl")
 
     if args.smoke_test:
         print("  [smoke-test] Using 200 train / 50 dev / 50 test records.")
         train_records = train_records[:200]
-        dev_records   = dev_records[:50]
-        test_records  = test_records[:50]
+        dev_records = dev_records[:50]
+        test_records = test_records[:50]
 
     print(f"  Lines — train: {len(train_records)}  dev: {len(dev_records)}  test: {len(test_records)}")
 
@@ -297,31 +296,31 @@ def main():
 
     print("  Tokenizing datasets...")
     train_dataset = SyllabusDataset(train_records, tokenizer)
-    dev_dataset   = SyllabusDataset(dev_records,   tokenizer)
-    test_dataset  = SyllabusDataset(test_records,  tokenizer)
+    dev_dataset = SyllabusDataset(dev_records, tokenizer)
+    test_dataset = SyllabusDataset(test_records, tokenizer)
 
     # ── Hyperparameter grid ────────────────────────────────────────────────────
     if args.smoke_test:
         grid = {
-            "lr":           [2e-5],
-            "epochs":       [2],
-            "batch_size":   [32],
+            "lr": [2e-5],
+            "epochs": [2],
+            "batch_size": [32],
             "warmup_ratio": [0.06],
             "weight_decay": [0.01],
         }
     elif args.quick:
         grid = {
-            "lr":           [1e-5, 2e-5, 5e-5],
-            "epochs":       [3, 5],
-            "batch_size":   [32],
+            "lr": [1e-5, 2e-5, 5e-5],
+            "epochs": [3, 5],
+            "batch_size": [32],
             "warmup_ratio": [0.06],
             "weight_decay": [0.01],
         }
     else:
         grid = {
-            "lr":           [1e-5, 2e-5, 3e-5, 5e-5],
-            "epochs":       [3, 5, 7],
-            "batch_size":   [16, 32],
+            "lr": [1e-5, 2e-5, 3e-5, 5e-5],
+            "epochs": [3, 5, 7],
+            "batch_size": [16, 32],
             "warmup_ratio": [0.06],
             "weight_decay": [0.0, 0.01],
         }
@@ -332,10 +331,10 @@ def main():
     ))
     print(f"\n  Hyperparameter search: {len(combos)} combinations...\n")
 
-    best_f1     = -1
-    best_model  = None
+    best_f1 = -1
+    best_model = None
     best_params = None
-    search_log  = []
+    search_log = []
 
     for i, (lr, epochs, bs, wr, wd) in enumerate(combos, 1):
         print(f"  [{i:>3}/{len(combos)}] lr={lr}  epochs={epochs}  batch={bs}"
@@ -353,8 +352,8 @@ def main():
         print(f"         dev macro F1: {dev_f1 * 100:.2f}")
 
         if dev_f1 > best_f1:
-            best_f1     = dev_f1
-            best_model  = model
+            best_f1 = dev_f1
+            best_model = model
             best_params = params
             print(f"         *** NEW BEST ***")
 
@@ -407,8 +406,8 @@ def main():
     y_pred = [ID2LABEL[i] for i in all_preds]
 
     metrics = compute_metrics(y_true, y_pred, labels=LABELS)
-    metrics["best_params"]   = best_params
-    metrics["best_dev_f1"]   = round(best_f1, 4)
+    metrics["best_params"] = best_params
+    metrics["best_dev_f1"] = round(best_f1, 4)
     metrics["hyperparameter_search"] = search_log
 
     print_results(metrics, model_name="RoBERTa (test set)")
@@ -419,8 +418,8 @@ def main():
     # ── Extract and save embeddings for train_roberta_crf.py ──────────────────
     print("\n  Extracting [CLS] embeddings and logits for all splits...")
     for split_name, records in [("train", train_records),
-                                 ("dev",   dev_records),
-                                 ("test",  test_records)]:
+                                ("dev", dev_records),
+                                ("test", test_records)]:
         cls_emb, logits, labels, doc_ids = extract_embeddings(
             best_model, tokenizer, records, batch_size=64, device=device
         )

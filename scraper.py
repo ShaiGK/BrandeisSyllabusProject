@@ -8,12 +8,12 @@ syllabus PDFs, with optional deduplication across semesters.
 import os
 import re
 import time
+from io import BytesIO
+from urllib.parse import urljoin
+
+import pdfplumber
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse, parse_qs
-from collections import defaultdict
-import pdfplumber
-from io import BytesIO
 
 import config
 
@@ -115,8 +115,8 @@ def parse_page(session, url, path_so_far=None, depth=0):
     # pages have <tr class="crs"> rows inside it.
     course_table = soup.find("table", class_="sylTable")
     has_course_rows = (
-        course_table
-        and course_table.find("tr", class_="crs") is not None
+            course_table
+            and course_table.find("tr", class_="crs") is not None
     )
 
     if has_course_rows:

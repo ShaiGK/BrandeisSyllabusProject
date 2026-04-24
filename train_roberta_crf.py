@@ -63,7 +63,7 @@ LABEL2ID = {lbl: i for i, lbl in enumerate(LABELS)}
 ID2LABEL = {i: lbl for lbl, i in LABEL2ID.items()}
 NUM_LABELS = len(LABELS)
 
-MODEL_PATH   = "models/roberta_crf_transitions.pt"
+MODEL_PATH = "models/roberta_crf_transitions.pt"
 RESULTS_PATH = "results/roberta_crf_results.json"
 CONFUSION_PATH = "results/roberta_crf_confusion_matrix.png"
 
@@ -78,9 +78,9 @@ def load_split(split_name):
       doc_sequences: list of tensors, each shape [doc_len, NUM_LABELS]
       doc_labels:    list of tensors, each shape [doc_len]  (int label ids)
     """
-    logits_path  = f"data/cls_logits_{split_name}.npy"
-    labels_path  = f"data/cls_labels_{split_name}.npy"
-    docids_path  = f"data/cls_docids_{split_name}.json"
+    logits_path = f"data/cls_logits_{split_name}.npy"
+    labels_path = f"data/cls_labels_{split_name}.npy"
+    docids_path = f"data/cls_docids_{split_name}.json"
 
     for p in (logits_path, labels_path, docids_path):
         if not os.path.exists(p):
@@ -88,13 +88,13 @@ def load_split(split_name):
             print("  Run train_roberta.py first to generate embeddings.")
             sys.exit(1)
 
-    logits  = np.load(logits_path)     # [N, NUM_LABELS]
-    labels  = np.load(labels_path)     # [N]  (int ids)
+    logits = np.load(logits_path)  # [N, NUM_LABELS]
+    labels = np.load(labels_path)  # [N]  (int ids)
     with open(docids_path) as f:
-        doc_ids = json.load(f)         # [N]  (strings)
+        doc_ids = json.load(f)  # [N]  (strings)
 
     # Group by doc_id, preserving the original order
-    from collections import defaultdict, OrderedDict
+    from collections import OrderedDict
     by_doc = OrderedDict()
     for i, doc_id in enumerate(doc_ids):
         if doc_id not in by_doc:
@@ -120,6 +120,7 @@ class RobertaCRF(nn.Module):
     Minimal wrapper: takes pre-computed emission scores and applies a CRF.
     The only learned parameters are the CRF transition matrix (13×13).
     """
+
     def __init__(self, num_labels):
         super().__init__()
         self.crf = CRF(num_labels, batch_first=True)
@@ -148,21 +149,21 @@ def make_batches(doc_sequences, doc_labels, batch_size):
 
     for start in range(0, n, batch_size):
         batch_idx = indices[start: start + batch_size]
-        batch_seqs   = [doc_sequences[i] for i in batch_idx]
-        batch_labels = [doc_labels[i]    for i in batch_idx]
+        batch_seqs = [doc_sequences[i] for i in batch_idx]
+        batch_labels = [doc_labels[i] for i in batch_idx]
 
         max_len = max(s.shape[0] for s in batch_seqs)
         B = len(batch_seqs)
 
         emissions = torch.zeros(B, max_len, NUM_LABELS)
-        labels    = torch.zeros(B, max_len, dtype=torch.long)
-        mask      = torch.zeros(B, max_len, dtype=torch.bool)
+        labels = torch.zeros(B, max_len, dtype=torch.long)
+        mask = torch.zeros(B, max_len, dtype=torch.bool)
 
         for j, (seq, lbl) in enumerate(zip(batch_seqs, batch_labels)):
             L = seq.shape[0]
             emissions[j, :L] = seq
-            labels[j, :L]    = lbl
-            mask[j, :L]      = True
+            labels[j, :L] = lbl
+            mask[j, :L] = True
 
         yield emissions, labels, mask
 
@@ -192,14 +193,14 @@ def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
         optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=l2_reg,
                               momentum=0.9)
 
-    best_dev_f1  = -1.0
-    best_state   = None
-    no_improve   = 0
+    best_dev_f1 = -1.0
+    best_state = None
+    no_improve = 0
 
     for epoch in range(1, epochs + 1):
         model.train()
         total_loss = 0.0
-        n_batches  = 0
+        n_batches = 0
 
         perm = torch.randperm(len(train_seqs)).tolist()
         shuffled_seqs = [train_seqs[i] for i in perm]
@@ -207,8 +208,8 @@ def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
 
         for emissions, labels, mask in make_batches(shuffled_seqs, shuffled_lbls, batch_size):
             emissions = emissions.to(device)
-            labels    = labels.to(device)
-            mask      = mask.to(device)
+            labels = labels.to(device)
+            mask = mask.to(device)
 
             optimizer.zero_grad()
             log_likelihood = model(emissions, labels, mask)
@@ -218,21 +219,21 @@ def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
             optimizer.step()
 
             total_loss += loss.item()
-            n_batches  += 1
+            n_batches += 1
 
         if dev_seqs is not None:
             dev_f1 = evaluate_f1(model, dev_seqs, dev_lbls, device)
 
             if dev_f1 > best_dev_f1:
                 best_dev_f1 = dev_f1
-                best_state  = {k: v.clone() for k, v in model.state_dict().items()}
-                no_improve  = 0
+                best_state = {k: v.clone() for k, v in model.state_dict().items()}
+                no_improve = 0
             else:
                 no_improve += 1
 
             if epoch % max(1, epochs // 5) == 0 or epoch == epochs:
                 avg_loss = total_loss / max(n_batches, 1)
-                print(f"      epoch {epoch:>3}/{epochs}  loss={avg_loss:.4f}  dev_f1={dev_f1*100:.2f}")
+                print(f"      epoch {epoch:>3}/{epochs}  loss={avg_loss:.4f}  dev_f1={dev_f1 * 100:.2f}")
 
             if no_improve >= patience:
                 print(f"      early stop at epoch {epoch} (no improvement for {patience} epochs)")
@@ -251,7 +252,7 @@ def evaluate_f1(model, doc_seqs, doc_lbls, device):
 
     for emissions, labels, mask in make_batches(doc_seqs, doc_lbls, batch_size=32):
         emissions = emissions.to(device)
-        mask      = mask.to(device)
+        mask = mask.to(device)
 
         pred_seqs = model(emissions, mask=mask)  # list of lists
 
@@ -285,26 +286,26 @@ def main():
 
     print("  Loading pre-computed RoBERTa logits...")
     train_seqs, train_lbls = load_split("train")
-    dev_seqs,   dev_lbls   = load_split("dev")
-    test_seqs,  test_lbls  = load_split("test")
+    dev_seqs, dev_lbls = load_split("dev")
+    test_seqs, test_lbls = load_split("test")
     print(f"  Docs — train: {len(train_seqs)}  dev: {len(dev_seqs)}  test: {len(test_seqs)}")
 
     # ── Hyperparameter grid ────────────────────────────────────────────────────
     if args.quick:
         grid = {
-            "lr":         [1e-2, 1e-1],
-            "epochs":     [50, 100],
+            "lr": [1e-2, 1e-1],
+            "epochs": [50, 100],
             "batch_size": [16],
-            "optimizer":  ["adam", "adamw", "sgd"],
-            "l2_reg":     [1e-3],
+            "optimizer": ["adam", "adamw", "sgd"],
+            "l2_reg": [1e-3],
         }
     else:
         grid = {
-            "lr":         [1e-3, 1e-2, 5e-2, 1e-1],
-            "epochs":     [20, 50, 100],
+            "lr": [1e-3, 1e-2, 5e-2, 1e-1],
+            "epochs": [20, 50, 100],
             "batch_size": [16, 32],
-            "optimizer":  ["adam", "adamw", "sgd"],
-            "l2_reg":     [0.0, 1e-3, 1e-2],
+            "optimizer": ["adam", "adamw", "sgd"],
+            "l2_reg": [0.0, 1e-3, 1e-2],
         }
 
     combos = list(itertools.product(
@@ -313,10 +314,10 @@ def main():
     ))
     print(f"\n  Hyperparameter search: {len(combos)} combinations...\n")
 
-    best_f1     = -1.0
-    best_model  = None
+    best_f1 = -1.0
+    best_model = None
     best_params = None
-    search_log  = []
+    search_log = []
 
     for i, (lr, epochs, bs, opt, l2) in enumerate(combos, 1):
         print(f"  [{i:>4}/{len(combos)}] lr={lr}  epochs={epochs}  batch={bs}"
@@ -324,7 +325,7 @@ def main():
 
         model, dev_f1 = train_crf(
             train_seqs, train_lbls,
-            dev_seqs,   dev_lbls,
+            dev_seqs, dev_lbls,
             lr=lr, epochs=epochs, batch_size=bs,
             optimizer_name=opt, l2_reg=l2,
             device=device,
@@ -335,8 +336,8 @@ def main():
         search_log.append({**params, "dev_macro_f1": round(dev_f1, 4)})
 
         if dev_f1 > best_f1:
-            best_f1     = dev_f1
-            best_model  = model
+            best_f1 = dev_f1
+            best_model = model
             best_params = params
             print(f"  *** NEW BEST  dev macro F1: {dev_f1 * 100:.2f} ***")
 
@@ -368,7 +369,7 @@ def main():
     with torch.no_grad():
         for emissions, labels, mask in make_batches(test_seqs, test_lbls, batch_size=32):
             emissions = emissions.to(device)
-            mask      = mask.to(device)
+            mask = mask.to(device)
             pred_seqs = best_model(emissions, mask=mask)
 
             for j, (pred_seq, lbl_tensor, msk) in enumerate(
@@ -381,14 +382,14 @@ def main():
     y_pred_str = [ID2LABEL[i] for i in y_pred_flat]
 
     metrics = compute_metrics(y_true_str, y_pred_str, labels=LABELS)
-    metrics["best_params"]   = best_params
-    metrics["best_dev_f1"]   = round(best_f1, 4)
+    metrics["best_params"] = best_params
+    metrics["best_dev_f1"] = round(best_f1, 4)
     metrics["hyperparameter_search"] = search_log
 
     print_results(metrics, model_name="RoBERTa + CRF (test set)")
 
     # Save
-    os.makedirs("models",  exist_ok=True)
+    os.makedirs("models", exist_ok=True)
     os.makedirs("results", exist_ok=True)
     torch.save(best_model.state_dict(), MODEL_PATH)
     print(f"  CRF transition matrix saved to {MODEL_PATH}")
