@@ -9,11 +9,16 @@ After finding the best hyperparameters, the script also saves:
   - The fine-tuned model                        →  models/roberta/
 
 Hyperparameter grid (evaluated on dev macro F1):
-  learning_rate  : [5e-6, 1e-5, 2e-5, 3e-5, 5e-5]
-  num_epochs     : [2, 3, 5, 7, 10]
-  per_device_batch: [16, 32, 64]
-  warmup_ratio   : [0.0, 0.06, 0.1]
-  weight_decay   : [0.0, 0.01, 0.1]
+  learning_rate  : [1e-5, 2e-5, 3e-5, 5e-5]
+  num_epochs     : [3, 5, 7]
+  per_device_batch: [16, 32]
+  warmup_ratio   : [0.06]          (fixed — standard value, rarely changes outcome)
+  weight_decay   : [0.0, 0.01]
+
+After selecting the best hyperparameters via dev F1, the script retrains the
+final model on train+dev combined before evaluating on test.  This uses all
+available labelled data and reduces the dev/test gap caused by having only
+~7 dev documents.
 
 Run on GPU (Colab recommended):
   python train_roberta.py
@@ -160,6 +165,16 @@ def save_embeddings(split_name, cls_emb, logits, labels, doc_ids):
 
 def run_training(train_dataset, dev_dataset, lr, epochs, batch_size,
                  warmup_ratio, weight_decay, seed=42):
+    """
+    Train RoBERTa for one hyperparameter combination.
+
+    If dev_dataset is provided (grid search mode): evaluates each epoch on dev,
+    restores the best checkpoint, and returns the best dev macro F1.
+
+    If dev_dataset is None (final retraining mode): trains for the full epoch
+    budget with no evaluation — used when retraining on train+dev combined after
+    the best hyperparameters have already been selected.
+    """
     model = AutoModelForSequenceClassification.from_pretrained(
         MODEL_NAME,
         num_labels=len(LABELS),
@@ -168,49 +183,69 @@ def run_training(train_dataset, dev_dataset, lr, epochs, batch_size,
         ignore_mismatched_sizes=True,
     )
 
-    # Use a temp directory for checkpoints so they are automatically cleaned up.
-    # load_best_model_at_end=True needs checkpoints on disk during the run, but
-    # we don't want to keep 225 × 10 epochs worth of 500MB RoBERTa checkpoints.
+    # Checkpoints live in a temp dir so they are cleaned up automatically.
     with tempfile.TemporaryDirectory() as tmp_dir:
-        train_args = TrainingArguments(
-            output_dir=tmp_dir,
-            num_train_epochs=epochs,
-            per_device_train_batch_size=batch_size,
-            per_device_eval_batch_size=64,
-            learning_rate=lr,
-            warmup_ratio=warmup_ratio,
-            weight_decay=weight_decay,
-            eval_strategy="epoch",
-            save_strategy="epoch",
-            save_total_limit=1,        # keep only the latest checkpoint → caps disk use to ~1 GB
-            load_best_model_at_end=True,
-            metric_for_best_model="macro_f1",
-            greater_is_better=True,
-            seed=seed,
-            logging_steps=50,
-            fp16=torch.cuda.is_available(),
-            report_to="none",
-            dataloader_num_workers=0,
-        )
+        if dev_dataset is not None:
+            train_args = TrainingArguments(
+                output_dir=tmp_dir,
+                num_train_epochs=epochs,
+                per_device_train_batch_size=batch_size,
+                per_device_eval_batch_size=64,
+                learning_rate=lr,
+                warmup_ratio=warmup_ratio,
+                weight_decay=weight_decay,
+                eval_strategy="epoch",
+                save_strategy="epoch",
+                save_total_limit=1,
+                load_best_model_at_end=True,
+                metric_for_best_model="macro_f1",
+                greater_is_better=True,
+                seed=seed,
+                logging_steps=50,
+                fp16=torch.cuda.is_available(),
+                report_to="none",
+                dataloader_num_workers=0,
+            )
+            trainer = Trainer(
+                model=model,
+                args=train_args,
+                train_dataset=train_dataset,
+                eval_dataset=dev_dataset,
+                compute_metrics=hf_compute_metrics,
+                callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
+            )
+            trainer.train()
+            best_f1 = max(
+                (log["eval_macro_f1"] for log in trainer.state.log_history if "eval_macro_f1" in log),
+                default=0.0,
+            )
+        else:
+            # Final retraining on train+dev — no held-out set, train for the
+            # full epoch budget found during grid search.
+            train_args = TrainingArguments(
+                output_dir=tmp_dir,
+                num_train_epochs=epochs,
+                per_device_train_batch_size=batch_size,
+                per_device_eval_batch_size=64,
+                learning_rate=lr,
+                warmup_ratio=warmup_ratio,
+                weight_decay=weight_decay,
+                seed=seed,
+                logging_steps=50,
+                fp16=torch.cuda.is_available(),
+                report_to="none",
+                dataloader_num_workers=0,
+            )
+            trainer = Trainer(
+                model=model,
+                args=train_args,
+                train_dataset=train_dataset,
+                compute_metrics=hf_compute_metrics,
+            )
+            trainer.train()
+            best_f1 = 0.0
 
-        trainer = Trainer(
-            model=model,
-            args=train_args,
-            train_dataset=train_dataset,
-            eval_dataset=dev_dataset,
-            compute_metrics=hf_compute_metrics,
-            callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
-        )
-        trainer.train()
-
-        # Read best dev F1 before the temp dir is deleted
-        best_f1 = max(
-            (log["eval_macro_f1"] for log in trainer.state.log_history if "eval_macro_f1" in log),
-            default=0.0,
-        )
         best_model = trainer.model
-    # tmp_dir and all checkpoints are deleted here automatically
-
     return best_model, best_f1
 
 
@@ -284,11 +319,11 @@ def main():
         }
     else:
         grid = {
-            "lr":           [5e-6, 1e-5, 2e-5, 3e-5, 5e-5],
-            "epochs":       [2, 3, 5, 7, 10],
-            "batch_size":   [16, 32, 64],
-            "warmup_ratio": [0.0, 0.06, 0.1],
-            "weight_decay": [0.0, 0.01, 0.1],
+            "lr":           [1e-5, 2e-5, 3e-5, 5e-5],
+            "epochs":       [3, 5, 7],
+            "batch_size":   [16, 32],
+            "warmup_ratio": [0.06],
+            "weight_decay": [0.0, 0.01],
         }
 
     combos = list(itertools.product(
@@ -326,6 +361,22 @@ def main():
     print()
     print(f"  Best params:       {best_params}")
     print(f"  Best dev macro F1: {best_f1 * 100:.2f}")
+
+    # ── Retrain on train+dev combined ──────────────────────────────────────────
+    # Using all labelled data (train+dev) for the final model reduces the
+    # effective train size gap and helps close the dev/test generalisation gap.
+    print("\n  Retraining final model on train+dev combined with best hyperparameters...")
+    train_dev_records = train_records + dev_records
+    train_dev_dataset = SyllabusDataset(train_dev_records, tokenizer)
+    best_model, _ = run_training(
+        train_dev_dataset, None,
+        lr=best_params["lr"],
+        epochs=best_params["epochs"],
+        batch_size=best_params["batch_size"],
+        warmup_ratio=best_params["warmup_ratio"],
+        weight_decay=best_params["weight_decay"],
+    )
+    print("  Retrained on train+dev combined.")
 
     # ── Save the best model ────────────────────────────────────────────────────
     os.makedirs(MODEL_DIR, exist_ok=True)

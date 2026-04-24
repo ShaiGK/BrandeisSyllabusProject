@@ -20,11 +20,14 @@ Implementation:
   train the CRF transition matrix (13×13 = 169 parameters).
 
 Hyperparameter grid:
-  learning_rate : [1e-3, 5e-3, 1e-2, 5e-2, 1e-1]
-  num_epochs    : [10, 20, 50, 100, 200]
-  batch_size    : [8, 16, 32]   (number of documents per batch)
-  optimizer     : ['adam', 'sgd', 'adamw']
-  l2_reg        : [0.0, 1e-4, 1e-3, 1e-2]   (weight decay for transition matrix)
+  learning_rate : [1e-3, 1e-2, 5e-2, 1e-1]
+  num_epochs    : [20, 50, 100]              (early stopping with patience=10)
+  batch_size    : [16, 32]
+  optimizer     : ['adam', 'adamw', 'sgd']
+  l2_reg        : [0.0, 1e-3, 1e-2]
+
+After selecting the best hyperparameters via dev F1, the script retrains on
+train+dev combined before evaluating on test.
 
 Output:
   models/roberta_crf_transitions.pt   (the learned CRF transition matrix)
@@ -32,7 +35,7 @@ Output:
   results/roberta_crf_confusion_matrix.png
 
 Run (after train_roberta.py has completed):
-  python train_roberta_crf.py           # full grid (900 combos)
+  python train_roberta_crf.py           # full grid (216 combos)
   python train_roberta_crf.py --quick   # reduced grid (12 combos) for a fast check
 """
 
@@ -168,7 +171,17 @@ def make_batches(doc_sequences, doc_labels, batch_size):
 
 def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
               lr, epochs, batch_size, optimizer_name, l2_reg,
-              device):
+              device, patience=10):
+    """
+    Train the CRF head for one hyperparameter combination.
+
+    If dev_seqs/dev_lbls are provided: tracks best dev F1, restores that
+    checkpoint, and applies early stopping (patience epochs without improvement).
+
+    If dev_seqs is None: trains for the full epoch budget and returns the final
+    model — used when retraining on train+dev combined after hyperparameter
+    selection.
+    """
     model = RobertaCRF(NUM_LABELS).to(device)
 
     if optimizer_name == "adam":
@@ -179,15 +192,15 @@ def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
         optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=l2_reg,
                               momentum=0.9)
 
-    best_dev_f1 = -1.0
-    best_state  = None
+    best_dev_f1  = -1.0
+    best_state   = None
+    no_improve   = 0
 
     for epoch in range(1, epochs + 1):
         model.train()
         total_loss = 0.0
         n_batches  = 0
 
-        # Shuffle document order each epoch
         perm = torch.randperm(len(train_seqs)).tolist()
         shuffled_seqs = [train_seqs[i] for i in perm]
         shuffled_lbls = [train_lbls[i] for i in perm]
@@ -199,7 +212,7 @@ def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
 
             optimizer.zero_grad()
             log_likelihood = model(emissions, labels, mask)
-            loss = -log_likelihood         # maximize log-likelihood = minimize negative
+            loss = -log_likelihood
             loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
             optimizer.step()
@@ -207,18 +220,26 @@ def train_crf(train_seqs, train_lbls, dev_seqs, dev_lbls,
             total_loss += loss.item()
             n_batches  += 1
 
-        # Evaluate on dev
-        dev_f1 = evaluate_f1(model, dev_seqs, dev_lbls, device)
+        if dev_seqs is not None:
+            dev_f1 = evaluate_f1(model, dev_seqs, dev_lbls, device)
 
-        if dev_f1 > best_dev_f1:
-            best_dev_f1 = dev_f1
-            best_state  = {k: v.clone() for k, v in model.state_dict().items()}
+            if dev_f1 > best_dev_f1:
+                best_dev_f1 = dev_f1
+                best_state  = {k: v.clone() for k, v in model.state_dict().items()}
+                no_improve  = 0
+            else:
+                no_improve += 1
 
-        if epoch % max(1, epochs // 5) == 0 or epoch == epochs:
-            avg_loss = total_loss / max(n_batches, 1)
-            print(f"      epoch {epoch:>3}/{epochs}  loss={avg_loss:.4f}  dev_f1={dev_f1*100:.2f}")
+            if epoch % max(1, epochs // 5) == 0 or epoch == epochs:
+                avg_loss = total_loss / max(n_batches, 1)
+                print(f"      epoch {epoch:>3}/{epochs}  loss={avg_loss:.4f}  dev_f1={dev_f1*100:.2f}")
 
-    model.load_state_dict(best_state)
+            if no_improve >= patience:
+                print(f"      early stop at epoch {epoch} (no improvement for {patience} epochs)")
+                break
+
+    if best_state is not None:
+        model.load_state_dict(best_state)
     return model, best_dev_f1
 
 
@@ -279,11 +300,11 @@ def main():
         }
     else:
         grid = {
-            "lr":         [1e-3, 5e-3, 1e-2, 5e-2, 1e-1],
-            "epochs":     [10, 20, 50, 100, 200],
-            "batch_size": [8, 16, 32],
+            "lr":         [1e-3, 1e-2, 5e-2, 1e-1],
+            "epochs":     [20, 50, 100],
+            "batch_size": [16, 32],
             "optimizer":  ["adam", "adamw", "sgd"],
-            "l2_reg":     [0.0, 1e-4, 1e-3, 1e-2],
+            "l2_reg":     [0.0, 1e-3, 1e-2],
         }
 
     combos = list(itertools.product(
@@ -322,6 +343,22 @@ def main():
     print()
     print(f"  Best params:       {best_params}")
     print(f"  Best dev macro F1: {best_f1 * 100:.2f}")
+
+    # ── Retrain on train+dev combined ──────────────────────────────────────────
+    print("\n  Retraining final CRF on train+dev combined with best hyperparameters...")
+    train_dev_seqs = train_seqs + dev_seqs
+    train_dev_lbls = train_lbls + dev_lbls
+    best_model, _ = train_crf(
+        train_dev_seqs, train_dev_lbls,
+        None, None,
+        lr=best_params["lr"],
+        epochs=best_params["epochs"],
+        batch_size=best_params["batch_size"],
+        optimizer_name=best_params["optimizer"],
+        l2_reg=best_params["l2_reg"],
+        device=device,
+    )
+    print("  Retrained on train+dev combined.")
 
     # ── Evaluate on test ───────────────────────────────────────────────────────
     print("\n  Evaluating on test set...")
