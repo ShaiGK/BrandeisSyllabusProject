@@ -220,10 +220,12 @@ def train_and_eval(X_train, y_train, X_dev, y_dev, algorithm, c1, c2, max_iter):
     except Exception as e:
         return None, None, str(e)
 
+    present_dev = {l for seq in y_dev for l in seq}
+    active_labels = [l for l in LABELS if l != "O" and l in present_dev]
     f1 = flat_f1_score(
         y_dev, crf.predict(X_dev),
         average="macro",
-        labels=[l for l in LABELS if l != "O"],  # macro over non-O labels
+        labels=active_labels,
         zero_division=0,
     )
     return crf, f1, None

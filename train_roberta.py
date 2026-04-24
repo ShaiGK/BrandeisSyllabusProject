@@ -93,7 +93,10 @@ def hf_compute_metrics(eval_pred):
     from sklearn.metrics import f1_score
     logits, labels = eval_pred
     preds = np.argmax(logits, axis=-1)
-    macro_f1 = f1_score(labels, preds, average="macro", zero_division=0)
+    # Only average over labels that actually appear in the eval split (support > 0).
+    present = set(labels.tolist())
+    active = [i for i, lbl in ID2LABEL.items() if lbl != "O" and i in present]
+    macro_f1 = f1_score(labels, preds, labels=active, average="macro", zero_division=0)
     return {"macro_f1": macro_f1}
 
 

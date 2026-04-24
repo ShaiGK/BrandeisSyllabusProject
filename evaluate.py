@@ -40,10 +40,16 @@ def compute_metrics(y_true, y_pred, labels=None):
     if labels is None:
         labels = LABELS
 
+    # Exclude labels with zero support (never appear in y_true) from the macro
+    # F1 average.  A label like CTF with no annotated examples would otherwise
+    # contribute a 0 to the average and silently drag down the reported score.
+    present = set(y_true)
+    active = [lbl for lbl in labels if lbl in present]
+
     report = classification_report(
         y_true, y_pred, labels=labels, output_dict=True, zero_division=0
     )
-    macro_f1 = f1_score(y_true, y_pred, labels=labels, average="macro", zero_division=0)
+    macro_f1 = f1_score(y_true, y_pred, labels=active, average="macro", zero_division=0)
     acc = accuracy_score(y_true, y_pred)
 
     per_label = {}

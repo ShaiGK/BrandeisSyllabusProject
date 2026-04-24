@@ -240,8 +240,9 @@ def evaluate_f1(model, doc_seqs, doc_lbls, device):
             y_true.extend(lbl_tensor[:true_len].tolist())
             y_pred.extend(pred_seq[:true_len])
 
-    non_o = [i for i, l in ID2LABEL.items() if l != "O"]
-    return f1_score(y_true, y_pred, labels=non_o, average="macro", zero_division=0)
+    present = set(y_true)
+    non_o_active = [i for i, l in ID2LABEL.items() if l != "O" and i in present]
+    return f1_score(y_true, y_pred, labels=non_o_active, average="macro", zero_division=0)
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
