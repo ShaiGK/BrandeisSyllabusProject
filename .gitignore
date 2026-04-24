@@ -21,3 +21,4 @@ label_studio_tasks.json
 # Generated data and model weights (reproducible from annotations/ + code)
 data/
 models/
+annotations/split_annotations

@@ -1,0 +1,88 @@
+{
+  "annotators": [
+    "sam",
+    "shai",
+    "spencer"
+  ],
+  "num_docs": 5,
+  "avg_pairwise_kappa": 0.8238,
+  "fleiss_kappa": 0.8237,
+  "pairwise": {
+    "sam_vs_shai": {
+      "kappa": 0.8001,
+      "percent_agree": 0.8282,
+      "macro_f1": 0.7778,
+      "f1_per_label": {
+        "ACCOM": 0.9375,
+        "ATTEND": 0.8376,
+        "GRADE": 0.7101,
+        "ASSIGN": 0.7148,
+        "MATERIAL": 0.6154,
+        "INTEGRITY": 0.9167,
+        "SCHEDULE": 0.997,
+        "CONDUCT": 0.5904,
+        "DESCRIP": 0.8483,
+        "ADMIN": 0.8163,
+        "LATE": 0.5714,
+        "O": 0.339
+      },
+      "n_lines": 1199,
+      "n_docs": 5
+    },
+    "sam_vs_spencer": {
+      "kappa": 0.851,
+      "percent_agree": 0.8724,
+      "macro_f1": 0.8481,
+      "f1_per_label": {
+        "ACCOM": 0.9176,
+        "ATTEND": 0.8188,
+        "GRADE": 0.9333,
+        "ASSIGN": 0.8808,
+        "MATERIAL": 0.8889,
+        "INTEGRITY": 0.9706,
+        "SCHEDULE": 0.9911,
+        "CONDUCT": 0.6316,
+        "DESCRIP": 0.7963,
+        "ADMIN": 0.8552,
+        "LATE": 0.6452,
+        "O": 0.2979
+      },
+      "n_lines": 1199,
+      "n_docs": 5
+    },
+    "shai_vs_spencer": {
+      "kappa": 0.8204,
+      "percent_agree": 0.8457,
+      "macro_f1": 0.7938,
+      "f1_per_label": {
+        "ACCOM": 0.8571,
+        "ATTEND": 0.7612,
+        "GRADE": 0.7101,
+        "ASSIGN": 0.7326,
+        "MATERIAL": 0.6316,
+        "INTEGRITY": 0.9437,
+        "SCHEDULE": 0.9911,
+        "CONDUCT": 0.6463,
+        "DESCRIP": 0.8664,
+        "ADMIN": 0.9045,
+        "LATE": 0.6875,
+        "O": 0.5
+      },
+      "n_lines": 1199,
+      "n_docs": 5
+    }
+  },
+  "label_avg_f1": {
+    "ACCOM": 0.9041,
+    "ATTEND": 0.8059,
+    "GRADE": 0.7845,
+    "ASSIGN": 0.7761,
+    "MATERIAL": 0.712,
+    "INTEGRITY": 0.9437,
+    "SCHEDULE": 0.9931,
+    "CONDUCT": 0.6228,
+    "DESCRIP": 0.837,
+    "ADMIN": 0.8587,
+    "LATE": 0.6347
+  }
+}

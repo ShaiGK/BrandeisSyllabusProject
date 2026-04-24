@@ -1,0 +1,219 @@
+{
+  "accuracy": 0.7087,
+  "macro_f1": 0.5084,
+  "per_label": {
+    "ACCOM": {
+      "precision": 1.0,
+      "recall": 0.5714,
+      "f1": 0.7273,
+      "support": 35
+    },
+    "ATTEND": {
+      "precision": 0.2,
+      "recall": 0.3333,
+      "f1": 0.25,
+      "support": 3
+    },
+    "GRADE": {
+      "precision": 0.6818,
+      "recall": 1.0,
+      "f1": 0.8108,
+      "support": 30
+    },
+    "ASSIGN": {
+      "precision": 0.4839,
+      "recall": 0.8824,
+      "f1": 0.625,
+      "support": 17
+    },
+    "MATERIAL": {
+      "precision": 0.2,
+      "recall": 0.2941,
+      "f1": 0.2381,
+      "support": 17
+    },
+    "INTEGRITY": {
+      "precision": 0.9459,
+      "recall": 0.7292,
+      "f1": 0.8235,
+      "support": 48
+    },
+    "SCHEDULE": {
+      "precision": 0.9494,
+      "recall": 0.8427,
+      "f1": 0.8929,
+      "support": 178
+    },
+    "CONDUCT": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6667,
+      "support": 6
+    },
+    "DESCRIP": {
+      "precision": 0.5588,
+      "recall": 0.5135,
+      "f1": 0.5352,
+      "support": 37
+    },
+    "ADMIN": {
+      "precision": 0.6897,
+      "recall": 0.6667,
+      "f1": 0.678,
+      "support": 120
+    },
+    "CTF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "LATE": {
+      "precision": 0.5,
+      "recall": 0.1818,
+      "f1": 0.2667,
+      "support": 11
+    },
+    "O": {
+      "precision": 0.069,
+      "recall": 0.1538,
+      "f1": 0.0952,
+      "support": 13
+    }
+  },
+  "best_params": {
+    "algorithm": "lbfgs",
+    "c1": 1.0,
+    "c2": 0.1,
+    "max_iterations": 200
+  },
+  "best_dev_f1": 0.4956,
+  "hyperparameter_search": [
+    {
+      "algorithm": "lbfgs",
+      "c1": 0.01,
+      "c2": 0.01,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.426
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 0.01,
+      "c2": 0.1,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.4744
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 0.01,
+      "c2": 1.0,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.3959
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 0.1,
+      "c2": 0.01,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.481
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 0.1,
+      "c2": 0.1,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.4286
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 0.1,
+      "c2": 1.0,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.489
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 1.0,
+      "c2": 0.01,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.4421
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 1.0,
+      "c2": 0.1,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.4956
+    },
+    {
+      "algorithm": "lbfgs",
+      "c1": 1.0,
+      "c2": 1.0,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.4027
+    },
+    {
+      "algorithm": "pa",
+      "c1": 0.01,
+      "c2": 0.01,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1815
+    },
+    {
+      "algorithm": "pa",
+      "c1": 0.01,
+      "c2": 0.1,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1392
+    },
+    {
+      "algorithm": "pa",
+      "c1": 0.01,
+      "c2": 1.0,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1802
+    },
+    {
+      "algorithm": "pa",
+      "c1": 0.1,
+      "c2": 0.01,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1687
+    },
+    {
+      "algorithm": "pa",
+      "c1": 0.1,
+      "c2": 0.1,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1797
+    },
+    {
+      "algorithm": "pa",
+      "c1": 0.1,
+      "c2": 1.0,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1624
+    },
+    {
+      "algorithm": "pa",
+      "c1": 1.0,
+      "c2": 0.01,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1589
+    },
+    {
+      "algorithm": "pa",
+      "c1": 1.0,
+      "c2": 0.1,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.1768
+    },
+    {
+      "algorithm": "pa",
+      "c1": 1.0,
+      "c2": 1.0,
+      "max_iterations": 200,
+      "dev_macro_f1": 0.158
+    }
+  ]
+}

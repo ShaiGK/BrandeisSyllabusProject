@@ -1,0 +1,142 @@
+{
+  "accuracy": 0.7204,
+  "macro_f1": 0.5269,
+  "per_label": {
+    "ACCOM": {
+      "precision": 0.931,
+      "recall": 0.7714,
+      "f1": 0.8438,
+      "support": 35
+    },
+    "ATTEND": {
+      "precision": 0.375,
+      "recall": 1.0,
+      "f1": 0.5455,
+      "support": 3
+    },
+    "GRADE": {
+      "precision": 0.6757,
+      "recall": 0.8333,
+      "f1": 0.7463,
+      "support": 30
+    },
+    "ASSIGN": {
+      "precision": 0.3333,
+      "recall": 0.5882,
+      "f1": 0.4255,
+      "support": 17
+    },
+    "MATERIAL": {
+      "precision": 0.55,
+      "recall": 0.6471,
+      "f1": 0.5946,
+      "support": 17
+    },
+    "INTEGRITY": {
+      "precision": 0.9024,
+      "recall": 0.7708,
+      "f1": 0.8315,
+      "support": 48
+    },
+    "SCHEDULE": {
+      "precision": 0.9342,
+      "recall": 0.7978,
+      "f1": 0.8606,
+      "support": 178
+    },
+    "CONDUCT": {
+      "precision": 0.1818,
+      "recall": 0.3333,
+      "f1": 0.2353,
+      "support": 6
+    },
+    "DESCRIP": {
+      "precision": 0.4889,
+      "recall": 0.5946,
+      "f1": 0.5366,
+      "support": 37
+    },
+    "ADMIN": {
+      "precision": 0.7768,
+      "recall": 0.725,
+      "f1": 0.75,
+      "support": 120
+    },
+    "CTF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "LATE": {
+      "precision": 0.6,
+      "recall": 0.2727,
+      "f1": 0.375,
+      "support": 11
+    },
+    "O": {
+      "precision": 0.08,
+      "recall": 0.1538,
+      "f1": 0.1053,
+      "support": 13
+    }
+  },
+  "best_params": {
+    "lr": 5e-05,
+    "epochs": 5,
+    "batch_size": 32,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01
+  },
+  "best_dev_f1": 0.6687,
+  "hyperparameter_search": [
+    {
+      "lr": 1e-05,
+      "epochs": 3,
+      "batch_size": 32,
+      "warmup_ratio": 0.06,
+      "weight_decay": 0.01,
+      "dev_macro_f1": 0.4305
+    },
+    {
+      "lr": 1e-05,
+      "epochs": 5,
+      "batch_size": 32,
+      "warmup_ratio": 0.06,
+      "weight_decay": 0.01,
+      "dev_macro_f1": 0.4945
+    },
+    {
+      "lr": 2e-05,
+      "epochs": 3,
+      "batch_size": 32,
+      "warmup_ratio": 0.06,
+      "weight_decay": 0.01,
+      "dev_macro_f1": 0.5255
+    },
+    {
+      "lr": 2e-05,
+      "epochs": 5,
+      "batch_size": 32,
+      "warmup_ratio": 0.06,
+      "weight_decay": 0.01,
+      "dev_macro_f1": 0.615
+    },
+    {
+      "lr": 5e-05,
+      "epochs": 3,
+      "batch_size": 32,
+      "warmup_ratio": 0.06,
+      "weight_decay": 0.01,
+      "dev_macro_f1": 0.6183
+    },
+    {
+      "lr": 5e-05,
+      "epochs": 5,
+      "batch_size": 32,
+      "warmup_ratio": 0.06,
+      "weight_decay": 0.01,
+      "dev_macro_f1": 0.6687
+    }
+  ]
+}

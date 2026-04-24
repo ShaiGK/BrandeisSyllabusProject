@@ -1,0 +1,190 @@
+{
+  "accuracy": 0.8233,
+  "macro_f1": 0.6115,
+  "per_label": {
+    "ACCOM": {
+      "precision": 1.0,
+      "recall": 0.5714,
+      "f1": 0.7273,
+      "support": 35
+    },
+    "ATTEND": {
+      "precision": 0.375,
+      "recall": 1.0,
+      "f1": 0.5455,
+      "support": 3
+    },
+    "GRADE": {
+      "precision": 0.7647,
+      "recall": 0.8667,
+      "f1": 0.8125,
+      "support": 30
+    },
+    "ASSIGN": {
+      "precision": 0.5,
+      "recall": 0.8235,
+      "f1": 0.6222,
+      "support": 17
+    },
+    "MATERIAL": {
+      "precision": 0.625,
+      "recall": 0.8824,
+      "f1": 0.7317,
+      "support": 17
+    },
+    "INTEGRITY": {
+      "precision": 0.6984,
+      "recall": 0.9167,
+      "f1": 0.7928,
+      "support": 48
+    },
+    "SCHEDULE": {
+      "precision": 0.9942,
+      "recall": 0.9607,
+      "f1": 0.9771,
+      "support": 178
+    },
+    "CONDUCT": {
+      "precision": 0.6667,
+      "recall": 0.3333,
+      "f1": 0.4444,
+      "support": 6
+    },
+    "DESCRIP": {
+      "precision": 0.7838,
+      "recall": 0.7838,
+      "f1": 0.7838,
+      "support": 37
+    },
+    "ADMIN": {
+      "precision": 0.8319,
+      "recall": 0.7833,
+      "f1": 0.8069,
+      "support": 120
+    },
+    "CTF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "LATE": {
+      "precision": 1.0,
+      "recall": 0.5455,
+      "f1": 0.7059,
+      "support": 11
+    },
+    "O": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 13
+    }
+  },
+  "best_params": {
+    "lr": 0.1,
+    "epochs": 100,
+    "batch_size": 16,
+    "optimizer": "sgd",
+    "l2_reg": 0.001
+  },
+  "best_dev_f1": 0.7039,
+  "hyperparameter_search": [
+    {
+      "lr": 0.01,
+      "epochs": 50,
+      "batch_size": 16,
+      "optimizer": "adam",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6639
+    },
+    {
+      "lr": 0.01,
+      "epochs": 50,
+      "batch_size": 16,
+      "optimizer": "adamw",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6639
+    },
+    {
+      "lr": 0.01,
+      "epochs": 50,
+      "batch_size": 16,
+      "optimizer": "sgd",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6626
+    },
+    {
+      "lr": 0.01,
+      "epochs": 100,
+      "batch_size": 16,
+      "optimizer": "adam",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6657
+    },
+    {
+      "lr": 0.01,
+      "epochs": 100,
+      "batch_size": 16,
+      "optimizer": "adamw",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6673
+    },
+    {
+      "lr": 0.01,
+      "epochs": 100,
+      "batch_size": 16,
+      "optimizer": "sgd",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6674
+    },
+    {
+      "lr": 0.1,
+      "epochs": 50,
+      "batch_size": 16,
+      "optimizer": "adam",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.663
+    },
+    {
+      "lr": 0.1,
+      "epochs": 50,
+      "batch_size": 16,
+      "optimizer": "adamw",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6683
+    },
+    {
+      "lr": 0.1,
+      "epochs": 50,
+      "batch_size": 16,
+      "optimizer": "sgd",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.7003
+    },
+    {
+      "lr": 0.1,
+      "epochs": 100,
+      "batch_size": 16,
+      "optimizer": "adam",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6663
+    },
+    {
+      "lr": 0.1,
+      "epochs": 100,
+      "batch_size": 16,
+      "optimizer": "adamw",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.6659
+    },
+    {
+      "lr": 0.1,
+      "epochs": 100,
+      "batch_size": 16,
+      "optimizer": "sgd",
+      "l2_reg": 0.001,
+      "dev_macro_f1": 0.7039
+    }
+  ]
+}
