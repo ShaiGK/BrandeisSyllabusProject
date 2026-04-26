@@ -26,7 +26,7 @@ Hyperparameter grid:
   optimizer     : ['adam', 'adamw', 'sgd']
   l2_reg        : [0.0, 1e-3, 1e-2]
 
-After selecting the best hyperparameters via dev F1, the script retrains on
+After selecting the best hyperparameters via dev F1, the script can retrain on
 train+dev combined before evaluating on test.
 
 Output:
@@ -346,20 +346,20 @@ def main():
     print(f"  Best dev macro F1: {best_f1 * 100:.2f}")
 
     # ── Retrain on train+dev combined ──────────────────────────────────────────
-    print("\n  Retraining final CRF on train+dev combined with best hyperparameters...")
-    train_dev_seqs = train_seqs + dev_seqs
-    train_dev_lbls = train_lbls + dev_lbls
-    best_model, _ = train_crf(
-        train_dev_seqs, train_dev_lbls,
-        None, None,
-        lr=best_params["lr"],
-        epochs=best_params["epochs"],
-        batch_size=best_params["batch_size"],
-        optimizer_name=best_params["optimizer"],
-        l2_reg=best_params["l2_reg"],
-        device=device,
-    )
-    print("  Retrained on train+dev combined.")
+    # print("\n  Retraining final CRF on train+dev combined with best hyperparameters...")
+    # train_dev_seqs = train_seqs + dev_seqs
+    # train_dev_lbls = train_lbls + dev_lbls
+    # best_model, _ = train_crf(
+    #     train_dev_seqs, train_dev_lbls,
+    #     None, None,
+    #     lr=best_params["lr"],
+    #     epochs=best_params["epochs"],
+    #     batch_size=best_params["batch_size"],
+    #     optimizer_name=best_params["optimizer"],
+    #     l2_reg=best_params["l2_reg"],
+    #     device=device,
+    # )
+    # print("  Retrained on train+dev combined.")
 
     # ── Evaluate on test ───────────────────────────────────────────────────────
     print("\n  Evaluating on test set...")

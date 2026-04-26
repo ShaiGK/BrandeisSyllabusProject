@@ -323,28 +323,30 @@ def main():
     print(f"  Best dev macro F1:    {best_f1 * 100:.2f}")
 
     # ── Retrain on train+dev combined ──────────────────────────────────────────
-    print()
-    print("  Retraining final CRF on train+dev combined with best hyperparameters...")
-    X_train_dev = X_train + X_dev
-    y_train_dev = train_labels + dev_labels
-    kwargs = dict(
-        algorithm=best_params["algorithm"],
-        max_iterations=best_params["max_iterations"],
-        all_possible_transitions=True,
-    )
-    if best_params["algorithm"] == "lbfgs":
-        kwargs["c1"] = best_params["c1"]
-        kwargs["c2"] = best_params["c2"]
-    elif best_params["algorithm"] == "l2sgd":
-        kwargs["c2"] = best_params["c2"]
-    final_crf = sklearn_crfsuite.CRF(**kwargs)
-    final_crf.fit(X_train_dev, y_train_dev)
-    print("  Retrained on train+dev combined.")
+    # print()
+    # print("  Retraining final CRF on train+dev combined with best hyperparameters...")
+    # X_train_dev = X_train + X_dev
+    # y_train_dev = train_labels + dev_labels
+    # kwargs = dict(
+    #     algorithm=best_params["algorithm"],
+    #     max_iterations=best_params["max_iterations"],
+    #     all_possible_transitions=True,
+    # )
+    # if best_params["algorithm"] == "lbfgs":
+    #     kwargs["c1"] = best_params["c1"]
+    #     kwargs["c2"] = best_params["c2"]
+    # elif best_params["algorithm"] == "l2sgd":
+    #     kwargs["c2"] = best_params["c2"]
+    # final_crf = sklearn_crfsuite.CRF(**kwargs)
+    # final_crf.fit(X_train_dev, y_train_dev)
+    # print("  Retrained on train+dev combined.")
 
     # ── Evaluate best model on test ────────────────────────────────────────────
     print()
-    print("  Evaluating final model on test set...")
-    y_pred_seqs = final_crf.predict(X_test)
+    # print("  Evaluating final model on test set...")
+    # y_pred_seqs = final_crf.predict(X_test)
+    print("  Evaluating best model on test set...")
+    y_pred_seqs = best_crf.predict(X_test)
 
     y_true_flat = [lbl for seq in test_labels for lbl in seq]
     y_pred_flat = [lbl for seq in y_pred_seqs for lbl in seq]
@@ -359,7 +361,8 @@ def main():
     # Save model and results
     os.makedirs("models", exist_ok=True)
     os.makedirs("results", exist_ok=True)
-    joblib.dump({"crf": final_crf, "vocab": vocab}, MODEL_PATH)
+    # joblib.dump({"crf": final_crf, "vocab": vocab}, MODEL_PATH)
+    joblib.dump({"crf": best_crf, "vocab": vocab}, MODEL_PATH)
     print(f"  Model saved to {MODEL_PATH}")
 
     save_results(metrics, RESULTS_PATH)

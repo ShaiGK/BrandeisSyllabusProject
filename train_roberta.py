@@ -15,9 +15,9 @@ Hyperparameter grid (evaluated on dev macro F1):
   warmup_ratio   : [0.06]          (fixed — standard value, rarely changes outcome)
   weight_decay   : [0.0, 0.01]
 
-After selecting the best hyperparameters via dev F1, the script retrains the
+After selecting the best hyperparameters via dev F1, the script can retrain the
 final model on train+dev combined before evaluating on test.  This uses all
-available labelled data and reduces the dev/test gap caused by having only
+available labeled data and reduces the dev/test gap caused by having only
 ~7 dev documents.
 
 Run on GPU (Colab recommended):
@@ -364,18 +364,18 @@ def main():
     # ── Retrain on train+dev combined ──────────────────────────────────────────
     # Using all labelled data (train+dev) for the final model reduces the
     # effective train size gap and helps close the dev/test generalisation gap.
-    print("\n  Retraining final model on train+dev combined with best hyperparameters...")
-    train_dev_records = train_records + dev_records
-    train_dev_dataset = SyllabusDataset(train_dev_records, tokenizer)
-    best_model, _ = run_training(
-        train_dev_dataset, None,
-        lr=best_params["lr"],
-        epochs=best_params["epochs"],
-        batch_size=best_params["batch_size"],
-        warmup_ratio=best_params["warmup_ratio"],
-        weight_decay=best_params["weight_decay"],
-    )
-    print("  Retrained on train+dev combined.")
+    # print("\n  Retraining final model on train+dev combined with best hyperparameters...")
+    # train_dev_records = train_records + dev_records
+    # train_dev_dataset = SyllabusDataset(train_dev_records, tokenizer)
+    # best_model, _ = run_training(
+    #     train_dev_dataset, None,
+    #     lr=best_params["lr"],
+    #     epochs=best_params["epochs"],
+    #     batch_size=best_params["batch_size"],
+    #     warmup_ratio=best_params["warmup_ratio"],
+    #     weight_decay=best_params["weight_decay"],
+    # )
+    # print("  Retrained on train+dev combined.")
 
     # ── Save the best model ────────────────────────────────────────────────────
     os.makedirs(MODEL_DIR, exist_ok=True)
