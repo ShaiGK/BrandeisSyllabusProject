@@ -54,3 +54,11 @@ REQUEST_DELAY = 0.5
 
 # Whether to organize downloads into subfolders by semester
 ORGANIZE_BY_SEMESTER = True
+
+# ============================================================
+# FIGURE / PLOT STYLING
+# ============================================================
+
+# Background color applied to all saved figures.
+# Use any matplotlib color string, e.g. "white", "#f5f5f5", "lightyellow".
+FIGURE_FACECOLOR = "white"

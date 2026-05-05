@@ -32,6 +32,8 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+
+from config import FIGURE_FACECOLOR
 from sklearn.metrics import (
     classification_report,
     confusion_matrix,
@@ -207,6 +209,8 @@ def save_confusion_matrix(y_true, y_pred, label_list, path, title):
     cm_norm = np.where(row_sums > 0, cm / row_sums, 0)
 
     fig, ax = plt.subplots(figsize=(max(8, len(active)), max(7, len(active) - 1)))
+    fig.patch.set_facecolor(FIGURE_FACECOLOR)
+    ax.set_facecolor(FIGURE_FACECOLOR)
     sns.heatmap(
         cm_norm,
         annot=cm,
@@ -222,7 +226,7 @@ def save_confusion_matrix(y_true, y_pred, label_list, path, title):
     ax.set_ylabel("Annotator 1 (reference)", fontsize=11)
     ax.set_title(title, fontsize=12, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(path, dpi=150)
+    plt.savefig(path, dpi=150, facecolor=FIGURE_FACECOLOR)
     plt.close()
     print(f"    → {path}")
 
@@ -232,6 +236,8 @@ def save_pairwise_kappa_chart(pair_labels, kappa_values, path):
     colours = ["#4C72B0" if k >= 0.6 else "#DD8452" if k >= 0.4 else "#C44E52"
                for k in kappa_values]
     fig, ax = plt.subplots(figsize=(max(5, len(pair_labels) * 1.4), 4))
+    fig.patch.set_facecolor(FIGURE_FACECOLOR)
+    ax.set_facecolor(FIGURE_FACECOLOR)
     bars = ax.bar(pair_labels, kappa_values, color=colours, edgecolor="white", width=0.5)
     ax.axhline(0.8, color="green", linestyle="--", linewidth=1, label="0.8 (almost perfect)")
     ax.axhline(0.6, color="orange", linestyle="--", linewidth=1, label="0.6 (substantial)")
@@ -244,7 +250,7 @@ def save_pairwise_kappa_chart(pair_labels, kappa_values, path):
     ax.set_title("Pairwise Cohen's κ", fontsize=12, fontweight="bold")
     ax.legend(fontsize=9, loc="lower right")
     plt.tight_layout()
-    plt.savefig(path, dpi=150)
+    plt.savefig(path, dpi=150, facecolor=FIGURE_FACECOLOR)
     plt.close()
     print(f"    → {path}")
 
@@ -258,6 +264,8 @@ def save_label_agreement_chart(label_avg_f1, path):
                for v in values]
 
     fig, ax = plt.subplots(figsize=(max(8, len(labels_sorted) * 0.9), 4))
+    fig.patch.set_facecolor(FIGURE_FACECOLOR)
+    ax.set_facecolor(FIGURE_FACECOLOR)
     bars = ax.bar(labels_sorted, values, color=colours, edgecolor="white")
     for bar, val in zip(bars, values):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01,
@@ -267,7 +275,7 @@ def save_label_agreement_chart(label_avg_f1, path):
     ax.set_title("Per-label average pairwise F1 (excludes zero-support labels)", fontsize=12,
                  fontweight="bold")
     plt.tight_layout()
-    plt.savefig(path, dpi=150)
+    plt.savefig(path, dpi=150, facecolor=FIGURE_FACECOLOR)
     plt.close()
     print(f"    → {path}")
 

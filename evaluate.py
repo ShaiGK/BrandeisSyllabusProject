@@ -8,6 +8,8 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+
+from config import FIGURE_FACECOLOR
 from sklearn.metrics import (
     classification_report,
     cohen_kappa_score,
@@ -107,6 +109,8 @@ def plot_confusion_matrix(y_true, y_pred, labels, path):
     cm_norm = np.where(row_sums > 0, cm / row_sums, 0)
 
     fig, ax = plt.subplots(figsize=(14, 11))
+    fig.patch.set_facecolor(FIGURE_FACECOLOR)
+    ax.set_facecolor(FIGURE_FACECOLOR)
     sns.heatmap(
         cm_norm,
         annot=cm,  # show raw counts in cells
@@ -121,7 +125,7 @@ def plot_confusion_matrix(y_true, y_pred, labels, path):
     ax.set_ylabel("True", fontsize=12)
     ax.set_title(os.path.splitext(os.path.basename(path))[0].replace("_", " ").title())
     plt.tight_layout()
-    plt.savefig(path, dpi=150)
+    plt.savefig(path, dpi=150, facecolor=FIGURE_FACECOLOR)
     plt.close()
     print(f"  Confusion matrix saved to {path}")
 
